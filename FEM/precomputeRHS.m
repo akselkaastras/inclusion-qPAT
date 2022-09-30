@@ -1,4 +1,4 @@
-function fmdl = precomputeRHS(meshpar,fmdl)
+function fmdl = precomputeRHS(meshpar,fmdl,wfun,wfungrad)
 %   Computes and saves integrals for rhs of variational form of
 %       - gamma nabla u . nabla v + quv    =  0
 %                                       u  =  f
@@ -24,12 +24,31 @@ Nbound = meshpar.e(1,:)';
 pN = size(p,1);
 HN = size(H,1);
 
-%% Build right-hand side  
+%% Build right-hand side 
+L1 = sparse(pN,pN);
+L2 = sparse(pN,pN);
 disp('- Building rhs')
-for ii = 1:HN
-    ind = mesh.H(ii, :);
-    gg = mesh.p(ind, :);
-    int3grad = triangint3gradpar(gg, kappa(ind));
-    C(ind, ind) = C(ind, ind) + int3;
-    K(ind, ind) = K(ind, ind) + int3grad;
+for kk = 1:pN
+    if rem(kk,round(pN/20)) == 0
+        disp(['- - ', num2str(round((kk/pN)*100)),' %'])
+    end
+    K = sparse(pN,1);
+    C = sparse(pN,1);
+    nodeInd = kk;
+    for jj = 1:3
+        elInd = find(H(:,jj) == nodeInd);
+        for ii = elInd'
+            ind = H(ii,:);
+            gg = p(ind,:);
+            elIntGrad = triangint3gradpar(gg, jj, wfungrad);
+            elInt = triangint3par(gg, 7, jj, wfun);
+            C(ind) = C(ind) + elInt';
+            K(ind) = K(ind) + elIntGrad';
+        end
+    end
+    L1(:,kk) = K;
+    L2(:,kk) = C;
 end
+
+fmdl.L1 = L1(fmdl.phi,:);
+fmdl.L2 = L2(fmdl.phi,:);

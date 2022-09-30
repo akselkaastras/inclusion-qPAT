@@ -1,26 +1,20 @@
-function int = triangint3gradpar(g,kappa)
-  
+function int = triangint3gradpar(g, k, gradkappa)
 
-    
+
 w = [1/6*ones(3,1)];
 ip = [1/2 0;1/2 1/2;0 1/2];
+quad = g(1,:)+ip(:,1)*(g(2,:)-g(1,:))+ip(:,2)*(g(3,:)-g(1,:));
+
 L = [-1 1 0;-1 0 1];
 Jt = L*g;
 iJt = inv(Jt);
 dJt = abs(det(Jt));
-G = iJt*L; % gradient of the three local basis functions in the "element space"
-G = G';
+G = iJt*L;
 int = 0;
+nabkap = gradkappa(quad(:,1),quad(:,2));
 
-S = [1-ip(1,1)-ip(1,2),1-ip(2,1)-ip(2,2),1-ip(3,1)-ip(3,2);ip(1,1),ip(2,1),ip(3,1);ip(1,2),ip(2,2),ip(3,2)];
-%%
-int = 0;
-for ii = 1:3,
-
-  int_1 =  kappa(1)*w(ii)*S(:,ii)*G(1,:)*G';
-  int_2 =  kappa(2)*w(ii)*S(:,ii)*G(2,:)*G';
-  int_3 =  kappa(3)*w(ii)*S(:,ii)*G(3,:)*G';
-  int = int + int_1 + int_2 + int_3;
+for ii = 1:length(w)
+    S = [1-ip(ii,1)-ip(ii,2);ip(ii,1);ip(ii,2)];
+    int = int + S(k)*w(ii)*nabkap(ii,:)*G;
 end
 int = int*dJt;
-
