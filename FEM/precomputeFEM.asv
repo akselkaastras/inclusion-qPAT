@@ -1,6 +1,6 @@
-function fmdl = precomputeFEM(meshpar)
+function fmdl = precomputeFEM(meshpar,Ntrig)
 %   Computes and saves integrals for lhs of variational form of
-%         gamma nabla u . nabla v + quv    =  0
+%       - gamma nabla u . nabla v + quv    =  0
 %                                       u  =  f
 %   in matrices Agrad and Aq and for which U solves
 %       gamma' * Agrad * U + q' * Aq * U   =  LHS(f,gamma,q)           
@@ -58,22 +58,22 @@ K = 1/2*(K'+K);
 %K = K+1e-12*speye(size(K));
 
 % Build mass matrix from inclusion (this will be changed to prior sample)
-C = Aq*gammatrix;
-C = reshape(sum(C,2),N,N);
-C = 1/2*(C'+C);
+
 
 % Optimal reordering
-[phi,stats] = amd(K+C); 
+[phi,stats] = amd(K); 
 r(phi) = 1:max(size(phi));
-%Qperm = Q(phi,:);
+Qperm = Q(phi,:);
 
 %% Save matrices in struct for output
 fmdl.Agrad = Agrad;
-fmdl.Aq = Aq;
-%fmdl.Q = Q;
-%fmdl.Qperm = Qperm;
+fmdl.Q = Q;
+fmdl.Qperm = Qperm;
 fmdl.phi = phi;
 fmdl.r = r;
+fmdl.Nvec = Nvec;
+fmdl.Ntrig = Ntrig;
+fmdl.I = 1e-12*speye(size(K));
 
 end
 
