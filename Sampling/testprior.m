@@ -26,5 +26,8 @@ end
 C(1:pN,1:pN) = K;
 C(pN+1,1:pN) = A';
 C(1,pN+1) = 1;
+%% Does a solution to the Neumann problem really integrate to 1?
+b = abs(randn(pN+1,1));
+u = C\b;
 %%
-lambda = eigs(C,5,'smallestabs');
+[V,d] = eigs(K,5,'smallestabs');

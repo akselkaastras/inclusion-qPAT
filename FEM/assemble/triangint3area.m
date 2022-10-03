@@ -25,9 +25,9 @@ function int = triangint3area(g,mu,order)
   for ii = 1:length(w)
       S = [1-ip(ii,1)-ip(ii,2);ip(ii,1);ip(ii,2)];
       %   int = int + w(ii)*S*S';
-      int1 = w(ii)*S(1)*mu(1)*S;
-      int2 = w(ii)*S(2)*mu(2)*S;
-      int3 = w(ii)*S(3)*mu(3)*S;
+      int1 = w(ii)*mu(1)*S;
+      int2 = w(ii)*mu(2)*S;
+      int3 = w(ii)*mu(3)*S;
       int = int + int1 + int2 + int3;
       % int = int + w(ii)*S(1)*mu(1)*(S*S');
   end
