@@ -60,7 +60,8 @@ trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), 1/100*usum,'EdgeCol
 view(2)
 %%
 % Make also a plot of the restriction to a line y = 0;
-F = scatteredInterpolant(meshpar.p(1, :)', meshpar.p(2, :)', usum');
+% eigenfunctions are neumann zero ?
+F = scatteredInterpolant(meshpar.p(1, :)', meshpar.p(2, :)', priorpar.Psi(20,:)');
 t = linspace(-1,1,1000);
 theta = pi/4;
 a = [cos(theta),sin(theta)];
