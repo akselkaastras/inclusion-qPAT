@@ -1,3 +1,6 @@
+clc; clear;
+addpath(genpath(pwd))
+%%
 meshpar = mesh_comp(3);
 
 wfun = @(x1,x2) sin(4*x1);
@@ -37,5 +40,33 @@ figure(2);
 trisurf(meshpar.t(1:3,:)',meshpar.p(1,:)',meshpar.p(2,:)',full(u),'facecolor','interp')
 view(2)
 
+%% test prior
+q = 1e4;
+alpha = 2;
+tau = 2;
+N = 100;
+usum = zeros(1,length(meshpar));
+for i = 1:100
+    i
+    priorpar = prior_init(meshpar,alpha,tau,q,N);
+    usum = usum + priorpar.u;
+end
 
 
+
+%%
+figure(1);
+trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), 1/100*usum,'EdgeColor','none','FaceColor','interp')
+view(2)
+%%
+% Make also a plot of the restriction to a line y = 0;
+F = scatteredInterpolant(meshpar.p(1, :)', meshpar.p(2, :)', usum');
+t = linspace(-1,1,1000);
+theta = pi/4;
+a = [cos(theta),sin(theta)];
+figure(2);
+plot(t,F(a(1)*t,a(2)*t));
+figure(1);
+hold on
+plot3(a(1)*t,a(2)*t,100+0.*t,'r-','linewidth',2)
+hold off

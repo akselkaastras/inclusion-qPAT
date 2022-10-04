@@ -30,4 +30,6 @@ C(1,pN+1) = 1;
 b = abs(randn(pN+1,1));
 u = C\b;
 %%
-[V,d] = eigs(K,5,'smallestabs');
+[V,d] = eigs(K,100,'smallestabs');
+
+trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), V(:,4)','EdgeColor','none','FaceColor','interp'), view(2)
