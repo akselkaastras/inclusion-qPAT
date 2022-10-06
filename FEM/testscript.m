@@ -44,30 +44,23 @@ view(2)
 q = 1e4;
 alpha = 2;
 tau = 2;
-N = 100;
+N = 64;
 usum = zeros(1,length(meshpar));
+priorpar = prior_init(meshpar,alpha,tau,q,N);
+%%
+priorpar.v = [1,0,2]; % values at each interface (M)
+priorpar.c = [-inf,-3,3,inf]; % contour levels (M + 1)
+priorpar.M = 3; % number of interfaces
 for i = 1:100
+    xi = randn(1,N);
+    theta = priorsample(xi,priorpar);
+    gamma = push_forward_levelset2D(theta,priorpar);
+    figure(1);
+    trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), theta,'EdgeColor','none','FaceColor','interp')
+    view(2)
+    figure(2);
+    trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), gamma,'EdgeColor','none','FaceColor','interp')
+    view(2);
+    pause(5);
     i
-    priorpar = prior_init(meshpar,alpha,tau,q,N);
-    usum = usum + priorpar.u;
 end
-
-
-
-%%
-figure(1);
-trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), 1/100*usum,'EdgeColor','none','FaceColor','interp')
-view(2)
-%%
-% Make also a plot of the restriction to a line y = 0;
-% eigenfunctions are neumann zero ?
-F = scatteredInterpolant(meshpar.p(1, :)', meshpar.p(2, :)', priorpar.Psi(20,:)');
-t = linspace(-1,1,1000);
-theta = pi/4;
-a = [cos(theta),sin(theta)];
-figure(2);
-plot(t,F(a(1)*t,a(2)*t));
-figure(1);
-hold on
-plot3(a(1)*t,a(2)*t,100+0.*t,'r-','linewidth',2)
-hold off
