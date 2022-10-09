@@ -15,7 +15,7 @@ function meshpar = mesh_comp(Nrefine)
 
 % Create a subdirectory called 'data'. If it already exists, Matlab will
 % show a warning. You don't need to care about the warning.
-mkdir('.','data')
+mkdir('.','Data')
 
 % Build Decomposed Geometry Matrix
 dgm = [...               % DGM for unit disc

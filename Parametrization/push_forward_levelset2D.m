@@ -8,7 +8,7 @@ function gamma = push_forward_levelset2D(theta,priorpar)
 
 % identify each levelset and insert inclusion
 gamma = 0*theta + 1;
-for i = 1:priorpar.M
+for i = 1:priorpar.ninterface
     gamma = gamma + priorpar.v(i)*bitand(priorpar.c(i)<theta,theta<=priorpar.c(i+1));
 end
 

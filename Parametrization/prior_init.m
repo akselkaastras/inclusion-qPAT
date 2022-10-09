@@ -1,66 +1,35 @@
-function priorpar = prior_init(meshpar,alpha,tau,q,N)
+function priorpar = prior_init(xq,yq,alpha,tau,q,maxfreq)
 
-% Finds eigenbasis (lambda_n, \psi_n) of (-Delta) on mesh provided by
+% Finds eigenbasis (lambda_n, \psi_n) of q*(tau^2-Delta)^(-alpha) on
+% [-1,1]^2 from fourier basis
 % mesh_par.
 % Input:    
-%       mesh_par: struct of mesh parameters, points, connectivity etc.
+%       [xq,yq] : points in which Fourier basis is evaluated
 %       alpha   : regularity of prior samples (decay of eigenvalues) > 0
 %       tau     : inverse length scale > 0
 %       q       : amplitude
-%       N       : number of basisfunctions to include
+%       maxfreq : maximum freq. to include in basis
 
 % Matern covariance parameters
 priorpar.alpha = alpha;
 priorpar.tau = tau;
 priorpar.q = q;
 
-% Make FEM discretization of operator (-Delta)
-p = meshpar.p';
-H = meshpar.t(1:3,:)';
-
-pN = size(p,1);
-HN = size(H,1);
-kappa = ones(pN,1);
-K = sparse(pN,pN);
-A = zeros(pN,1);
-for ii = 1:HN
-    ind = H(ii, :);
-    gg = p(ind, :);
-    int3grad = triangint3grad(gg, kappa(ind));
-    int3 = triangint3area(gg, kappa(ind));
-    K(ind, ind) = K(ind, ind) + int3grad;
-    A(ind) = A(ind) + int3;
-end
-
-% Extract N eigenvectors corresponding to the N smallest eigenvalues 
-[Psi,lambda] = eigs(K,N,'smallestabs');
-Psi = Psi';
-lambda = diag(lambda).';
+evalpar = makeEvalMatrixFourier(xq,yq,maxfreq);
+priorpar.M = evalpar.M;
+priorpar.maxfreq = evalpar.maxfreq;
 
 % Eigenvalues of q*(tau^2 - Delta)^{-alpha} is q*(tau^2 + lambda)^{-alpha}
-lambda = q*(tau^2+lambda).^(-alpha);
+lambda = q*(tau^2+evalpar.Lambda).^(-alpha);
+
 
 % Make KL expansion to plot example
-xi = randn(1,N);
-u = xi.*(lambda).^(1/2) * Psi;
+xi = randn(priorpar.M,1);
+u = evalpar.B * (xi.*(lambda).^(1/2));
 
-figure(1);
-trisurf(meshpar.t(1:3,:)', meshpar.p(1, :), meshpar.p(2, :), u,'EdgeColor','none','FaceColor','interp')
-view(2)
-
-% Make also a plot of the restriction to a line y = 0;
-F = scatteredInterpolant(meshpar.p(1, :)', meshpar.p(2, :)', u');
-t = linspace(-1,1,1000);
-theta = pi/4;
-a = [cos(theta),sin(theta)];
-figure(2);
-plot(t,F(a(1)*t,a(2)*t));
-figure(1);
-hold on
-plot3(a(1)*t,a(2)*t,100+0.*t,'r-','linewidth',2)
-hold off
 
 % Save eigenvalues and eigenvectors
-priorpar.Psi = Psi;
+priorpar.B = evalpar.B;
 priorpar.lambda = lambda;
+priorpar.lambdahalf = lambda.^(1/2);
 priorpar.u = u;

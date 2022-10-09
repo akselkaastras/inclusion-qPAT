@@ -1,0 +1,13 @@
+function plot_from_coef(cn,xq,yq,priorpar)
+
+N = length(xq);
+n = floor(sq
+% make evaluation matrix for Fourierbasis in query points (xq,yq)
+evalpar = makeEvalMatrixFourier(xq,yq,priorpar.maxfreq);
+% evaluate Fourier basis in those points given coefficients cn
+thetaq = evalKLFourierExpansion(cn,evalpar,priorpar);
+% push-forward
+gamma = push_forward_levelset2D(thetaq,priorpar);
+% plot
+surf(, gamma,'EdgeColor','none','FaceColor','interp')
+view(2)
