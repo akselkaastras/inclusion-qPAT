@@ -49,6 +49,6 @@ for kk = 1:pN
     L1(:,kk) = K;
     L2(:,kk) = C;
 end
-
+%% save in struct and use reordering from LHS
 fmdl.L1 = L1(fmdl.phi,:);
 fmdl.L2 = L2(fmdl.phi,:);

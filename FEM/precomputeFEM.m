@@ -63,16 +63,15 @@ C = Aint*gammatrix;
 C = reshape(sum(C,2),N,N);
 C = 1/2*(C'+C);
 
-% Optimal reordering
+%% Optimal reordering
 [phi,stats] = amd(K+C); 
 r(phi) = 1:max(size(phi));
-%Qperm = Q(phi,:);
+%Agrad = Agrad(phi,:);
+%Aint = Aint(phi,:);
 
 %% Save matrices in struct for output
 fmdl.Agrad = Agrad;
 fmdl.Aint = Aint;
-%fmdl.Q = Q;
-%fmdl.Qperm = Qperm;
 fmdl.phi = phi;
 fmdl.r = r;
 

@@ -39,6 +39,12 @@ view(2)
 figure(2);
 trisurf(meshpar.t(1:3,:)',meshpar.p(1,:)',meshpar.p(2,:)',full(u),'EdgeColor','none')
 view(2)
+%% Integral of solution squared
+fun = @(r,theta) r.*sin(4*r.*cos(theta)).^2;
+normsq = integral2(fun,0,1,0,2*pi);
+C = fmdl.Aint*speye(N);
+C = reshape(sum(C,2),N,N);
+u'*C*u
 %%
 figure(3)
 T = linspace(-1,1,100);

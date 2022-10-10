@@ -1,4 +1,5 @@
-%   1.  make_data
+%   0.  how to estimate 2-norm of finite element solution
+%   1.  make_data with noise
 %   2.  forward_map
 %   3.  approximation error model -> "real" variance - ask Tanja
 %   4.  pcn-likelihood
