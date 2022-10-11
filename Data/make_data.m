@@ -81,10 +81,10 @@ colorbar
 sigma = 0.5;
 m = 0.5*[sqrt(2),sqrt(2)];
 figure(2);
-wfun = @(x1,x2) 2*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
-wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
-%wfun = @(x1,x2) 0*x1 + 1;
-%wfungrad = @(x1,x2) [0*x1 0*x2];
+%wfun = @(x1,x2) 2*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
+%wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
+wfun = @(x1,x2) 0*x1 + 1;
+wfungrad = @(x1,x2) [0*x1 0*x2];
 fmdl = precomputeFEM(meshpar);
 fmdl = precomputeRHS(meshpar,fmdl,wfun,wfungrad);
 fmdl = fixingD(meshpar,fmdl,D);
@@ -100,8 +100,8 @@ plot_from_gamma(full(u).*q',meshpar)
 title('Data')
 colorbar
 %% add noise
-sigma = noiselevel * norm(Ax) / sqrt(N);
-eta =  sigma * randn(N,1);
-b = Ax + eta;
-datapar = 0;
+%sigma = noiselevel * norm(Ax) / sqrt(N);
+%eta =  sigma * randn(N,1);
+%b = Ax + eta;
+%datapar = 0;
 %% save in struct

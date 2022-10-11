@@ -1,3 +1,6 @@
+%   -2. Fix Dirichlet boundary conditions of the system..
+% https://scicomp.stackexchange.com/questions/28370/how-to-apply-non-zero-dirichlet-boundary-condition-in-finite-elements
+%   -1. Test qPAT demo
 %   0.  how to estimate 2-norm of finite element solution
 %   1.  make_data with noise
 %   2.  forward_map
