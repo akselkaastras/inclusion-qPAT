@@ -63,12 +63,14 @@ gammatrix = spdiags(gamma, 0, N, N);
 % Build stiffness matrix from inclusion  
 K = Agrad*gammatrix;
 K = reshape(sum(K,2),pNN,pNN);
+issymmetric(K);
+
 K = 1/2*(K'+K);
 %K = K+1e-12*speye(size(K));
 
 % Build mass matrix from inclusion (this will be changed to prior sample)
 C = Aint*gammatrix;
-C = reshape(sum(C,2),pNN,pNN);
+C = reshape(sum(C,2),N,N);
 C = 1/2*(C'+C);
 
 %% Optimal reordering
