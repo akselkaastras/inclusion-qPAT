@@ -23,6 +23,9 @@ pNN = pN-NN;
 %% Build stiffness and mass matrix
 Agrad = sparse(pNN*pNN,pN);
 Aint = sparse(pNN*pNN,pN);
+%Agrad = sparse(pN*pN,pN);
+%Aint = sparse(pN*pN,pN);
+Aarea = sparse(pN*pN,pN);
 
 for kk = 1:pN
     if rem(kk,round(pN/20)) == 0
@@ -42,6 +45,7 @@ for kk = 1:pN
             K(ind, ind) = K(ind, ind) + elIntGrad;
         end
     end
+    Aarea(:,kk) = C(:);
     % Add dirichlet boundary conditions to C and K before adding using
     % Nbound
     C(Nbound,:) = [];
@@ -71,6 +75,10 @@ C = Aint*gammatrix;
 C = reshape(sum(C,2),pNN,pNN);
 C = 1/2*(C'+C);
 
+% Build "area" matrix. Simply mass matrix corresponding to gamma = 1
+Carea = reshape(sum(Aarea,2),pN,pN);
+Carea = 1/2*(Carea'+Carea);
+
 %% Optimal reordering
 [phi,stats] = amd(K+C); 
 r(phi) = 1:max(size(phi));
@@ -82,6 +90,7 @@ fmdl.Agrad = Agrad;
 fmdl.Aint = Aint;
 fmdl.phi = phi;
 fmdl.r = r;
+fmdl.Carea = Carea;
 
 end
 

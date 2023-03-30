@@ -1,4 +1,4 @@
-function priorpar = prior_init(xq,yq,alpha,tau,q,maxfreq)
+function priorpar = prior_init_2d(xq,yq,alpha,tau,q,maxfreq)
 
 % Finds eigenbasis (lambda_n, \psi_n) of q*(tau^2-Delta)^(-alpha) on
 % [-1,1]^2 from fourier basis
@@ -15,7 +15,7 @@ priorpar.alpha = alpha;
 priorpar.tau = tau;
 priorpar.q = q;
 
-evalpar = makeEvalMatrixFourier(xq,yq,maxfreq);
+evalpar = makeEvalMatrixFourier_2d(xq,yq,maxfreq);
 priorpar.M = evalpar.M;
 priorpar.maxfreq = evalpar.maxfreq;
 

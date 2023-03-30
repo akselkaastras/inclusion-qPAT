@@ -1,11 +1,12 @@
 function u = evalFowardModel(fmdl,meshpar,q)
 
-N = length(meshpar.p);
-qmatrix = spdiags(q, 0, N, N);
+pN = length(meshpar.p);
+pNN = pN-size(meshpar.e(1,:),2);
+qmatrix = spdiags(q, 0, pN, pN);
 
 % Build mass matrix
 C = fmdl.Aint*qmatrix;
-C = reshape(sum(C,2),N,N);
+C = reshape(sum(C,2),pNN,pNN);
 C = 1/2*(C'+C);
 
 % System matrix A and reordering of C
@@ -15,7 +16,7 @@ A = fmdl.K+C(fmdl.phi,fmdl.phi);
 Q2 = fmdl.L2*qmatrix;
 Q2 = sum(Q2,2);
 
-Q = fmdl.Q1 + Q2;
+Q = - fmdl.Q1 - Q2;
 
 % Solve
 R = chol(A);

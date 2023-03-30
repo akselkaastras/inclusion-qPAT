@@ -1,11 +1,12 @@
 function fmdl = fixingD(meshpar,fmdl,D)
 
-N = length(meshpar.p);
-Dmatrix = spdiags(D', 0, N, N);
+pN = length(meshpar.p);
+pNN = pN-size(meshpar.e(1,:),2);
+Dmatrix = spdiags(D', 0, pN, pN);
 
 
 K = fmdl.Agrad*Dmatrix;
-K = reshape(sum(K,2),N,N);
+K = reshape(sum(K,2),pNN,pNN);
 K = 1/2*(K'+K);
 
 Q1 = fmdl.L1*Dmatrix;

@@ -37,7 +37,7 @@ for k = 2:N_iter
         N_reject = N_reject + 1; % do nothing
     end
 
-    % Current posterior probability
+    % Current likelihood
     LL(k) = ll;
     XR(k,:) = xr;
     

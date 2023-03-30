@@ -1,7 +1,10 @@
-function ll = compute_log_likelihood_pcn(cn, datapar, priorpar, fmdl)
+function ll = compute_log_likelihood_pcn_level(xi, datapar, priorpar, fmdl)
 
-[x,w,gamma] = push_forward(cn,priorpar);
+% sample prior
+theta = priorsample(xi,priorpar);
 
+% push-forward
+gamma = push_forward_levelset2D_smooth(theta,priorpar);
 
 u = forwardFEM(gamma',fmdl);
 

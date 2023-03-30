@@ -1,0 +1,19 @@
+function ll = compute_log_likelihood_pcn_level(xi, datapar, priorpar, fmdl)
+
+% sample prior
+theta = priorsample(xi,priorpar);
+
+% push-forward
+gamma = push_forward_levelset2D_smooth(theta,priorpar);
+
+% evaluate forward model
+u = evalFowardModel(fmdl,datapar.meshpar,gamma);
+
+% add source
+%U = zeros(length(datapar.meshpar.p),1);
+datapar.U(datapar.meshpar.NZ) = datapar.U(datapar.meshpar.NZ) + u;
+u = U + datapar.W;
+
+% compute log-likelihood
+ll = -1/(2*datapar.epssq_approx)*sum(abs(u-datapar.bq).^2);
+

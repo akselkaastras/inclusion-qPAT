@@ -1,7 +1,7 @@
 function fmdl = precomputeRHS(meshpar,fmdl,wfun,wfungrad)
 %   Computes and saves integrals for rhs of variational form of
-%       - gamma nabla u . nabla v + quv    =  0
-%                                       u  =  f
+%       - gamma nabla u . nabla v + quv  =  0
+%                                     u  =  f
 %   for f = x_1 and f = x_2 in two matrices such that U (projection of u) 
 %   solves
 %       gamma' * Agrad * U + q' * Aq * U   =  LHS(f,gamma,q)  
@@ -25,6 +25,7 @@ NN = size(Nbound,1);
 HN = size(H,1);
 
 pNN = pN-NN;
+%pNN = pN;
 %% Build right-hand side 
 L1 = sparse(pNN,pN);
 L2 = sparse(pNN,pN);

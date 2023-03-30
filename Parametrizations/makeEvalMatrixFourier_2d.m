@@ -1,4 +1,4 @@
-function evalpar = makeEvalMatrixFourier(xq,yq,maxfreq)
+function evalpar = makeEvalMatrixFourier_2d(xq,yq,maxfreq)
 %% Real Fourier basis functions on [-1,1]^2
 
 
