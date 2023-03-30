@@ -1,4 +1,0 @@
-function thetaq = evalKLFourierExpansion(cn,xq,vq,evalpar,priorpar) 
-
-% evaluate KL expansion in (xq,yq) from evalpar and priorpar
-evalpar = makeEvalMatrixFourier(xq,yq,maxfreq);
