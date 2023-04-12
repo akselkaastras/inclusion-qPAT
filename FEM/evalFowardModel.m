@@ -2,7 +2,8 @@ function u = evalFowardModel(fmdl,meshpar,q)
 
 pN = length(meshpar.p);
 pNN = pN-size(meshpar.e(1,:),2);
-qmatrix = spdiags(q, 0, pN, pN);
+%qmatrix = spdiags(q, 0, pN, pN);
+qmatrix = 0.001*speye(pN);
 
 % Build mass matrix
 C = fmdl.Aint*qmatrix;
@@ -18,7 +19,7 @@ Q2 = sum(Q2,2);
 fmdl.Q1 = fmdl.Q1(fmdl.phi);
 Q2 = Q2(fmdl.phi);
 
-Q =  fmdl.Q1 + Q2;
+Q =  - fmdl.Q1 - Q2;
 
 % Solve
 R = chol(A);
