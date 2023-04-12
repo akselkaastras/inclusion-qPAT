@@ -15,8 +15,10 @@ A = fmdl.K+C(fmdl.phi,fmdl.phi);
 % Build rhs
 Q2 = fmdl.L2*qmatrix;
 Q2 = sum(Q2,2);
+fmdl.Q1 = fmdl.Q1(fmdl.phi);
+Q2 = Q2(fmdl.phi);
 
-Q = - fmdl.Q1 - Q2;
+Q =  fmdl.Q1 + Q2;
 
 % Solve
 R = chol(A);

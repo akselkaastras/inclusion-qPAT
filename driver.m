@@ -84,7 +84,7 @@ kitecurve = [cos(t)+0.65*cos(2*t)-0.65; 1.5*sin(t)];
 r = sqrt(0.8+0.8*(cos(4*t)-1).^2);
 cushioncurve = [r.*cos(t); r.*sin(t)]; 
 curves = [0.18*kitecurve+[0.4;-0.4]; 0.12*cushioncurve+[-0.4;0.4]];
-values = [200,400];
+values = [2,4,1];
 noiselevel = 0.01;
 seed = 0;
 
@@ -103,8 +103,8 @@ fmdl = fixingD(meshpar,fmdl,datapar.D_coarse');
 
 %% Test sampler
 rng(1);
-N_iter = 10000;
-jump_size = 0.01;
+N_iter = 1000000;
+jump_size = 0.02;
 %s = load('Data/x0/x02');
 %x0 = s.x0;
 x0 = priorpar.std*randn(priorpar.dim);
@@ -118,5 +118,5 @@ samplerpar.jump_size = jump_size;
 [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl);
 %%
 
-plot_from_coef_star(reshape(XR(end-1000,:),priorpar.M,priorpar.ninclusions),priorpar);
+plot_from_coef_star(reshape(XR(223064,:),priorpar.M,priorpar.ninclusions),priorpar);
 compute_log_likelihood_pcn_star(XR(end,:), datapar, priorpar, fmdl)

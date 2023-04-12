@@ -38,7 +38,7 @@ dgm = [...               % DGM for unit disc
 [p,e,t] = initmesh(dgm);
 for rrr = 1:Nrefine
     [p,e,t] = refinemesh(dgm,p,e,t);
-    p       = jigglemesh(p,e,t);
+    p       = jigglemesh(p,e,t,'opt','minimum','Iter',1000);
 end
 
 % Determine the center points of edges and the corresponding angles

@@ -1,4 +1,4 @@
-function fmdl = precomputeRHS(meshpar,fmdl,wfun,wfungrad)
+function fmdl = precomputeRHStest(meshpar,fmdl,wfun,wfungrad)
 %   Computes and saves integrals for rhs of variational form of
 %       - gamma nabla u . nabla v + quv  =  0
 %                                     u  =  f
@@ -24,8 +24,8 @@ HN = size(H,1);
 pNN = pN-NN;
 %pNN = pN;
 %% Build right-hand side 
-L1 = sparse(pNN,pN);
-L2 = sparse(pNN,pN);
+L1 = sparse(pN,pN);
+L2 = sparse(pN,pN);
 disp('- Building rhs')
 for kk = 1:pN
     if rem(kk,round(pN/20)) == 0
@@ -40,15 +40,15 @@ for kk = 1:pN
             ind = H(ii,:);
             gg = p(ind,:);
             elIntGrad = triangint3gradpar(gg, jj, wfungrad);
-            elInt = triangint3par(gg, 7, jj, wfun);
+            elInt = triangint3par(gg, 3, jj, wfun);
             C(ind) = C(ind) + elInt';
             K(ind) = K(ind) + elIntGrad';
         end
     end
     % Add dirichlet boundary conditions to C and K before adding using
     % Nbound
-    C(Nbound) = [];
-    K(Nbound) = [];
+    %C(Nbound) = [];
+    %K(Nbound) = [];
     L1(:,kk) = K;
     L2(:,kk) = C;
 end

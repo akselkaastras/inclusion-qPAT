@@ -3,7 +3,7 @@ function int = triangint3par(g, quadPoints, k, kappa)
 
 switch quadPoints
 case 3
-  w = 1/6*ones(3,1);
+  w = [1/6*ones(3,1)];
   ip = [1/2 0;1/2 1/2;0 1/2];
 case 7
   w = [1/40*ones(3,1); 1/15*ones(3,1);27/120];

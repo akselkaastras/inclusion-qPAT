@@ -26,7 +26,7 @@ fmdl = precomputeRHS(meshpar,fmdl,wfun,wfungrad);
 pNN = pN-size(meshpar.e(1,:),2);
 
 %condmatrix = spdiags(cond, 0, N, N);
-condmatrix = 1*speye(pN);
+condmatrix = 0*speye(pN);
 qmatrix = 1*speye(pN);
 
 K = fmdl.Agrad*condmatrix;
@@ -58,7 +58,7 @@ U1(meshpar.NZ) = u;
 U2 = U1 + wfun(meshpar.p(1,:)',meshpar.p(2,:)');
 %%
 figure(1);
-trisurf(meshpar.t(1:3,:)',meshpar.p(1,:)',meshpar.p(2,:)',full(U2),'EdgeColor','none','facecolor','interp')
+trisurf(meshpar.t(1:3,:)',meshpar.p(1,:)',meshpar.p(2,:)',full(U1),'EdgeColor','none','facecolor','interp')
 view(2)
 %% Integral of solution squared
 funxy = @(x,y) 0*x+1;
