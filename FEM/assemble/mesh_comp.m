@@ -12,6 +12,7 @@ function meshpar = mesh_comp(Nrefine)
 % btri_ind   indices of triangles having an edge as one side
 %
 % Samuli Siltanen March 2012
+% Aksel Rasmussen March 2023
 
 % Create a subdirectory called 'data'. If it already exists, Matlab will
 % show a warning. You don't need to care about the warning.
@@ -142,6 +143,7 @@ meshpar.Dfii = Dfii;
 meshpar.theta = theta;
 meshpar.interp_x = interp_x;
 meshpar.interp_y = interp_y;
+meshpar.refine = Nrefine;
 
 save data/mesh p e t bfii ecenters btri_ind elengths dgm
 

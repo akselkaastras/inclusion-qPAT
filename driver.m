@@ -8,7 +8,7 @@ meshpar = mesh_comp(meshrefine);
 q = 3;
 alpha = 1;
 tau = 1;
-maxfreq = 3;
+maxfreq = 4;
 delta = 0.2;
 
 priorpar = prior_init_2d(meshpar.p(1, :), meshpar.p(2, :),alpha,tau,q,maxfreq);
@@ -16,8 +16,11 @@ priorpar = prior_init_2d(meshpar.p(1, :), meshpar.p(2, :),alpha,tau,q,maxfreq);
 % For levelset
 priorpar.ninterface = 3; % number of interfaces
 priorpar.c = [-inf -2 2 inf]; % contour levels (ninterface+1)
-priorpar.v = [1 0 2]; % values at each interface
+priorpar.v = [3 1 5]; % values at each interface
 priorpar.delta = delta; % smoothing factor
+priorpar.dim = [priorpar.M,1];
+priorpar.type = 'level';
+priorpar.std = 1;
 
 % Sample prior
 xi = randn(priorpar.M,1);
@@ -31,10 +34,7 @@ figure(1);
 plot_from_gamma(gamma,meshpar);
 
 figure(2);
-[X,Y] = meshgrid(linspace(-1,1,200));
-xq = X(:);
-yq = Y(:);
-plot_from_coef_level_smooth(xi,xq,yq,priorpar);
+plot_from_coef_level_smooth(xi,priorpar);
 
 %% Make prior for star-shaped set with matern covariance
 q = 10;
@@ -47,17 +47,22 @@ priorpar = prior_init(xq,alpha,tau,q,maxfreq);
 
 % For star-shaped inclusion parametrization
 priorpar.ninclusions = 2; % number of interfaces
-priorpar.v = [1 2]; % values at each interface
-priorpar.background = 0;
+priorpar.v = [2 4]; % values at each interface
+
+priorpar.background = 1;
 priorpar.angles = linspace(0,2*pi,256)';
 priorpar.mean = -2;
+priorpar.dim = [priorpar.M,priorpar.ninclusions];
+priorpar.type = 'star';
+priorpar.center = [0.37,-0.43;-0.44,0.36];
+priorpar.std = 0.2;
 
 
 % We use M Fourier coefficients and 2 numbers for each inclusion
-xi_total = randn(priorpar.M+2,priorpar.ninclusions);
-xi = 0.2*xi_total(1:priorpar.M,:);
-xi_center = 0.5*xi_total(priorpar.M+1:end,:);
-%xi_center = [0,0;0,0];
+xi = priorpar.std*randn(priorpar.dim);
+%xi_center = 0.5*xi_total(priorpar.M+1:end,:);
+xi_center = priorpar.center;
+
 
 % Make KL expansion
 theta = priorsample(xi,priorpar);
@@ -69,45 +74,49 @@ gamma = push_forward_star2D(xi_center,theta,meshpar.p(1,:)',meshpar.p(2,:)',prio
 figure(1);
 plot_from_gamma(gamma,meshpar);
 
-figure(2);
-[X,Y] = meshgrid(linspace(-1,1,200));
-xq = X(:);
-yq = Y(:);
-plot_from_coef_star(xi_center,xi,xq,yq,priorpar)
+plot_from_coef_star(xi,priorpar)
 
 %% Simulate data
 
-% kite and cushion
+% Kite and cushion parametrizations
 t = linspace(0,2*pi,1000);
 kitecurve = [cos(t)+0.65*cos(2*t)-0.65; 1.5*sin(t)];
 r = sqrt(0.8+0.8*(cos(4*t)-1).^2);
 cushioncurve = [r.*cos(t); r.*sin(t)]; 
-curves = [0.18*kitecurve+[0.4;-0.3]; 0.12*cushioncurve+[-0.3;0.3]];
-values = [2,4];
-noiselevel = 0.2;
+curves = [0.18*kitecurve+[0.4;-0.4]; 0.12*cushioncurve+[-0.4;0.4]];
+values = [200,400];
+noiselevel = 0.01;
 seed = 0;
 
 datapar = make_data(curves,values,noiselevel,finemeshrefine,meshpar,seed); 
 
 %% Compute approximation error as diagonal normal distribution
-N = 10;
+N = 500;
 datapar = computeApproxError(datapar,N);
-
-%% Initialize forward model
-% define source from wfun
-%sigma = 0.5;
-%m = 0.5*[sqrt(2),sqrt(2)];
-%wfun = @(x1,x2) 2*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
-%wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
-
+%datapar.sigmasq = 0;
+%datapar.epssq = 1e-8;
+datapar.epssq_approx = datapar.epssq;
+%% Initialize forward model for sampling
 fmdl = precomputeFEM(meshpar);
 fmdl = precomputeRHS(meshpar,fmdl,datapar.wfun,datapar.wfungrad);
 fmdl = fixingD(meshpar,fmdl,datapar.D_coarse');
 
-%% Test log-likelihood
+%% Test sampler
+rng(1);
+N_iter = 10000;
+jump_size = 0.01;
+%s = load('Data/x0/x02');
+%x0 = s.x0;
+x0 = priorpar.std*randn(priorpar.dim);
+plot_from_coef_star(x0,priorpar);
+samplerpar.x0 = x0;
+%%
+samplerpar.N_iter = N_iter;
+samplerpar.jump_size = jump_size;
+%samplerpar.x0 = randn(priorpar.dim);
 
-for i = 1:100
-    i
-    xi = randn(priorpar.M,1);
-    compute_log_likelihood_pcn_level(xi, datapar, priorpar, fmdl)
-end
+[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl);
+%%
+
+plot_from_coef_star(reshape(XR(end-1000,:),priorpar.M,priorpar.ninclusions),priorpar);
+compute_log_likelihood_pcn_star(XR(end,:), datapar, priorpar, fmdl)

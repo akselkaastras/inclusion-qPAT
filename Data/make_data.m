@@ -49,13 +49,13 @@ for i = 1:ninclusions
     index = 2*(i-1);
     Musimage(i,:) = inpolygon(x,y,curves(index+1,:),curves(index+2,:));
 end
-musimage = 1+zeros(1,nimage*nimage);
+musimage = 100+zeros(1,nimage*nimage);
 for i = 1:ninclusions
     musimage = musimage + values(i)*Musimage(i,:);
 end
 musimage = reshape(musimage,nimage,nimage);
 musimage = imgaussfilt(musimage,15);
-imagesc(musimage);
+%imagesc(musimage);
 % interpolate onto mesh
 mus = interp2(X,Y,musimage,meshpar_fine.p(1,:),meshpar_fine.p(2,:));
 
@@ -88,7 +88,7 @@ m = 0.5*[sqrt(2),sqrt(2)];
 figure(2);
 
 % Source is Gaussian
-wfun = @(x1,x2) 2*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
+wfun = @(x1,x2) 200*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
 wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
 
 % Precomputing finite element matrices and rhs
@@ -105,6 +105,9 @@ U = zeros(pN,1);
 U(meshpar_fine.NZ) = u;
 u = U + wfun(meshpar_fine.p(1,:)',meshpar_fine.p(2,:)');
 
+%% Data
+data = full(u).*gamma';
+
 %% plot solution and data
 figure(2), clf
 subplot(121)
@@ -112,35 +115,49 @@ plot_from_gamma(full(u),meshpar_fine)
 title('Solution to PDE')
 colorbar
 subplot(122)
-plot_from_gamma(full(u),meshpar_fine)
+plot_from_gamma(data,meshpar_fine)
 title('Data')
 colorbar
-%% add noise
-rng(seed);
-data = full(u).*gamma';
-xi = randn(pN,1);
-% compute norm squared of data and noisesample
-normdata = normFEM(data,fmdl);
-normxi = normFEM(xi,fmdl);
-epssq = noiselevel^2 * normdata / normxi;
 
-b = data + sqrt(epssq)*xi;
 
-plot_from_gamma(b,meshpar_fine)
 
 %% Project data to coarse mesh
 % We do this by evaluating data in coarse mesh points
 % This corresponds to minimizing approx. L^2(D) functional over 
 % coarse hat-basis-functions.
-bq = interpolateMesh(b,meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+dataq = interpolateMesh(data,meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+%bq = interpolateMesh(b,meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
 D_coarse = interpolateMesh(D',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
-figure;
-plot_from_gamma(bq,meshpar);
+gamma_true = interpolateMesh(gamma',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+%figure;
+%plot_from_gamma(bq,meshpar);
+%% add noise
+rng(seed);
+%data = full(u).*gamma';
+%data = gamma';
+%xi = randn(pN,1);
+xi = randn(length(meshpar.p),1);
+% compute norm squared of data and noisesample
+fmdl_coarse = precomputeFEM(meshpar);
+normdataq = normFEM(dataq,fmdl_coarse);
+%normdata = normFEM(data,fmdl);
+normxi = normFEM(xi,fmdl_coarse);
+epssq = noiselevel^2 * normdataq / normxi;
+%epssq = noiselevel^2 * normdata / normxi;
+%epssqinf = noiselevel^2 * max(data)^2 / (max(abs(xi)).^2);
+%b = data + sqrt(epssq)*xi;
+bq = dataq + sqrt(epssq)*xi;
+
+%plot_from_gamma(b,meshpar_fine)
+
+
 %% save in struct
 datapar.bq = bq;
-datapar.b = b;
+%datapar.b = b;
 datapar.data = data;
+datapar.gamma_true = gamma_true;
 datapar.epssq = epssq;
+%datapar.epssqinf = epssqinf;
 datapar.D = D;
 datapar.D_coarse = D_coarse;
 datapar.meshpar_fine = meshpar_fine;

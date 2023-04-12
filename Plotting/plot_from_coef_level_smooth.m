@@ -1,5 +1,7 @@
-function plot_from_coef_level_smooth(cn,xq,yq,priorpar)
-
+function plot_from_coef_level_smooth(cn,priorpar)
+[X,Y] = meshgrid(linspace(-1,1,200));
+xq = X(:);
+yq = Y(:);
 N = length(xq);
 n = floor(sqrt(N));
 
