@@ -89,10 +89,10 @@ scale = 4;
 figure(2);
 
 % Source is Gaussian
-%wfun = @(x1,x2) scale*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
-%wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
-wfun = @(x1,x2) 3+2*x1;
-wfungrad = @(x1,x2) 2*[0*x1+1 0*x2];
+wfun = @(x1,x2) scale*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
+wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
+%wfun = @(x1,x2) 3+2*x1;
+%wfungrad = @(x1,x2) 2*[0*x1+1 0*x2];
 
 % Precomputing finite element matrices and rhs
 fmdl = precomputeFEM(meshpar_fine);
@@ -157,7 +157,7 @@ epssq = noiselevel^2 * normdataq / normxi;
 %b = data + sqrt(epssq)*xi;
 bq = dataq + sqrt(epssq)*xi;
 
-plot_from_gamma(bq,meshpar)
+%plot_from_gamma(bq,meshpar)
 
 
 %% save in struct
