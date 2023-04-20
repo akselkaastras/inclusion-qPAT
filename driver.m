@@ -1,9 +1,10 @@
 clc; clear;
 addpath(genpath(pwd))
 %% Make mesh
-finemeshrefine = 3;
-meshrefine = 2;
-meshpar = mesh_comp(meshrefine);
+fine_hmax = 0.02;
+hmax = 0.03;
+
+meshpar = mesh_comp(hmax);
 %% Make prior for levelset with matern covariance
 q = 3;
 alpha = 1;
@@ -16,7 +17,7 @@ priorpar = prior_init_2d(meshpar.p(1, :), meshpar.p(2, :),alpha,tau,q,maxfreq);
 % For levelset
 priorpar.ninterface = 3; % number of interfaces
 priorpar.c = [-inf -2 2 inf]; % contour levels (ninterface+1)
-priorpar.v = [3 1 5]; % values at each interface
+priorpar.v = [0.3 0.1 0.5]; % values at each interface
 priorpar.delta = delta; % smoothing factor
 priorpar.dim = [priorpar.M,1];
 priorpar.type = 'level';
@@ -47,9 +48,9 @@ priorpar = prior_init(xq,alpha,tau,q,maxfreq);
 
 % For star-shaped inclusion parametrization
 priorpar.ninclusions = 2; % number of interfaces
-priorpar.v = [2 4]; % values at each interface
+priorpar.v = [0.2 0.4]; % values at each interface
 
-priorpar.background = 1;
+priorpar.background = 0.1;
 priorpar.angles = linspace(0,2*pi,256)';
 priorpar.mean = -2;
 priorpar.dim = [priorpar.M,priorpar.ninclusions];
@@ -84,11 +85,11 @@ kitecurve = [cos(t)+0.65*cos(2*t)-0.65; 1.5*sin(t)];
 r = sqrt(0.8+0.8*(cos(4*t)-1).^2);
 cushioncurve = [r.*cos(t); r.*sin(t)]; 
 curves = [0.18*kitecurve+[0.4;-0.4]; 0.12*cushioncurve+[-0.4;0.4]];
-values = [2,4,1];
+values = [0.2,0.4,0.1];
 noiselevel = 0.01;
 seed = 0;
 
-datapar = make_data(curves,values,noiselevel,finemeshrefine,meshpar,seed); 
+datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,seed); 
 
 %% Compute approximation error as diagonal normal distribution
 N = 500;
@@ -103,20 +104,19 @@ fmdl = fixingD(meshpar,fmdl,datapar.D_coarse');
 
 %% Test sampler
 rng(1);
-N_iter = 1000000;
+N_iter = 10000;
 jump_size = 0.02;
-%s = load('Data/x0/x02');
-%x0 = s.x0;
 x0 = priorpar.std*randn(priorpar.dim);
 plot_from_coef_star(x0,priorpar);
 samplerpar.x0 = x0;
 %%
 samplerpar.N_iter = N_iter;
 samplerpar.jump_size = jump_size;
-%samplerpar.x0 = randn(priorpar.dim);
 
 [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl);
 %%
-
-plot_from_coef_star(reshape(XR(223064,:),priorpar.M,priorpar.ninclusions),priorpar);
-compute_log_likelihood_pcn_star(XR(end,:), datapar, priorpar, fmdl)
+figure;
+%plot_from_coef_star(reshape(XR(end-50,:),priorpar.M,priorpar.ninclusions),priorpar);
+figure;
+plot_from_coef_star(reshape(XR(end,:),priorpar.M,priorpar.ninclusions),priorpar);
+%plot(LL)

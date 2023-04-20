@@ -2,37 +2,13 @@
 clc;
 clear;
 % Mesh to project basis functions onto
-hmax = 0.05;
+hmax = 0.03;
 meshpar = mesh_comp(hmax);
+fmdl = precomputeFEM(meshpar);
 
 % Define number of basis functions to include
-MBessel = 50;
-Nzeros = 50;
+MBessel = 20;
+Nzeros = 20;
 
 [E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
-
-%%
-for j = 1:1000
-    plot_from_gamma(E(j,:),meshpar)
-    pause(0.1);
-end
-%% Noise
-e = randn(1,size(E,1));
-v = e * E;
-plot_from_gamma(v,meshpar)
-
-%% Orthogonal?
-fmdl = precomputeFEM(meshpar);
-%%
-for j = 1:100
-    E(j,:)*fmdl.Carea*E(j,:)'
-    pause(0.2);
-end
-%% Orthonormal?
-for j = 1:size(E,1)
-    if abs(E(j,:)*fmdl.Carea*E(380,:)') > 0.01 && j~=380
-        j
-        error('hey');
-    end
-end
-E(2972,:)*fmdl.Carea*E(380,:)'
+[xi, norm_noise, norm_noise_fem] = make_noise(meshpar,fmdl,E,Lambda);

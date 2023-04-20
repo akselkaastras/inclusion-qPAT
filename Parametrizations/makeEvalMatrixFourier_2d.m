@@ -1,12 +1,13 @@
 function evalpar = makeEvalMatrixFourier_2d(xq,yq,maxfreq)
 %% Real Fourier basis functions on [-1,1]^2
 
-
+eps = 0.1;
 
 M = (2*maxfreq+1)^2; % number of basisfunctions
 res = length(xq); % number of points
-xq = pi*xq;
-yq = pi*yq;
+k = 2*pi/(2+2*eps);
+xq = k*xq;
+yq = k*yq;
 
 %% When n,m ~= 0
 Bnm = zeros(res,4*maxfreq*maxfreq);
@@ -45,7 +46,10 @@ for n = 1:maxfreq
 end
 
 %% Collect
-B = [1/2*ones(res,1) 1/sqrt(2)*Bm  1/sqrt(2)*Bn Bnm];
+kap1 = 1/(2+2*eps);
+kap2 = sqrt(2)/(2+2*eps);
+kap3 = 2/(2+2*eps);
+B = [kap1*ones(res,1) kap2*Bm  kap2*Bn kap3*Bnm];
 Lambda = [0; Lambdan; Lambdam; Lambdanm];
 
 %% Sort in increasing eigenvalues

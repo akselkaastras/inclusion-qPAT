@@ -1,16 +1,44 @@
-function meshpar = mesh_comp(hmax)
+function meshpar = mesh_comp(Nrefine)
 
 % Create geometry and FEM mesh for the unit disc
+%
+% The following information is saved into file data/mesh.mat:
+% p          point data matrix
+% e          edge data matrix
+% t          triangle data matrix
+% ecenters   Nx2 matrix of centerpoints of edges
+% elengths   lengths of edges
+% bfii       Nx1 vector of angles of complex numbers ecenters
+% btri_ind   indices of triangles having an edge as one side
+%
+% Samuli Siltanen March 2012
 
-% Aksel Rasmussen March 2023
+% Create a subdirectory called 'data'. If it already exists, Matlab will
+% show a warning. You don't need to care about the warning.
+mkdir('.','data')
 
-model = createpde();
-geometryFromEdges(model,@circleg);
-generateMesh(model,"Hmax",hmax,'GeometricOrder','linear');
-figure;
-pdemesh(model); 
-axis equal
-[p,e,t] = meshToPet(model.Mesh);
+% Build Decomposed Geometry Matrix
+dgm = [...               % DGM for unit disc
+    [ 1, 1, 1, 1];... % 1 = circle domain
+    [-1, 0, 1, 0];... % Starting x-coordinate of boundary segment
+    [ 0, 1, 0,-1];... % Ending x-coordinate of boundary segment
+    [ 0,-1, 0, 1];... % Starting y-coordinate of boundary segment
+    [-1, 0, 1, 0];... % Ending y-coordinate of boundary segment
+    [ 1, 1, 1, 1];... % Left minimal region label
+    [ 0, 0, 0, 0];... % Right minimal region label
+    [ 0, 0, 0, 0];... % x-coordinate of the center of the circle
+    [ 0, 0, 0, 0];... % y-coordinate of the center of the circle
+    [ 1, 1, 1, 1];... % radius of the circle
+    [ 0, 0, 0, 0];... % dummy row to match up with the ellipse geometry below
+    [ 0, 0, 0, 0];... % dummy row to match up with the ellipse geometry below
+    ];
+
+% Construct mesh
+[p,e,t] = initmesh(dgm);
+for rrr = 1:Nrefine
+    [p,e,t] = refinemesh(dgm,p,e,t);
+    p       = jigglemesh(p,e,t);
+end
 
 % Determine the center points of edges and the corresponding angles
 ecenters = (p(:,e(1,:)) + p(:,e(2,:)))/2;
@@ -54,8 +82,8 @@ end
 
 
 % Check the result visually
-figure(1)
-clf
+%figure(1)
+%clf
 pdemesh(p,e,t)
 axis equal
 axis off
@@ -108,11 +136,12 @@ interp_y = squeeze(mdl_pts(:,2,:));
 
 meshpar.trix = trix;
 meshpar.triy = triy;
+meshpar.dgm = dgm;
 meshpar.btri_ind = btri_ind;
 meshpar.Dfii = Dfii;
 meshpar.theta = theta;
 meshpar.interp_x = interp_x;
 meshpar.interp_y = interp_y;
-meshpar.hmax = hmax;
 
+save data/mesh p e t bfii ecenters btri_ind elengths dgm
 

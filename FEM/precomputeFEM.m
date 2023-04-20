@@ -59,8 +59,9 @@ end
 %% Build sparsity pattern
 
 % Insert inclusion in (0,0)
-fcn = @(x,y) abs(x+1i*y)<0.3;
-gamma = 1+feval(fcn,meshpar.p(1,:),meshpar.p(2,:))';
+inc1 = @(x,y) abs((x-0.4)+1i*(y+0.4))<0.25;
+inc2 = @(x,y) abs((x+0.4)+1i*(y-0.4))<0.25;
+gamma = 1+feval(inc1,meshpar.p(1,:),meshpar.p(2,:))'+feval(inc2,meshpar.p(1,:),meshpar.p(2,:))';
 N = length(gamma);
 gammatrix = spdiags(gamma, 0, N, N);
 

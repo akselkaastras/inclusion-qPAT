@@ -53,7 +53,7 @@ for kk = 1:pN
     L2(:,kk) = C;
 end
 %% save in struct and use reordering from LHS
-fmdl.L1 = L1;
-fmdl.L2 = L2;
-%fmdl.L1 = L1(fmdl.phi,:);
-%fmdl.L2 = L2(fmdl.phi,:);
+%fmdl.L1 = L1;
+%fmdl.L2 = L2;
+fmdl.L1 = L1(fmdl.phi,:);
+fmdl.L2 = L2(fmdl.phi,:);

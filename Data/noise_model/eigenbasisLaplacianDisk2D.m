@@ -40,8 +40,10 @@ if ~isfile(['Data/noise_model/',filename1])
 
     E = reshape(E,(2*MBessel+1)*Nzeros,length(r));
     Lambda = reshape(Lambda,(2*MBessel+1)*Nzeros,1);
-    save(['Data/noise_model/',filename1],'E')
-    save(['Data/noise_model/',filename2],'Lambda')
+    Lambda = Lambda.^2;
+
+    save(['Data/noise_model/',filename1],'E','-v7.3')
+    save(['Data/noise_model/',filename2],'Lambda','-v7.3')
 else
     s1 = load(['Data/noise_model/',filename1]);
     s2 = load(['Data/noise_model/',filename2]);

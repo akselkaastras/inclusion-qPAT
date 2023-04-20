@@ -3,7 +3,7 @@ function u = evalFowardModel(fmdl,meshpar,q)
 pN = length(meshpar.p);
 pNN = pN-size(meshpar.e(1,:),2);
 qmatrix = spdiags(q, 0, pN, pN);
-%qmatrix = 0.001*speye(pN);
+
 
 % Build mass matrix
 C = fmdl.Aint*qmatrix;
@@ -11,8 +11,8 @@ C = reshape(sum(C,2),pNN,pNN);
 C = 1/2*(C'+C);
 
 % System matrix A and reordering of C
-%A = fmdl.K+C(fmdl.phi,fmdl.phi);
-A = fmdl.K+C;
+A = fmdl.K+C(fmdl.phi,fmdl.phi);
+%A = fmdl.K+C;
 
 % Build rhs
 Q2 = fmdl.L2*qmatrix;
@@ -25,4 +25,4 @@ Q =  - fmdl.Q1 - Q2;
 % Solve
 R = chol(A);
 u = R\(R'\Q);
-%u = u(fmdl.r);
+u = u(fmdl.r);
