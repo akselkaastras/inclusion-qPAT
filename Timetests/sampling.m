@@ -1,0 +1,1 @@
+[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl);

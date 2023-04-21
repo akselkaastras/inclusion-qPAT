@@ -1,8 +1,8 @@
 clc; clear;
 addpath(genpath(pwd))
 %% Make mesh
-fine_hmax = 0.02;
-hmax = 0.03;
+fine_hmax = 0.01;
+hmax = 0.02;
 
 meshpar = mesh_comp(hmax);
 %% Make prior for levelset with matern covariance
@@ -92,11 +92,11 @@ seed = 0;
 datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,seed); 
 
 %% Compute approximation error as diagonal normal distribution
-N = 500;
+N = 100;
 datapar = computeApproxError(datapar,N);
 %datapar.sigmasq = 0;
 %datapar.epssq = 1e-8;
-datapar.epssq_approx = datapar.epssq;
+%datapar.epssq_approx = datapar.epssq;
 %% Initialize forward model for sampling
 fmdl = precomputeFEM(meshpar);
 fmdl = precomputeRHS(meshpar,fmdl,datapar.wfun,datapar.wfungrad);

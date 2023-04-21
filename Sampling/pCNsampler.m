@@ -70,7 +70,7 @@ for k = 2:N_iter
         zeta = 1/sqrt(i);
         jump_size = exp(log(jump_size) + zeta*(hat_acc(i)-star_acc));
         jump_size = min(jump_size,1);
-        disp(['-- jump_size updated to ', num2str(jump_size)])
+        disp(['- - jump_size updated to ', num2str(jump_size)])
 
         % Update counters
         i = i+1;
@@ -81,10 +81,14 @@ for k = 2:N_iter
     LL(k) = ll;
     XR(k,:) = reshape(xr,NN,1);
     
-    % Print progression every 1/100'th time increment
-    if ~mod(k,ceil(N_iter/1000))
+    % Print progression every 1/1000'th time increment
+    b = ceil(N_iter/1000);
+    if ~mod(k,b)
         disp(['- - ', num2str(k), '/', num2str(N_iter)]);
-        disp(['- - ', 'Rejections: ', num2str(N_reject)])
+        disp(['- - ', 'Rejections: ', num2str(N_reject)]);
+        n = k/b;
+        acc_since_last_time = sum(acc(((n-1)*b+1):(n*b)))/b*100;
+        disp(['- - ', 'Accepted: ', sprintf('%.1f%%',acc_since_last_time)]);
     end  
     
 end
