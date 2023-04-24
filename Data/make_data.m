@@ -25,6 +25,7 @@ meshpar_fine = mesh_comp(fine_hmax);
 
 % Find mesh on boundary
 npoints = length(meshpar_fine.p);
+npoints_coarse = length(meshpar.p);
 pN = length(meshpar_fine.p);
 pNN = pN-size(meshpar_fine.e(1,:),2);
 meshpar.NZ = setdiff(1:length(meshpar.p),meshpar.e(1,:));
@@ -40,6 +41,18 @@ gamma = values(ninclusions+1)+zeros(1,npoints);
 for i = 1:ninclusions
     gamma = gamma + values(i)*Gamma(i,:);
 end
+
+% Gamma on coarse grid
+Gamma_coarse = zeros(ninclusions,npoints_coarse);
+for i = 1:ninclusions
+    index = 2*(i-1);
+    Gamma_coarse(i,:) = inpolygon(meshpar.p(1,:),meshpar.p(2,:),curves(index+1,:),curves(index+2,:));
+end
+gamma_coarse = values(ninclusions+1)+zeros(1,npoints_coarse);
+for i = 1:ninclusions
+    gamma_coarse  = gamma_coarse + values(i)*Gamma_coarse(i,:);
+end
+
 
 %% Make smoothened scattering mus with Gaussian smoothing
 nimage = 300;
@@ -136,10 +149,11 @@ colorbar
 % We do this by evaluating data in coarse mesh points
 % This corresponds to minimizing approx. L^2(D) functional over 
 % coarse hat-basis-functions.
-dataq = interpolateMesh(data,meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+uq = interpolateMesh(full(u),meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+dataq = uq.*gamma_coarse';
 
 D_coarse = interpolateMesh(D',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
-gamma_true = interpolateMesh(gamma',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+gamma_true = gamma_coarse';
 
 %% add noise
 rng(seed);

@@ -1,1 +1,2 @@
-# Files over 50mb
+# Files ending with _large.mat
+*_large.mat

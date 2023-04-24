@@ -1,8 +1,8 @@
 clc; clear;
 addpath(genpath(pwd))
 %% Make mesh
-fine_hmax = 0.01;
-hmax = 0.02;
+fine_hmax = 0.03;
+hmax = 0.04;
 
 meshpar = mesh_comp(hmax);
 %% Make prior for levelset with matern covariance
@@ -96,7 +96,7 @@ N = 100;
 datapar = computeApproxError(datapar,N);
 %datapar.sigmasq = 0;
 %datapar.epssq = 1e-8;
-%datapar.epssq_approx = datapar.epssq;
+datapar.epssq_approx = datapar.epssq;
 %% Initialize forward model for sampling
 fmdl = precomputeFEM(meshpar);
 fmdl = precomputeRHS(meshpar,fmdl,datapar.wfun,datapar.wfungrad);
@@ -112,8 +112,9 @@ samplerpar.x0 = x0;
 %%
 samplerpar.N_iter = N_iter;
 samplerpar.jump_size = jump_size;
-
+tic;
 [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl);
+T= toc;
 %%
 figure;
 %plot_from_coef_star(reshape(XR(end-50,:),priorpar.M,priorpar.ninclusions),priorpar);

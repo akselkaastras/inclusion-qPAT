@@ -4,8 +4,8 @@ hmax = meshpar.hmax;
 
 
 
-filename1 = ['eigenf_',num2str(hmax),'_',num2str(MBessel),'_',num2str(Nzeros),'.mat'];
-filename2 = ['eigenv_',num2str(hmax),'_',num2str(MBessel),'_',num2str(Nzeros),'.mat'];
+filename1 = ['eigenf_',num2str(hmax),'_',num2str(MBessel),'_',num2str(Nzeros),'_large.mat'];
+filename2 = ['eigenv_',num2str(hmax),'_',num2str(MBessel),'_',num2str(Nzeros),'_large.mat'];
 
 if ~isfile(['Data/noise_model/',filename1])
     % Mesh in polar coordinates
