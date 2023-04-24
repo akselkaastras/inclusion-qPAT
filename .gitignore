@@ -1,2 +1,5 @@
 # Files ending with _large.mat
 *_large.mat
+
+# Apple file
+.DS_Store
