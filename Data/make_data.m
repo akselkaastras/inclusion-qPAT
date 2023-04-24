@@ -188,6 +188,7 @@ datapar.bq = bq;
 datapar.data = data;
 datapar.gamma_true = gamma_true;
 datapar.epssq = epssq;
+datapar.noiselevel = noiselevel;
 %datapar.epssqinf = epssqinf;
 datapar.D = D;
 datapar.D_coarse = D_coarse;

@@ -9,7 +9,7 @@ function datapar = computeApproxError(datapar,N,priortype)
 %   the distribution of G_{fine}-G_{coarse}
 
 %% Is the approximation error already computed?
-filename = [num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'.mat'];
+filename = [num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(datapar.noiselevel),'.mat'];
 
 if ~isfile(['Data/sigma2/sigma2_',filename])
 
