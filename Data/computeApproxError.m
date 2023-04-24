@@ -138,6 +138,10 @@ if ~isfile(['Data/sigma2/sigma2_',filename])
     m = mean(V,2);
     C = cov(V');
     sigmasq = (norm(m,2)^2+trace(C))/(length(m));
+    eigC = eig(C);
+    indpos = find(v>0,1);
+    sigmasq_ws = (sum(eigC(indpos:end).^(1/2))/length(m))^2;
+    sigmaKL2 = length(m)/sum(eigC(indpos:end).^(-1));
     save(['Data/sigma2/sigma2_',filename],'sigmasq')
 else
     s = load(['Data/sigma2/sigma2_',filename]);
@@ -146,6 +150,8 @@ else
 end
 datapar.filename = filename;
 datapar.sigmasq = sigmasq;
+datapar.sigmasq_ws = sigmasq_ws;
+datapar.sigmaKL2 = sigmaKL2;
 datapar.epssq_approx = datapar.epssq + datapar.sigmasq;
 datapar.V = V;
 
