@@ -12,3 +12,11 @@ Error in dataSave (line 16)
     datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
 } 
 /zhome/ee/2/108654/.lsbatch/1682413511.16583808.shell: line 14: 58212 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(1,0.005,"star");exit'
+{Unrecognized function or variable 'v'.
+
+Error in computeApproxError (line 142)
+    indpos = find(v>0,1);
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 

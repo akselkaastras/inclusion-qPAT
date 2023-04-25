@@ -139,7 +139,7 @@ if ~isfile(['Data/sigma2/sigma2_',filename])
     C = cov(V');
     sigmasq = (norm(m,2)^2+trace(C))/(length(m));
     eigC = eig(C);
-    indpos = find(v>0,1);
+    indpos = find(eigC>0,1);
     sigmasq_ws = (sum(eigC(indpos:end).^(1/2))/length(m))^2;
     sigmaKL2 = length(m)/sum(eigC(indpos:end).^(-1));
     save(['Data/sigma2/sigma2_',filename],'sigmasq')
