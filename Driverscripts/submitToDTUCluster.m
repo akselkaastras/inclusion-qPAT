@@ -25,7 +25,7 @@ str = append(str,['#BSUB -e Error/ErrorCluster_',id,'_.err\n']);
 str = append(str,cmd);
 
 % name
-jobscript = ['Jobscripts/submitToCluster_',jobid,'.sh'];
+jobscript = ['Driverscripts/Jobscripts/submitToCluster_',jobid,'.sh'];
 fileid = fopen(jobscript,'w');
 fprintf(fileid,str);
 fclose(fileid);
