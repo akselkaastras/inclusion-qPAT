@@ -12,12 +12,12 @@ for i=1:1
         seedstr = sprintf('%0.5g',noiseseed(i));
         noisestr = sprintf('%0.5g',noiselevel(j));
         
-        matlab_call = 'matlab -nodisplay -r ''cd(''Data/dataSave'');';
+        matlab_call = 'matlab -nodisplay -r ''cd(''../Data'');';
         func_call = ['dataSave(',seedstr,',',noisestr,',''',priortype,''')'];
         end_call = ';exit''';
         
         cmd = [matlab_call, func_call, end_call];
         
-        submitToDTUCluster([num2str(i),num2str(j)],cmd)
+        %submitToDTUCluster([num2str(i),num2str(j)],cmd)
     end
 end
