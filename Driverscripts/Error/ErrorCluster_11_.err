@@ -1,0 +1,14 @@
+{Error using save
+Cannot create 'eigenf_0.02_69_69_large.mat' because 'Data/noise_model' does not
+exist.
+
+Error in eigenbasisLaplacianDisk2D (line 45)
+    save(['Data/noise_model/',filename1],'E','-v7.3')
+
+Error in make_data (line 170)
+[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+
+Error in dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+/zhome/ee/2/108654/.lsbatch/1682413511.16583808.shell: line 14: 58212 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(1,0.005,"star");exit'

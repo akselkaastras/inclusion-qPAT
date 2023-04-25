@@ -3,8 +3,8 @@ function cmdsub = submitToDTUCluster(jobid,cmd)
 id = num2str(jobid);
 jobname = ['job_', id];
 
-memcore = 2000;
-maxmem  = 3000;
+memcore = 4000;
+maxmem  = 6000;
 email   = 'akara@dtu.dk';
 ncores = 1;
 
@@ -18,8 +18,8 @@ str = append(str,['#BSUB -M ', num2str(maxmem), 'MB\n']);
 str = append(str,'#BSUB -W 24:00\n');
 str = append(str,['#BSUB -u ', email,'\n']);
 str = append(str,'#BSUB -N \n');
-str = append(str,['#BSUB -o Output/OutputCluster_',id,'_.out\n']);
-str = append(str,['#BSUB -e Error/ErrorCluster_',id,'_.err\n']);
+str = append(str,['#BSUB -o Driverscripts/Output/OutputCluster_',id,'_.out\n']);
+str = append(str,['#BSUB -e Driverscripts/Error/ErrorCluster_',id,'_.err\n']);
 %str = append(str,'export OMP_NUM_THREADS=$LSB_DJOB_NUMPROC\n');
 %str = append(str,['module load gcc\n']);
 str = append(str,cmd);
