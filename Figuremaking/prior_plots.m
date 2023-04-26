@@ -81,4 +81,4 @@ ax.FontSize = 16;
 set(gcf, 'Position',  [100, 100, 1320, 360])
 
 %% Export figure
-export_fig 'test.pdf' %-pdf -transparent
+export_fig 'test.eps' -eps -transparent

@@ -61,3 +61,11 @@ datapar.sigmasq_ws = sigmasq_ws;
 Error in dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
+{Unrecognized function or variable 'sigmsq'.
+
+Error in computeApproxError (line 145)
+    sigma.sigmasq = sigmsq;
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 
