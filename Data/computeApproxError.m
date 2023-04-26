@@ -145,12 +145,14 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     sigma.sigmasq = sigmasq;
     sigma.sigmasq_ws = sigmasq_ws;
     sigma.sigmaKL2 = sigmaKL2;
+    sigma.V = V;
     save(strcat('Data/sigma2/sigma2_',filename),'sigma')
 else
     s = load(strcat('Data/sigma2/sigma2_',filename));
     sigmasq = s.sigma.sigmasq;
     sigmasq_ws = s.sigma.sigmasq_ws;
     sigmaKL2 = s.sigma.sigmaKL2;
+    V = s.sigma.V;
     disp('Approximation error loaded')
 end
 datapar.filename = filename;

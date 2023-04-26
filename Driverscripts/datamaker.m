@@ -2,7 +2,7 @@
 clc; clear; close all;
 addpath(genpath(pwd));
 %%
-priortype = 'star';
+priortype = 'level';
 noiseseed = [1,2,3,4,5];
 noiselevel = [0.005,0.01,0.02,0.04];
 

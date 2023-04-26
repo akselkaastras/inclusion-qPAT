@@ -69,3 +69,11 @@ Error in computeApproxError (line 145)
 Error in dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
+{Unrecognized function or variable 'V'.
+
+Error in computeApproxError (line 161)
+datapar.V = V;
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 
