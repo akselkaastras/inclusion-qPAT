@@ -3,3 +3,7 @@
 
 # Apple file
 .DS_Store
+
+# Figures
+*.pdf
+*.eps

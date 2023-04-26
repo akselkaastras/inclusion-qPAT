@@ -66,19 +66,22 @@ axes(ha(4))
 plot_from_coef_star(xi,priorpar)
 axes(ha(3))
 c = parula(256);
-plot(xq,theta(:,1)-priorpar.mean,'color',c(128,:),'linewidth',4)
+plot(xq,theta(:,1)-priorpar.mean,'color',c(128,:),'linewidth',5)
 hold on
-plot(xq,theta(:,2)-priorpar.mean,'color',c(end,:),'linewidth',4)
+plot(xq,theta(:,2)-priorpar.mean,'color',c(end,:),'linewidth',5)
 xticks([0,pi,2*pi])
 yticks([0,0.4])
 xlim([0,2*pi])
 set(gca,'XTickLabel',{'0','\pi','2\pi'})
 ax = gca;
-ax.FontSize = 16; 
+ax.FontSize = 24; 
+set(gca, 'Color', [0.8,0.8,0.8] )
 % parula colormap
 
 %% Adjust size of figure
 set(gcf, 'Position',  [100, 100, 1320, 360])
+set(gcf,'color','w');
 
 %% Export figure
-export_fig 'test.pdf' %-pdf -transparent
+%exportgraphics(gcf,'test.pdf','BackgroundColor','none')
+export_fig 'test.pdf' -opengl
