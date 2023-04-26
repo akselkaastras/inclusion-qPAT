@@ -9,9 +9,9 @@ function datapar = computeApproxError(datapar,N,priortype)
 %   the distribution of G_{fine}-G_{coarse}
 
 %% Is the approximation error already computed?
-filename = [num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(datapar.noiselevel),'.mat'];
-
-if ~isfile(['Data/sigma2/sigma2_',filename])
+filename = strcat(num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(datapar.noiselevel), '.mat');
+disp(filename);
+if ~isfile(strcat('Data/sigma2/sigma2_',filename))
 
     %% Initialize mesh
     
@@ -142,10 +142,15 @@ if ~isfile(['Data/sigma2/sigma2_',filename])
     indpos = find(eigC>0,1);
     sigmasq_ws = (sum(eigC(indpos:end).^(1/2))/length(m))^2;
     sigmaKL2 = length(m)/sum(eigC(indpos:end).^(-1));
-    save(['Data/sigma2/sigma2_',filename],'sigmasq')
+    sigma.sigmasq = sigmsq;
+    sigma.sigmasq_ws = sigmasq_ws;
+    sigma.sigmaKL2 = sigmaKL2;
+    save(strcat('Data/sigma2/sigma2_',filename),'sigma')
 else
-    s = load(['Data/sigma2/sigma2_',filename]);
-    sigmasq = s.sigmasq;
+    s = load(strcat('Data/sigma2/sigma2_',filename));
+    sigmasq = s.sigma.sigmasq;
+    sigmasq_ws = s.sigma.sigmasq_ws;
+    sigmaKL2 = s.sigma.sigmaKL2;
     disp('Approximation error loaded')
 end
 datapar.filename = filename;

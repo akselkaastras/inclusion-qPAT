@@ -20,3 +20,44 @@ Error in computeApproxError (line 142)
 Error in dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
+{Error using save
+Must be a text scalar.
+
+Error in computeApproxError (line 145)
+    save(['Data/sigma2/sigma2_',filename],'sigmasq')
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 
+{Error using save
+Must be a text scalar.
+
+Error in computeApproxError (line 146)
+    save(['Data/sigma2/sigma2_',filename],'sigmasq')
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 
+{Error using save
+Must be a text scalar.
+
+Error in computeApproxError (line 146)
+    save('Data/sigma2/sigma2_'+filename,'sigmasq')
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 
+{Error using save
+Must be a text scalar.
+
+Error in dataSave (line 19)
+    save(['Data/data/data_',datapar.filename],'datapar');
+} 
+{Unrecognized function or variable 'sigmasq_ws'.
+
+Error in computeApproxError (line 154)
+datapar.sigmasq_ws = sigmasq_ws;
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 
