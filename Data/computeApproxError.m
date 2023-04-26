@@ -142,7 +142,7 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     indpos = find(eigC>0,1);
     sigmasq_ws = (sum(eigC(indpos:end).^(1/2))/length(m))^2;
     sigmaKL2 = length(m)/sum(eigC(indpos:end).^(-1));
-    sigma.sigmasq = sigmsq;
+    sigma.sigmasq = sigmasq;
     sigma.sigmasq_ws = sigmasq_ws;
     sigma.sigmaKL2 = sigmaKL2;
     save(strcat('Data/sigma2/sigma2_',filename),'sigma')
