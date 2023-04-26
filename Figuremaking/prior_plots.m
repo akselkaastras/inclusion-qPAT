@@ -83,4 +83,4 @@ set(gcf, 'Position',  [100, 100, 1320, 360])
 set(gcf,'color','w');
 
 %% Export figure
-export_fig 'test.pdf' -opengl
+export_fig 'Figures/prior/prior_4by1.pdf' -opengl
