@@ -14,7 +14,7 @@ function dataSave(noiseseed, noiselevel, priortype)
     
     % Makes data
     datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed); 
-    N = 1;
+    N = 200;
     datapar = computeApproxError(datapar,N,priortype);
     save(strcat('Data/data/data_',datapar.filename),'datapar');
     
