@@ -1,7 +1,7 @@
 function priorpar = prior_init_2d(xq,yq,alpha,tau,q,maxfreq)
 
 % Finds eigenbasis (lambda_n, \psi_n) of q*(tau^2-Delta)^(-alpha) on
-% [-1,1]^2 from fourier basis
+% grid from fourier basis
 % mesh_par.
 % Input:    
 %       [xq,yq] : points in which Fourier basis is evaluated

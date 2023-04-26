@@ -1,5 +1,5 @@
 function evalpar = makeEvalMatrixFourier_2d(xq,yq,maxfreq)
-%% Real Fourier basis functions on [-1,1]^2
+%% Real Fourier basis functions on [-1-eps,1+eps]^2
 
 eps = 0.1;
 

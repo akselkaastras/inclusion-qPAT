@@ -22,8 +22,3 @@ Z(ind) = nan;
 % plot
 surf(X,Y,Z,'EdgeColor','none','FaceColor','interp')
 view(2)
-box off
-axis off
-axis equal
-xlim([-1.1 1.1]) 
-ylim([-1.1 1.1])
