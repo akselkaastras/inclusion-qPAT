@@ -146,6 +146,8 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     sigma.sigmasq_ws = sigmasq_ws;
     sigma.sigmaKL2 = sigmaKL2;
     sigma.V = V;
+    sigma.m = m;
+    sigma.sigmasq_m = trace(C)/length(m);
     save(strcat('Data/sigma2/sigma2_',filename),'sigma')
 else
     s = load(strcat('Data/sigma2/sigma2_',filename));
@@ -153,12 +155,16 @@ else
     sigmasq_ws = s.sigma.sigmasq_ws;
     sigmaKL2 = s.sigma.sigmaKL2;
     V = s.sigma.V;
+    m = s.sigma.m;
+    sigmasq_m = s.sigma.sigmasq_m;
     disp('Approximation error loaded')
 end
 datapar.filename = filename;
 datapar.sigmasq = sigmasq;
 datapar.sigmasq_ws = sigmasq_ws;
 datapar.sigmaKL2 = sigmaKL2;
-datapar.epssq_approx = datapar.epssq + datapar.sigmasq;
+datapar.m = m;
+datapar.sigmasq_m = sigmasq_m;
+datapar.epssq_approx = datapar.epssq + datapar.sigmasq_m;
 datapar.V = V;
 
