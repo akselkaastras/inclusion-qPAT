@@ -1,4 +1,4 @@
-function [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl)
+function [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl, x0)
 
 % Prior parameters
 dim = priorpar.dim;
@@ -8,7 +8,7 @@ N_iter = samplerpar.N_iter;
 jump_size = samplerpar.jump_size;
 
 % Initialize and compute initial log likelihood
-xr = samplerpar.x0;
+xr = x0;
 if strcmp(priorpar.type,'level')
     ll = compute_log_likelihood_pcn_level(xr, datapar, priorpar, fmdl);
 elseif strcmp(priorpar.type,'star')

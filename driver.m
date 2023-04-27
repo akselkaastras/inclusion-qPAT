@@ -108,12 +108,11 @@ N_iter = 10000;
 jump_size = 0.02;
 x0 = priorpar.std*randn(priorpar.dim);
 plot_from_coef_star(x0,priorpar);
-samplerpar.x0 = x0;
 %%
 samplerpar.N_iter = N_iter;
 samplerpar.jump_size = jump_size;
 tic;
-[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl);
+[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl,x0);
 T= toc;
 %%
 figure;
