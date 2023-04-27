@@ -3,8 +3,8 @@ function cmdsub = submitToDTUCluster(jobid,cmd)
 id = num2str(jobid);
 jobname = ['job_', id];
 
-memcore = 3000;
-maxmem  = 4000;
+memcore = 2000;
+maxmem  = 3000;
 email   = 'akara@dtu.dk';
 ncores = 1;
 
@@ -15,7 +15,7 @@ str = append(str,['#BSUB -n ', num2str(ncores), '\n']);
 str = append(str,'#BSUB -R "span[hosts=1]"\n');
 str = append(str,['#BSUB -R "rusage[mem=', num2str(memcore),'MB]"\n']);
 str = append(str,['#BSUB -M ', num2str(maxmem), 'MB\n']);
-str = append(str,'#BSUB -W 24:00\n');
+str = append(str,'#BSUB -W 30:00\n');
 str = append(str,['#BSUB -u ', email,'\n']);
 str = append(str,'#BSUB -N \n');
 str = append(str,['#BSUB -o Driverscripts/Output/OutputCluster_',id,'_.out\n']);

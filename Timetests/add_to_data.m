@@ -1,4 +1,4 @@
-priortype = 'level';
+priortype = 'star';
 noiseseed = [1,2,3,4,5];
 noiselevel = [0.005,0.01,0.02,0.04];
 datapar.meshpar_fine.hmax = 0.01;
@@ -18,7 +18,7 @@ for i = 1:length(noiseseed)
         filename = strcat(num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(noise), '.mat');
         lol = strcat('Data/data/data_','noiseseed_',num2str(seed),'_',filename);
         load(lol)
-        datapar.m = m;
+        datapar.m = sigma.m;
         datapar.sigmasq_m = sigma.sigmasq_m;
         datapar.epssq_approx = datapar.epssq + datapar.sigmasq_m;
         save(lol,'datapar');

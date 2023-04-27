@@ -1,0 +1,18 @@
+{Unrecognized field name "m".
+
+Error in compute_log_likelihood_pcn_star (line 23)
+v = u.*gamma+datapar.m-datapar.bq;
+
+Error in pCNsampler (line 15)
+    ll = compute_log_likelihood_pcn_star(xr, datapar, priorpar, fmdl);
+
+Error in starPCN (line 61)
+[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl, x0);
+} 
+{Error using save
+Cannot create 'xr_x0seed_1_noiseseed_1_0.01_0.02_star_0.01.mat' because
+'Results/Star' does not exist.
+
+Error in starPCN (line 65)
+save(strcat('Results/Star/xr_',result_filename),'results')
+} 

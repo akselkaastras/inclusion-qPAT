@@ -55,11 +55,24 @@ samplerpar.x0 = x0;
 %% Filename
 result_filename = strcat('x0seed_',num2str(x0seed),'_','noiseseed_',num2str(noiseseed),'_',num2str(fine_hmax),'_',num2str(hmax),'_star_',num2str(noiselevel), '.mat');
 
-%% Sample and save
+%% Sample
 sampleseed = noiseseed;
 rng(sampleseed)
+tic;
 [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl, x0);
+T = toc;
 results.LL = LL;
 results.N_reject = N_reject;
 results.XR = XR;
+results.T = T;
+
+%% Make folder
+if not(isfolder('Results'))
+    mkdir('Results');
+end
+if not(isfolder('Results/Star'))
+    mkdir('Results/Star');
+end
+
+%% Save
 save(strcat('Results/Star/xr_',result_filename),'results')
