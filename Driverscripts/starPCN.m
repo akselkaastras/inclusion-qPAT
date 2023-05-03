@@ -1,7 +1,7 @@
 function starPCN(iter,stepsize,noiselevel,x0seed,noiseseed)
 %% Initialize forward mesh
 fine_hmax = 0.01;
-hmax = 0.02;
+hmax = 0.015;
 meshpar = mesh_comp(hmax);
 close all;
 %% Load data

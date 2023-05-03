@@ -7,8 +7,8 @@ priortype = 'star';
 %noiselevel = [0.005,0.01,0.02,0.04];
 
 iter = 1e6;
-stepsize = [0.1,0.03,0.005,0.003];
-noiselevel = [0.04,0.02,0.01,0.005];
+stepsize = [0.004,0.006,0.008,0.01];
+noiselevel = [0.015,0.03,0.06,0.12];
 x0seed = 1;
 noiseseed = 1;
 

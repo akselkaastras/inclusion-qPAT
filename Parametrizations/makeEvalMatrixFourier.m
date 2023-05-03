@@ -13,7 +13,7 @@ for n = 1:maxfreq
 end
 
 %% Collect
-B = [1/sqrt(2*pi)*ones(res,1) 1/sqrt(2*pi)*Bn];
+B = [1/sqrt(2*pi)*ones(res,1) 1/sqrt(pi)*Bn];
 l = reshape(repmat((1:maxfreq).^2,2,1),1,2*length(1:maxfreq));
 Lambda = [0 l]';
 

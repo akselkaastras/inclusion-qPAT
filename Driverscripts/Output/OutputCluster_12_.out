@@ -2894,3 +2894,4539 @@ For product information, visit www.mathworks.com.
 - - 80 %
 - - 85 %
 - - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+ - - 1/92
+ - - 2/92
+ - - 3/92
+ - - 4/92
+ - - 5/92
+ - - 6/92
+ - - 7/92
+ - - 8/92
+ - - 9/92
+ - - 10/92
+ - - 11/92
+ - - 12/92
+ - - 13/92
+ - - 14/92
+ - - 15/92
+ - - 16/92
+ - - 17/92
+ - - 18/92
+ - - 19/92
+ - - 20/92
+ - - 21/92
+ - - 22/92
+ - - 23/92
+ - - 24/92
+ - - 25/92
+ - - 26/92
+ - - 27/92
+ - - 28/92
+ - - 29/92
+ - - 30/92
+ - - 31/92
+ - - 32/92
+ - - 33/92
+ - - 34/92
+ - - 35/92
+ - - 36/92
+ - - 37/92
+ - - 38/92
+ - - 39/92
+ - - 40/92
+ - - 41/92
+ - - 42/92
+ - - 43/92
+ - - 44/92
+ - - 45/92
+ - - 46/92
+ - - 47/92
+ - - 48/92
+ - - 49/92
+ - - 50/92
+ - - 51/92
+ - - 52/92
+ - - 53/92
+ - - 54/92
+ - - 55/92
+ - - 56/92
+ - - 57/92
+ - - 58/92
+ - - 59/92
+ - - 60/92
+ - - 61/92
+ - - 62/92
+ - - 63/92
+ - - 64/92
+ - - 65/92
+ - - 66/92
+ - - 67/92
+ - - 68/92
+ - - 69/92
+ - - 70/92
+ - - 71/92
+ - - 72/92
+ - - 73/92
+ - - 74/92
+ - - 75/92
+ - - 76/92
+ - - 77/92
+ - - 78/92
+ - - 79/92
+ - - 80/92
+ - - 81/92
+ - - 82/92
+ - - 83/92
+ - - 84/92
+ - - 85/92
+ - - 86/92
+ - - 87/92
+ - - 88/92
+ - - 89/92
+ - - 90/92
+ - - 91/92
+ - - 92/92
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+ - - 1/92
+ - - 2/92
+ - - 3/92
+ - - 4/92
+ - - 5/92
+ - - 6/92
+ - - 7/92
+ - - 8/92
+ - - 9/92
+ - - 10/92
+ - - 11/92
+ - - 12/92
+ - - 13/92
+ - - 14/92
+ - - 15/92
+ - - 16/92
+ - - 17/92
+ - - 18/92
+ - - 19/92
+ - - 20/92
+ - - 21/92
+ - - 22/92
+ - - 23/92
+ - - 24/92
+ - - 25/92
+ - - 26/92
+ - - 27/92
+ - - 28/92
+ - - 29/92
+ - - 30/92
+ - - 31/92
+ - - 32/92
+ - - 33/92
+ - - 34/92
+ - - 35/92
+ - - 36/92
+ - - 37/92
+ - - 38/92
+ - - 39/92
+ - - 40/92
+ - - 41/92
+ - - 42/92
+ - - 43/92
+ - - 44/92
+ - - 45/92
+ - - 46/92
+ - - 47/92
+ - - 48/92
+ - - 49/92
+ - - 50/92
+ - - 51/92
+ - - 52/92
+ - - 53/92
+ - - 54/92
+ - - 55/92
+ - - 56/92
+ - - 57/92
+ - - 58/92
+ - - 59/92
+ - - 60/92
+ - - 61/92
+ - - 62/92
+ - - 63/92
+ - - 64/92
+ - - 65/92
+ - - 66/92
+ - - 67/92
+ - - 68/92
+ - - 69/92
+ - - 70/92
+ - - 71/92
+ - - 72/92
+ - - 73/92
+ - - 74/92
+ - - 75/92
+ - - 76/92
+ - - 77/92
+ - - 78/92
+ - - 79/92
+ - - 80/92
+ - - 81/92
+ - - 82/92
+ - - 83/92
+ - - 84/92
+ - - 85/92
+ - - 86/92
+ - - 87/92
+ - - 88/92
+ - - 89/92
+ - - 90/92
+ - - 91/92
+ - - 92/92
+0.01_0.015_level_0.02.mat
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+
+i =
+
+     1
+
+0 points outside mesh
+
+i =
+
+     2
+
+0 points outside mesh
+
+i =
+
+     3
+
+0 points outside mesh
+
+i =
+
+     4
+
+0 points outside mesh
+
+i =
+
+     5
+
+0 points outside mesh
+
+i =
+
+     6
+
+0 points outside mesh
+
+i =
+
+     7
+
+0 points outside mesh
+
+i =
+
+     8
+
+0 points outside mesh
+
+i =
+
+     9
+
+0 points outside mesh
+
+i =
+
+    10
+
+0 points outside mesh
+
+i =
+
+    11
+
+0 points outside mesh
+
+i =
+
+    12
+
+0 points outside mesh
+
+i =
+
+    13
+
+0 points outside mesh
+
+i =
+
+    14
+
+0 points outside mesh
+
+i =
+
+    15
+
+0 points outside mesh
+
+i =
+
+    16
+
+0 points outside mesh
+
+i =
+
+    17
+
+0 points outside mesh
+
+i =
+
+    18
+
+0 points outside mesh
+
+i =
+
+    19
+
+0 points outside mesh
+
+i =
+
+    20
+
+0 points outside mesh
+
+i =
+
+    21
+
+0 points outside mesh
+
+i =
+
+    22
+
+0 points outside mesh
+
+i =
+
+    23
+
+0 points outside mesh
+
+i =
+
+    24
+
+0 points outside mesh
+
+i =
+
+    25
+
+0 points outside mesh
+
+i =
+
+    26
+
+0 points outside mesh
+
+i =
+
+    27
+
+0 points outside mesh
+
+i =
+
+    28
+
+0 points outside mesh
+
+i =
+
+    29
+
+0 points outside mesh
+
+i =
+
+    30
+
+0 points outside mesh
+
+i =
+
+    31
+
+0 points outside mesh
+
+i =
+
+    32
+
+0 points outside mesh
+
+i =
+
+    33
+
+0 points outside mesh
+
+i =
+
+    34
+
+0 points outside mesh
+
+i =
+
+    35
+
+0 points outside mesh
+
+i =
+
+    36
+
+0 points outside mesh
+
+i =
+
+    37
+
+0 points outside mesh
+
+i =
+
+    38
+
+0 points outside mesh
+
+i =
+
+    39
+
+0 points outside mesh
+
+i =
+
+    40
+
+0 points outside mesh
+
+i =
+
+    41
+
+0 points outside mesh
+
+i =
+
+    42
+
+0 points outside mesh
+
+i =
+
+    43
+
+0 points outside mesh
+
+i =
+
+    44
+
+0 points outside mesh
+
+i =
+
+    45
+
+0 points outside mesh
+
+i =
+
+    46
+
+0 points outside mesh
+
+i =
+
+    47
+
+0 points outside mesh
+
+i =
+
+    48
+
+0 points outside mesh
+
+i =
+
+    49
+
+0 points outside mesh
+
+i =
+
+    50
+
+0 points outside mesh
+
+i =
+
+    51
+
+0 points outside mesh
+
+i =
+
+    52
+
+0 points outside mesh
+
+i =
+
+    53
+
+0 points outside mesh
+
+i =
+
+    54
+
+0 points outside mesh
+
+i =
+
+    55
+
+0 points outside mesh
+
+i =
+
+    56
+
+0 points outside mesh
+
+i =
+
+    57
+
+0 points outside mesh
+
+i =
+
+    58
+
+0 points outside mesh
+
+i =
+
+    59
+
+0 points outside mesh
+
+i =
+
+    60
+
+0 points outside mesh
+
+i =
+
+    61
+
+0 points outside mesh
+
+i =
+
+    62
+
+0 points outside mesh
+
+i =
+
+    63
+
+0 points outside mesh
+
+i =
+
+    64
+
+0 points outside mesh
+
+i =
+
+    65
+
+0 points outside mesh
+
+i =
+
+    66
+
+0 points outside mesh
+
+i =
+
+    67
+
+0 points outside mesh
+
+i =
+
+    68
+
+0 points outside mesh
+
+i =
+
+    69
+
+0 points outside mesh
+
+i =
+
+    70
+
+0 points outside mesh
+
+i =
+
+    71
+
+0 points outside mesh
+
+i =
+
+    72
+
+0 points outside mesh
+
+i =
+
+    73
+
+0 points outside mesh
+
+i =
+
+    74
+
+0 points outside mesh
+
+i =
+
+    75
+
+0 points outside mesh
+
+i =
+
+    76
+
+0 points outside mesh
+
+i =
+
+    77
+
+0 points outside mesh
+
+i =
+
+    78
+
+0 points outside mesh
+
+i =
+
+    79
+
+0 points outside mesh
+
+i =
+
+    80
+
+0 points outside mesh
+
+i =
+
+    81
+
+0 points outside mesh
+
+i =
+
+    82
+
+0 points outside mesh
+
+i =
+
+    83
+
+0 points outside mesh
+
+i =
+
+    84
+
+0 points outside mesh
+
+i =
+
+    85
+
+0 points outside mesh
+
+i =
+
+    86
+
+0 points outside mesh
+
+i =
+
+    87
+
+0 points outside mesh
+
+i =
+
+    88
+
+0 points outside mesh
+
+i =
+
+    89
+
+0 points outside mesh
+
+i =
+
+    90
+
+0 points outside mesh
+
+i =
+
+    91
+
+0 points outside mesh
+
+i =
+
+    92
+
+0 points outside mesh
+
+i =
+
+    93
+
+0 points outside mesh
+
+i =
+
+    94
+
+0 points outside mesh
+
+i =
+
+    95
+
+0 points outside mesh
+
+i =
+
+    96
+
+0 points outside mesh
+
+i =
+
+    97
+
+0 points outside mesh
+
+i =
+
+    98
+
+0 points outside mesh
+
+i =
+
+    99
+
+0 points outside mesh
+
+i =
+
+   100
+
+0 points outside mesh
+
+i =
+
+   101
+
+0 points outside mesh
+
+i =
+
+   102
+
+0 points outside mesh
+
+i =
+
+   103
+
+0 points outside mesh
+
+i =
+
+   104
+
+0 points outside mesh
+
+i =
+
+   105
+
+0 points outside mesh
+
+i =
+
+   106
+
+0 points outside mesh
+
+i =
+
+   107
+
+0 points outside mesh
+
+i =
+
+   108
+
+0 points outside mesh
+
+i =
+
+   109
+
+0 points outside mesh
+
+i =
+
+   110
+
+0 points outside mesh
+
+i =
+
+   111
+
+0 points outside mesh
+
+i =
+
+   112
+
+0 points outside mesh
+
+i =
+
+   113
+
+0 points outside mesh
+
+i =
+
+   114
+
+0 points outside mesh
+
+i =
+
+   115
+
+0 points outside mesh
+
+i =
+
+   116
+
+0 points outside mesh
+
+i =
+
+   117
+
+0 points outside mesh
+
+i =
+
+   118
+
+0 points outside mesh
+
+i =
+
+   119
+
+0 points outside mesh
+
+i =
+
+   120
+
+0 points outside mesh
+
+i =
+
+   121
+
+0 points outside mesh
+
+i =
+
+   122
+
+0 points outside mesh
+
+i =
+
+   123
+
+0 points outside mesh
+
+i =
+
+   124
+
+0 points outside mesh
+
+i =
+
+   125
+
+0 points outside mesh
+
+i =
+
+   126
+
+0 points outside mesh
+
+i =
+
+   127
+
+0 points outside mesh
+
+i =
+
+   128
+
+0 points outside mesh
+
+i =
+
+   129
+
+0 points outside mesh
+
+i =
+
+   130
+
+0 points outside mesh
+
+i =
+
+   131
+
+0 points outside mesh
+
+i =
+
+   132
+
+0 points outside mesh
+
+i =
+
+   133
+
+0 points outside mesh
+
+i =
+
+   134
+
+0 points outside mesh
+
+i =
+
+   135
+
+0 points outside mesh
+
+i =
+
+   136
+
+0 points outside mesh
+
+i =
+
+   137
+
+0 points outside mesh
+
+i =
+
+   138
+
+0 points outside mesh
+
+i =
+
+   139
+
+0 points outside mesh
+
+i =
+
+   140
+
+0 points outside mesh
+
+i =
+
+   141
+
+0 points outside mesh
+
+i =
+
+   142
+
+0 points outside mesh
+
+i =
+
+   143
+
+0 points outside mesh
+
+i =
+
+   144
+
+0 points outside mesh
+
+i =
+
+   145
+
+0 points outside mesh
+
+i =
+
+   146
+
+0 points outside mesh
+
+i =
+
+   147
+
+0 points outside mesh
+
+i =
+
+   148
+
+0 points outside mesh
+
+i =
+
+   149
+
+0 points outside mesh
+
+i =
+
+   150
+
+0 points outside mesh
+
+i =
+
+   151
+
+0 points outside mesh
+
+i =
+
+   152
+
+0 points outside mesh
+
+i =
+
+   153
+
+0 points outside mesh
+
+i =
+
+   154
+
+0 points outside mesh
+
+i =
+
+   155
+
+0 points outside mesh
+
+i =
+
+   156
+
+0 points outside mesh
+
+i =
+
+   157
+
+0 points outside mesh
+
+i =
+
+   158
+
+0 points outside mesh
+
+i =
+
+   159
+
+0 points outside mesh
+
+i =
+
+   160
+
+0 points outside mesh
+
+i =
+
+   161
+
+0 points outside mesh
+
+i =
+
+   162
+
+0 points outside mesh
+
+i =
+
+   163
+
+0 points outside mesh
+
+i =
+
+   164
+
+0 points outside mesh
+
+i =
+
+   165
+
+0 points outside mesh
+
+i =
+
+   166
+
+0 points outside mesh
+
+i =
+
+   167
+
+0 points outside mesh
+
+i =
+
+   168
+
+0 points outside mesh
+
+i =
+
+   169
+
+0 points outside mesh
+
+i =
+
+   170
+
+0 points outside mesh
+
+i =
+
+   171
+
+0 points outside mesh
+
+i =
+
+   172
+
+0 points outside mesh
+
+i =
+
+   173
+
+0 points outside mesh
+
+i =
+
+   174
+
+0 points outside mesh
+
+i =
+
+   175
+
+0 points outside mesh
+
+i =
+
+   176
+
+0 points outside mesh
+
+i =
+
+   177
+
+0 points outside mesh
+
+i =
+
+   178
+
+0 points outside mesh
+
+i =
+
+   179
+
+0 points outside mesh
+
+i =
+
+   180
+
+0 points outside mesh
+
+i =
+
+   181
+
+0 points outside mesh
+
+i =
+
+   182
+
+0 points outside mesh
+
+i =
+
+   183
+
+0 points outside mesh
+
+i =
+
+   184
+
+0 points outside mesh
+
+i =
+
+   185
+
+0 points outside mesh
+
+i =
+
+   186
+
+0 points outside mesh
+
+i =
+
+   187
+
+0 points outside mesh
+
+i =
+
+   188
+
+0 points outside mesh
+
+i =
+
+   189
+
+0 points outside mesh
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+Eigenfunctions and eigenvalues loaded
+0.01_0.015_level_0.02.mat
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+
+i =
+
+     1
+
+0 points outside mesh
+
+i =
+
+     2
+
+0 points outside mesh
+
+i =
+
+     3
+
+0 points outside mesh
+
+i =
+
+     4
+
+0 points outside mesh
+
+i =
+
+     5
+
+0 points outside mesh
+
+i =
+
+     6
+
+0 points outside mesh
+
+i =
+
+     7
+
+0 points outside mesh
+
+i =
+
+     8
+
+0 points outside mesh
+
+i =
+
+     9
+
+0 points outside mesh
+
+i =
+
+    10
+
+0 points outside mesh
+
+i =
+
+    11
+
+0 points outside mesh
+
+i =
+
+    12
+
+0 points outside mesh
+
+i =
+
+    13
+
+0 points outside mesh
+
+i =
+
+    14
+
+0 points outside mesh
+
+i =
+
+    15
+
+0 points outside mesh
+
+i =
+
+    16
+
+0 points outside mesh
+
+i =
+
+    17
+
+0 points outside mesh
+
+i =
+
+    18
+
+0 points outside mesh
+
+i =
+
+    19
+
+0 points outside mesh
+
+i =
+
+    20
+
+0 points outside mesh
+
+i =
+
+    21
+
+0 points outside mesh
+
+i =
+
+    22
+
+0 points outside mesh
+
+i =
+
+    23
+
+0 points outside mesh
+
+i =
+
+    24
+
+0 points outside mesh
+
+i =
+
+    25
+
+0 points outside mesh
+
+i =
+
+    26
+
+0 points outside mesh
+
+i =
+
+    27
+
+0 points outside mesh
+
+i =
+
+    28
+
+0 points outside mesh
+
+i =
+
+    29
+
+0 points outside mesh
+
+i =
+
+    30
+
+0 points outside mesh
+
+i =
+
+    31
+
+0 points outside mesh
+
+i =
+
+    32
+
+0 points outside mesh
+
+i =
+
+    33
+
+0 points outside mesh
+
+i =
+
+    34
+
+0 points outside mesh
+
+i =
+
+    35
+
+0 points outside mesh
+
+i =
+
+    36
+
+0 points outside mesh
+
+i =
+
+    37
+
+0 points outside mesh
+
+i =
+
+    38
+
+0 points outside mesh
+
+i =
+
+    39
+
+0 points outside mesh
+
+i =
+
+    40
+
+0 points outside mesh
+
+i =
+
+    41
+
+0 points outside mesh
+
+i =
+
+    42
+
+0 points outside mesh
+
+i =
+
+    43
+
+0 points outside mesh
+
+i =
+
+    44
+
+0 points outside mesh
+
+i =
+
+    45
+
+0 points outside mesh
+
+i =
+
+    46
+
+0 points outside mesh
+
+i =
+
+    47
+
+0 points outside mesh
+
+i =
+
+    48
+
+0 points outside mesh
+
+i =
+
+    49
+
+0 points outside mesh
+
+i =
+
+    50
+
+0 points outside mesh
+
+i =
+
+    51
+
+0 points outside mesh
+
+i =
+
+    52
+
+0 points outside mesh
+
+i =
+
+    53
+
+0 points outside mesh
+
+i =
+
+    54
+
+0 points outside mesh
+
+i =
+
+    55
+
+0 points outside mesh
+
+i =
+
+    56
+
+0 points outside mesh
+
+i =
+
+    57
+
+0 points outside mesh
+
+i =
+
+    58
+
+0 points outside mesh
+
+i =
+
+    59
+
+0 points outside mesh
+
+i =
+
+    60
+
+0 points outside mesh
+
+i =
+
+    61
+
+0 points outside mesh
+
+i =
+
+    62
+
+0 points outside mesh
+
+i =
+
+    63
+
+0 points outside mesh
+
+i =
+
+    64
+
+0 points outside mesh
+
+i =
+
+    65
+
+0 points outside mesh
+
+i =
+
+    66
+
+0 points outside mesh
+
+i =
+
+    67
+
+0 points outside mesh
+
+i =
+
+    68
+
+0 points outside mesh
+
+i =
+
+    69
+
+0 points outside mesh
+
+i =
+
+    70
+
+0 points outside mesh
+
+i =
+
+    71
+
+0 points outside mesh
+
+i =
+
+    72
+
+0 points outside mesh
+
+i =
+
+    73
+
+0 points outside mesh
+
+i =
+
+    74
+
+0 points outside mesh
+
+i =
+
+    75
+
+0 points outside mesh
+
+i =
+
+    76
+
+0 points outside mesh
+
+i =
+
+    77
+
+0 points outside mesh
+
+i =
+
+    78
+
+0 points outside mesh
+
+i =
+
+    79
+
+0 points outside mesh
+
+i =
+
+    80
+
+0 points outside mesh
+
+i =
+
+    81
+
+0 points outside mesh
+
+i =
+
+    82
+
+0 points outside mesh
+
+i =
+
+    83
+
+0 points outside mesh
+
+i =
+
+    84
+
+0 points outside mesh
+
+i =
+
+    85
+
+0 points outside mesh
+
+i =
+
+    86
+
+0 points outside mesh
+
+i =
+
+    87
+
+0 points outside mesh
+
+i =
+
+    88
+
+0 points outside mesh
+
+i =
+
+    89
+
+0 points outside mesh
+
+i =
+
+    90
+
+0 points outside mesh
+
+i =
+
+    91
+
+0 points outside mesh
+
+i =
+
+    92
+
+0 points outside mesh
+
+i =
+
+    93
+
+0 points outside mesh
+
+i =
+
+    94
+
+0 points outside mesh
+
+i =
+
+    95
+
+0 points outside mesh
+
+i =
+
+    96
+
+0 points outside mesh
+
+i =
+
+    97
+
+0 points outside mesh
+
+i =
+
+    98
+
+0 points outside mesh
+
+i =
+
+    99
+
+0 points outside mesh
+
+i =
+
+   100
+
+0 points outside mesh
+
+i =
+
+   101
+
+0 points outside mesh
+
+i =
+
+   102
+
+0 points outside mesh
+
+i =
+
+   103
+
+0 points outside mesh
+
+i =
+
+   104
+
+0 points outside mesh
+
+i =
+
+   105
+
+0 points outside mesh
+
+i =
+
+   106
+
+0 points outside mesh
+
+i =
+
+   107
+
+0 points outside mesh
+
+i =
+
+   108
+
+0 points outside mesh
+
+i =
+
+   109
+
+0 points outside mesh
+
+i =
+
+   110
+
+0 points outside mesh
+
+i =
+
+   111
+
+0 points outside mesh
+
+i =
+
+   112
+
+0 points outside mesh
+
+i =
+
+   113
+
+0 points outside mesh
+
+i =
+
+   114
+
+0 points outside mesh
+
+i =
+
+   115
+
+0 points outside mesh
+
+i =
+
+   116
+
+0 points outside mesh
+
+i =
+
+   117
+
+0 points outside mesh
+
+i =
+
+   118
+
+0 points outside mesh
+
+i =
+
+   119
+
+0 points outside mesh
+
+i =
+
+   120
+
+0 points outside mesh
+
+i =
+
+   121
+
+0 points outside mesh
+
+i =
+
+   122
+
+0 points outside mesh
+
+i =
+
+   123
+
+0 points outside mesh
+
+i =
+
+   124
+
+0 points outside mesh
+
+i =
+
+   125
+
+0 points outside mesh
+
+i =
+
+   126
+
+0 points outside mesh
+
+i =
+
+   127
+
+0 points outside mesh
+
+i =
+
+   128
+
+0 points outside mesh
+
+i =
+
+   129
+
+0 points outside mesh
+
+i =
+
+   130
+
+0 points outside mesh
+
+i =
+
+   131
+
+0 points outside mesh
+
+i =
+
+   132
+
+0 points outside mesh
+
+i =
+
+   133
+
+0 points outside mesh
+
+i =
+
+   134
+
+0 points outside mesh
+
+i =
+
+   135
+
+0 points outside mesh
+
+i =
+
+   136
+
+0 points outside mesh
+
+i =
+
+   137
+
+0 points outside mesh
+
+i =
+
+   138
+
+0 points outside mesh
+
+i =
+
+   139
+
+0 points outside mesh
+
+i =
+
+   140
+
+0 points outside mesh
+
+i =
+
+   141
+
+0 points outside mesh
+
+i =
+
+   142
+
+0 points outside mesh
+
+i =
+
+   143
+
+0 points outside mesh
+
+i =
+
+   144
+
+0 points outside mesh
+
+i =
+
+   145
+
+0 points outside mesh
+
+i =
+
+   146
+
+0 points outside mesh
+
+i =
+
+   147
+
+0 points outside mesh
+
+i =
+
+   148
+
+0 points outside mesh
+
+i =
+
+   149
+
+0 points outside mesh
+
+i =
+
+   150
+
+0 points outside mesh
+
+i =
+
+   151
+
+0 points outside mesh
+
+i =
+
+   152
+
+0 points outside mesh
+
+i =
+
+   153
+
+0 points outside mesh
+
+i =
+
+   154
+
+0 points outside mesh
+
+i =
+
+   155
+
+0 points outside mesh
+
+i =
+
+   156
+
+0 points outside mesh
+
+i =
+
+   157
+
+0 points outside mesh
+
+i =
+
+   158
+
+0 points outside mesh
+
+i =
+
+   159
+
+0 points outside mesh
+
+i =
+
+   160
+
+0 points outside mesh
+
+i =
+
+   161
+
+0 points outside mesh
+
+i =
+
+   162
+
+0 points outside mesh
+
+i =
+
+   163
+
+0 points outside mesh
+
+i =
+
+   164
+
+0 points outside mesh
+
+i =
+
+   165
+
+0 points outside mesh
+
+i =
+
+   166
+
+0 points outside mesh
+
+i =
+
+   167
+
+0 points outside mesh
+
+i =
+
+   168
+
+0 points outside mesh
+
+i =
+
+   169
+
+0 points outside mesh
+
+i =
+
+   170
+
+0 points outside mesh
+
+i =
+
+   171
+
+0 points outside mesh
+
+i =
+
+   172
+
+0 points outside mesh
+
+i =
+
+   173
+
+0 points outside mesh
+
+i =
+
+   174
+
+0 points outside mesh
+
+i =
+
+   175
+
+0 points outside mesh
+
+i =
+
+   176
+
+0 points outside mesh
+
+i =
+
+   177
+
+0 points outside mesh
+
+i =
+
+   178
+
+0 points outside mesh
+
+i =
+
+   179
+
+0 points outside mesh
+
+i =
+
+   180
+
+0 points outside mesh
+
+i =
+
+   181
+
+0 points outside mesh
+
+i =
+
+   182
+
+0 points outside mesh
+
+i =
+
+   183
+
+0 points outside mesh
+
+i =
+
+   184
+
+0 points outside mesh
+
+i =
+
+   185
+
+0 points outside mesh
+
+i =
+
+   186
+
+0 points outside mesh
+
+i =
+
+   187
+
+0 points outside mesh
+
+i =
+
+   188
+
+0 points outside mesh
+
+i =
+
+   189
+
+0 points outside mesh
+
+i =
+
+   190
+
+0 points outside mesh
+
+i =
+
+   191
+
+0 points outside mesh
+
+i =
+
+   192
+
+0 points outside mesh
+
+i =
+
+   193
+
+0 points outside mesh
+
+i =
+
+   194
+
+0 points outside mesh
+
+i =
+
+   195
+
+0 points outside mesh
+
+i =
+
+   196
+
+0 points outside mesh
+
+i =
+
+   197
+
+0 points outside mesh
+
+i =
+
+   198
+
+0 points outside mesh
+
+i =
+
+   199
+
+0 points outside mesh
+
+i =
+
+   200
+
+0 points outside mesh
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+Eigenfunctions and eigenvalues loaded
+0.01_0.015_star_0.02.mat
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+
+i =
+
+     1
+
+0 points outside mesh
+
+i =
+
+     2
+
+0 points outside mesh
+
+i =
+
+     3
+
+0 points outside mesh
+
+i =
+
+     4
+
+0 points outside mesh
+
+i =
+
+     5
+
+0 points outside mesh
+
+i =
+
+     6
+
+0 points outside mesh
+
+i =
+
+     7
+
+0 points outside mesh
+
+i =
+
+     8
+
+0 points outside mesh
+
+i =
+
+     9
+
+0 points outside mesh
+
+i =
+
+    10
+
+0 points outside mesh
+
+i =
+
+    11
+
+0 points outside mesh
+
+i =
+
+    12
+
+0 points outside mesh
+
+i =
+
+    13
+
+0 points outside mesh
+
+i =
+
+    14
+
+0 points outside mesh
+
+i =
+
+    15
+
+0 points outside mesh
+
+i =
+
+    16
+
+0 points outside mesh
+
+i =
+
+    17
+
+0 points outside mesh
+
+i =
+
+    18
+
+0 points outside mesh
+
+i =
+
+    19
+
+0 points outside mesh
+
+i =
+
+    20
+
+0 points outside mesh
+
+i =
+
+    21
+
+0 points outside mesh
+
+i =
+
+    22
+
+0 points outside mesh
+
+i =
+
+    23
+
+0 points outside mesh
+
+i =
+
+    24
+
+0 points outside mesh
+
+i =
+
+    25
+
+0 points outside mesh
+
+i =
+
+    26
+
+0 points outside mesh
+
+i =
+
+    27
+
+0 points outside mesh
+
+i =
+
+    28
+
+0 points outside mesh
+
+i =
+
+    29
+
+0 points outside mesh
+
+i =
+
+    30
+
+0 points outside mesh
+
+i =
+
+    31
+
+0 points outside mesh
+
+i =
+
+    32
+
+0 points outside mesh
+
+i =
+
+    33
+
+0 points outside mesh
+
+i =
+
+    34
+
+0 points outside mesh
+
+i =
+
+    35
+
+0 points outside mesh
+
+i =
+
+    36
+
+0 points outside mesh
+
+i =
+
+    37
+
+0 points outside mesh
+
+i =
+
+    38
+
+0 points outside mesh
+
+i =
+
+    39
+
+0 points outside mesh
+
+i =
+
+    40
+
+0 points outside mesh
+
+i =
+
+    41
+
+0 points outside mesh
+
+i =
+
+    42
+
+0 points outside mesh
+
+i =
+
+    43
+
+0 points outside mesh
+
+i =
+
+    44
+
+0 points outside mesh
+
+i =
+
+    45
+
+0 points outside mesh
+
+i =
+
+    46
+
+0 points outside mesh
+
+i =
+
+    47
+
+0 points outside mesh
+
+i =
+
+    48
+
+0 points outside mesh
+
+i =
+
+    49
+
+0 points outside mesh
+
+i =
+
+    50
+
+0 points outside mesh
+
+i =
+
+    51
+
+0 points outside mesh
+
+i =
+
+    52
+
+0 points outside mesh
+
+i =
+
+    53
+
+0 points outside mesh
+
+i =
+
+    54
+
+0 points outside mesh
+
+i =
+
+    55
+
+0 points outside mesh
+
+i =
+
+    56
+
+0 points outside mesh
+
+i =
+
+    57
+
+0 points outside mesh
+
+i =
+
+    58
+
+0 points outside mesh
+
+i =
+
+    59
+
+0 points outside mesh
+
+i =
+
+    60
+
+0 points outside mesh
+
+i =
+
+    61
+
+0 points outside mesh
+
+i =
+
+    62
+
+0 points outside mesh
+
+i =
+
+    63
+
+0 points outside mesh
+
+i =
+
+    64
+
+0 points outside mesh
+
+i =
+
+    65
+
+0 points outside mesh
+
+i =
+
+    66
+
+0 points outside mesh
+
+i =
+
+    67
+
+0 points outside mesh
+
+i =
+
+    68
+
+0 points outside mesh
+
+i =
+
+    69
+
+0 points outside mesh
+
+i =
+
+    70
+
+0 points outside mesh
+
+i =
+
+    71
+
+0 points outside mesh
+
+i =
+
+    72
+
+0 points outside mesh
+
+i =
+
+    73
+
+0 points outside mesh
+
+i =
+
+    74
+
+0 points outside mesh
+
+i =
+
+    75
+
+0 points outside mesh
+
+i =
+
+    76
+
+0 points outside mesh
+
+i =
+
+    77
+
+0 points outside mesh
+
+i =
+
+    78
+
+0 points outside mesh
+
+i =
+
+    79
+
+0 points outside mesh
+
+i =
+
+    80
+
+0 points outside mesh
+
+i =
+
+    81
+
+0 points outside mesh
+
+i =
+
+    82
+
+0 points outside mesh
+
+i =
+
+    83
+
+0 points outside mesh
+
+i =
+
+    84
+
+0 points outside mesh
+
+i =
+
+    85
+
+0 points outside mesh
+
+i =
+
+    86
+
+0 points outside mesh
+
+i =
+
+    87
+
+0 points outside mesh
+
+i =
+
+    88
+
+0 points outside mesh
+
+i =
+
+    89
+
+0 points outside mesh
+
+i =
+
+    90
+
+0 points outside mesh
+
+i =
+
+    91
+
+0 points outside mesh
+
+i =
+
+    92
+
+0 points outside mesh
+
+i =
+
+    93
+
+0 points outside mesh
+
+i =
+
+    94
+
+0 points outside mesh
+
+i =
+
+    95
+
+0 points outside mesh
+
+i =
+
+    96
+
+0 points outside mesh
+
+i =
+
+    97
+
+0 points outside mesh
+
+i =
+
+    98
+
+0 points outside mesh
+
+i =
+
+    99
+
+0 points outside mesh
+
+i =
+
+   100
+
+0 points outside mesh
+
+i =
+
+   101
+
+0 points outside mesh
+
+i =
+
+   102
+
+0 points outside mesh
+
+i =
+
+   103
+
+0 points outside mesh
+
+i =
+
+   104
+
+0 points outside mesh
+
+i =
+
+   105
+
+0 points outside mesh
+
+i =
+
+   106
+
+0 points outside mesh
+
+i =
+
+   107
+
+0 points outside mesh
+
+i =
+
+   108
+
+0 points outside mesh
+
+i =
+
+   109
+
+0 points outside mesh
+
+i =
+
+   110
+
+0 points outside mesh
+
+i =
+
+   111
+
+0 points outside mesh
+
+i =
+
+   112
+
+0 points outside mesh
+
+i =
+
+   113
+
+0 points outside mesh
+
+i =
+
+   114
+
+0 points outside mesh
+
+i =
+
+   115
+
+0 points outside mesh
+
+i =
+
+   116
+
+0 points outside mesh
+
+i =
+
+   117
+
+0 points outside mesh
+
+i =
+
+   118
+
+0 points outside mesh
+
+i =
+
+   119
+
+0 points outside mesh
+
+i =
+
+   120
+
+0 points outside mesh
+
+i =
+
+   121
+
+0 points outside mesh
+
+i =
+
+   122
+
+0 points outside mesh
+
+i =
+
+   123
+
+0 points outside mesh
+
+i =
+
+   124
+
+0 points outside mesh
+
+i =
+
+   125
+
+0 points outside mesh
+
+i =
+
+   126
+
+0 points outside mesh
+
+i =
+
+   127
+
+0 points outside mesh
+
+i =
+
+   128
+
+0 points outside mesh
+
+i =
+
+   129
+
+0 points outside mesh
+
+i =
+
+   130
+
+0 points outside mesh
+
+i =
+
+   131
+
+0 points outside mesh
+
+i =
+
+   132
+
+0 points outside mesh
+
+i =
+
+   133
+
+0 points outside mesh
+
+i =
+
+   134
+
+0 points outside mesh
+
+i =
+
+   135
+
+0 points outside mesh
+
+i =
+
+   136
+
+0 points outside mesh
+
+i =
+
+   137
+
+0 points outside mesh
+
+i =
+
+   138
+
+0 points outside mesh
+
+i =
+
+   139
+
+0 points outside mesh
+
+i =
+
+   140
+
+0 points outside mesh
+
+i =
+
+   141
+
+0 points outside mesh
+
+i =
+
+   142
+
+0 points outside mesh
+
+i =
+
+   143
+
+0 points outside mesh
+
+i =
+
+   144
+
+0 points outside mesh
+
+i =
+
+   145
+
+0 points outside mesh
+
+i =
+
+   146
+
+0 points outside mesh
+
+i =
+
+   147
+
+0 points outside mesh
+
+i =
+
+   148
+
+0 points outside mesh
+
+i =
+
+   149
+
+0 points outside mesh
+
+i =
+
+   150
+
+0 points outside mesh
+
+i =
+
+   151
+
+0 points outside mesh
+
+i =
+
+   152
+
+0 points outside mesh
+
+i =
+
+   153
+
+0 points outside mesh
+
+i =
+
+   154
+
+0 points outside mesh
+
+i =
+
+   155
+
+0 points outside mesh
+
+i =
+
+   156
+
+0 points outside mesh
+
+i =
+
+   157
+
+0 points outside mesh
+
+i =
+
+   158
+
+0 points outside mesh
+
+i =
+
+   159
+
+0 points outside mesh
+
+i =
+
+   160
+
+0 points outside mesh
+
+i =
+
+   161
+
+0 points outside mesh
+
+i =
+
+   162
+
+0 points outside mesh
+
+i =
+
+   163
+
+0 points outside mesh
+
+i =
+
+   164
+
+0 points outside mesh
+
+i =
+
+   165
+
+0 points outside mesh
+
+i =
+
+   166
+
+0 points outside mesh
+
+i =
+
+   167
+
+0 points outside mesh
+
+i =
+
+   168
+
+0 points outside mesh
+
+i =
+
+   169
+
+0 points outside mesh
+
+i =
+
+   170
+
+0 points outside mesh
+
+i =
+
+   171
+
+0 points outside mesh
+
+i =
+
+   172
+
+0 points outside mesh
+
+i =
+
+   173
+
+0 points outside mesh
+
+i =
+
+   174
+
+0 points outside mesh
+
+i =
+
+   175
+
+0 points outside mesh
+
+i =
+
+   176
+
+0 points outside mesh
+
+i =
+
+   177
+
+0 points outside mesh
+
+i =
+
+   178
+
+0 points outside mesh
+
+i =
+
+   179
+
+0 points outside mesh
+
+i =
+
+   180
+
+0 points outside mesh
+
+i =
+
+   181
+
+0 points outside mesh
+
+i =
+
+   182
+
+0 points outside mesh
+
+i =
+
+   183
+
+0 points outside mesh
+
+i =
+
+   184
+
+0 points outside mesh
+
+i =
+
+   185
+
+0 points outside mesh
+
+i =
+
+   186
+
+0 points outside mesh
+
+i =
+
+   187
+
+0 points outside mesh
+
+i =
+
+   188
+
+0 points outside mesh
+
+i =
+
+   189
+
+0 points outside mesh
+
+i =
+
+   190
+
+0 points outside mesh
+
+i =
+
+   191
+
+0 points outside mesh
+
+i =
+
+   192
+
+0 points outside mesh
+
+i =
+
+   193
+
+0 points outside mesh
+
+i =
+
+   194
+
+0 points outside mesh
+
+i =
+
+   195
+
+0 points outside mesh
+
+i =
+
+   196
+
+0 points outside mesh
+
+i =
+
+   197
+
+0 points outside mesh
+
+i =
+
+   198
+
+0 points outside mesh
+
+i =
+
+   199
+
+0 points outside mesh
+
+i =
+
+   200
+
+0 points outside mesh
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+Eigenfunctions and eigenvalues loaded
+0.01_0.015_star_0.02.mat
+Approximation error loaded
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+Eigenfunctions and eigenvalues loaded
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+0 points outside mesh
+0 points outside mesh
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+Eigenfunctions and eigenvalues loaded
+0.01_0.015_star_0.03.mat
+Approximation error loaded

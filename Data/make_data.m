@@ -175,7 +175,7 @@ fmdl_coarse = precomputeFEM(meshpar);
 
 normdata = normFEM(data,fmdl);
 
-epssq = noiselevel^2 * normdata / norm_noise;
+epssq = noiselevel^2 * normdata / norm_noise_fem;
 
 bq = dataq + sqrt(epssq)*xi';
 figure;

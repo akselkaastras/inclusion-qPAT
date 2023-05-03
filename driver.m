@@ -1,8 +1,8 @@
 clc; clear;
 addpath(genpath(pwd))
 %% Make mesh
-fine_hmax = 0.03;
-hmax = 0.04;
+fine_hmax = 0.02;
+hmax = 0.03;
 
 meshpar = mesh_comp(hmax);
 %% Make prior for levelset with matern covariance
@@ -57,7 +57,7 @@ priorpar.dim = [priorpar.M,priorpar.ninclusions];
 priorpar.type = 'star';
 priorpar.center = [0.37,-0.43;-0.44,0.36];
 priorpar.std = 0.2;
-
+%%
 
 % We use M Fourier coefficients and 2 numbers for each inclusion
 xi = priorpar.std*randn(priorpar.dim);

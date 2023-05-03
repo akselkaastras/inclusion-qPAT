@@ -6,3 +6,50 @@ datapar.V = V;
 Error in dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
+{Error using save
+Unable to write to file
+'/work3/akara/qPAT-level/Data/noise_model/eigenf_0.015_92_92_large.mat' because
+it appears to be corrupt.
+
+Error in eigenbasisLaplacianDisk2D (line 45)
+    save(['Data/noise_model/',filename1],'E','-v7.3')
+
+Error in make_data (line 170)
+[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+
+Error in dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+HDF5-DIAG: Error detected in HDF5 (1.8.12) thread 0:
+  #000: H5Dio.c line 179 in H5Dread(): can't read data
+    major: Dataset
+    minor: Read failed
+  #001: H5Dio.c line 547 in H5D__read(): can't read data
+    major: Dataset
+    minor: Read failed
+  #002: H5Dchunk.c line 1836 in H5D__chunk_read(): unable to read raw data chunk
+    major: Low-level I/O
+    minor: Read failed
+  #003: H5Dchunk.c line 2867 in H5D__chunk_lock(): data pipeline read failed
+    major: Data filters
+    minor: Filter operation failed
+  #004: H5Z.c line 1377 in H5Z_pipeline(): filter returned failure during read
+    major: Data filters
+    minor: Read failed
+  #005: H5Zdeflate.c line 125 in H5Z_filter_deflate(): inflate() failed
+    major: Data filters
+    minor: Unable to initialize object
+{Error using load
+Cannot read file
+/work3/akara/qPAT-level/Data/noise_model/eigenf_0.015_92_92_large.mat.
+
+Error in eigenbasisLaplacianDisk2D (line 48)
+    s1 = load(['Data/noise_model/',filename1]);
+
+Error in make_data (line 170)
+[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+
+Error in dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+/zhome/ee/2/108654/.lsbatch/1683112610.16639035.shell: line 14: 216231 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(3,0.06,"star");exit'

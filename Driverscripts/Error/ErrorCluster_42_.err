@@ -6,3 +6,62 @@ datapar.V = V;
 Error in dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
+HDF5-DIAG: Error detected in HDF5 (1.8.12) thread 0:
+  #000: H5D.c line 402 in H5Dclose(): can't decrement count on dataset ID
+    major: Dataset
+    minor: Unable to decrement reference count
+  #001: H5I.c line 1537 in H5I_dec_app_ref_always_close(): can't decrement ID ref count
+    major: Object atom
+    minor: Unable to decrement reference count
+  #002: H5I.c line 1479 in H5I_dec_app_ref(): can't decrement ID ref count
+    major: Object atom
+    minor: Unable to decrement reference count
+  #003: H5Dint.c line 1381 in H5D_close(): unable to flush cached dataset info
+    major: Dataset
+    minor: Write failed
+  #004: H5Dint.c line 2311 in H5D__flush_real(): unable to update layout/pline/efl info
+    major: Dataset
+    minor: Write failed
+  #005: H5Dlayout.c line 479 in H5D__layout_oh_write(): unable to update layout message
+    major: Dataset
+    minor: Write failed
+  #006: H5Omessage.c line 335 in H5O_msg_write_oh(): unable to write object header message
+    major: Object header
+    minor: Write failed
+  #007: H5Omessage.c line 389 in H5O_msg_write_real(): unable to modify constant message
+    major: Object header
+    minor: Write failed
+/zhome/ee/2/108654/.lsbatch/1682693078.16613082.shell: line 14: 68807 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(4,0.02,"level");exit'
+HDF5-DIAG: Error detected in HDF5 (1.8.12) thread 0:
+  #000: H5Dio.c line 179 in H5Dread(): can't read data
+    major: Dataset
+    minor: Read failed
+  #001: H5Dio.c line 547 in H5D__read(): can't read data
+    major: Dataset
+    minor: Read failed
+  #002: H5Dchunk.c line 1836 in H5D__chunk_read(): unable to read raw data chunk
+    major: Low-level I/O
+    minor: Read failed
+  #003: H5Dchunk.c line 2867 in H5D__chunk_lock(): data pipeline read failed
+    major: Data filters
+    minor: Filter operation failed
+  #004: H5Z.c line 1377 in H5Z_pipeline(): filter returned failure during read
+    major: Data filters
+    minor: Read failed
+  #005: H5Zdeflate.c line 125 in H5Z_filter_deflate(): inflate() failed
+    major: Data filters
+    minor: Unable to initialize object
+{Error using load
+Cannot read file
+/work3/akara/qPAT-level/Data/noise_model/eigenf_0.015_92_92_large.mat.
+
+Error in eigenbasisLaplacianDisk2D (line 48)
+    s1 = load(['Data/noise_model/',filename1]);
+
+Error in make_data (line 170)
+[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+
+Error in dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+/zhome/ee/2/108654/.lsbatch/1683112611.16639038.shell: line 14: 103582 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(4,0.03,"star");exit'
