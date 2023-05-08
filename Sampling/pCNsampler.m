@@ -13,6 +13,8 @@ if strcmp(priorpar.type,'level')
     ll = compute_log_likelihood_pcn_level(xr, datapar, priorpar, fmdl);
 elseif strcmp(priorpar.type,'star')
     ll = compute_log_likelihood_pcn_star(xr, datapar, priorpar, fmdl); 
+elseif strcmp(priorpar.type,'id')
+    ll = compute_log_likelihood_pcn_id(xr, datapar, priorpar, fmdl);
 end
 
 % Initialize records
@@ -45,7 +47,9 @@ for k = 2:N_iter
     if strcmp(priorpar.type,'level')
         ll_new = compute_log_likelihood_pcn_level(xr_new, datapar, priorpar, fmdl);
     elseif strcmp(priorpar.type,'star')
-        ll_new = compute_log_likelihood_pcn_star(xr_new, datapar, priorpar, fmdl); 
+        ll_new = compute_log_likelihood_pcn_star(xr_new, datapar, priorpar, fmdl);
+    elseif strcmp(priorpar.type,'id')
+        ll_new = compute_log_likelihood_pcn_id(xr_new, datapar, priorpar, fmdl);
     end
     
     % Compute acceptance probability
