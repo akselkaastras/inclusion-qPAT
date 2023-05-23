@@ -51,8 +51,8 @@ for j = 1:HN
         n = n/n(3);
         vq(id) = -n(1)*(xq(id)-gg(2,1)) - n(2)*(yq(id)-gg(2,2)) + u(ind(2));
         if abs(vq(id)) < 1e-8
-            disp('small value');
-            keyboard;
+            %disp('small value');
+            %keyboard;
         end
     else
     end

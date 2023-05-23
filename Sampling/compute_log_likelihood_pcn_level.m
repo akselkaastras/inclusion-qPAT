@@ -16,7 +16,13 @@ u = evalFowardModel(fmdl,datapar.meshpar,gamma);
 datapar.U(datapar.meshpar.NZ) = u;
 u = datapar.U + datapar.W;
 
+% find data
+data = u.*gamma;
+
+% Find projection
+c = fmdl.U_proj'*data;
+
 % compute log-likelihood
-v = u.*gamma+datapar.m-datapar.bq;
-%v = gamma - datapar.bq;
-ll = -1/(2*datapar.epssq_approx)*normFEM(v,fmdl);
+v = c-datapar.bq;
+ll = -1/(2*datapar.epssq_approx)*sum(v.^2);
+

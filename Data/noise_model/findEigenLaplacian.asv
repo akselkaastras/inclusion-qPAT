@@ -1,0 +1,25 @@
+function findEigenLaplacian(meshpar)
+
+% 4 GB for each core
+L = 480;
+LL = 2000;
+[K,C,M] = computeLaplacian(meshpar);
+E = zeros(size(K,1),L);
+D = zeros(L,1);
+NZ = meshpar.NZ;
+
+filename = '/Data/noise_model/eigen_0.015';
+
+parfor i = 1:36
+    
+    [VV,D,iresult] = sptarn(K,C,LL*(i-1),LL*i,1,1e-12,10000);
+    V = zeros(pN,size(VV,2));
+    for j = 1:size(VV,2)
+        V(NZ,i) = VV(:,i);
+        V(:,i) = V(:,i)/sqrt(V(:,i)'*M*V(:,i));
+    end
+    v.V;
+    v.D;
+    save(strcat(filename,'_',num2str(i),'.mat'),"v");
+
+end

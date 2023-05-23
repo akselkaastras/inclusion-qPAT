@@ -103,15 +103,19 @@ plot_from_gamma(full(D),meshpar_fine)
 title('Diffusion coefficient')
 colorbar
 %% evaluate forward model
-% define source from wfun
-sigma = 0.5;
-m = 0.5*[sqrt(2),sqrt(2)];
-scale = 10;
-figure(2);
+    % define source from wfun
+    sigma = 0.5;
+    m1 = 0.5*[sqrt(2),sqrt(2)];
+    m2 = -0.5*[sqrt(2),sqrt(2)];
+    scale = 10;
+    figure(2);
+    
+    % Source is Gaussian
+    wfunfun = @(x1,x2,m) scale*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
+    wfungradfun = @(x1,x2,m) 1/(sigma^2)*wfunfun(x1,x2,m).*[m(1)-x1 m(2)-x2]; 
+    wfun = @(x1,x2) wfunfun(x1,x2,m1) + wfunfun(x1,x2,m2);
+    wfungrad = @(x1,x2) wfungradfun(x1,x2,m1) + wfungradfun(x1,x2,m2);
 
-% Source is Gaussian
-wfun = @(x1,x2) scale*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
-wfungrad = @(x1,x2) 1/(sigma^2)*wfun(x1,x2).*[m(1)-x1 m(2)-x2]; 
 
 % Precomputing finite element matrices and rhs
 fmdl = precomputeFEM(meshpar_fine);
@@ -157,29 +161,59 @@ gamma_true = gamma_coarse';
 
 %% add noise
 rng(seed);
-pN = length(meshpar.p);
+%pN = length(meshpar.p);
 % Define number of basis functions to include
-NN = ceil(1/4*(sqrt(1+8*pN)-1));
-MBessel = NN;
-Nzeros = NN;
+%NN = ceil(1/4*(sqrt(1+8*pN)-1));
+%MBessel = NN;
+%Nzeros = NN;
 
 % Compute norm squared of data and noisesample
-fmdl_coarse = precomputeFEM(meshpar);
+%fmdl_coarse = precomputeFEM(meshpar);
 
 % Make eigenfunctions of L^2(D)
-[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+%[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+%R = chol(fmdl_coarse.Carea);
+%RR = R\speye(pN);
+
+%xi_vec = randn(pN,1);
+
+% Noise in basis consisting of scaled eigenvectors of mass matrix
+%xi = RR*xi_vec;
+% Truncation of noise
+% This corresponds to NN = 40;
+%NN = 40;
+%trunc = NN*(2*NN+1);
 
 % Make some noise and compute norm
-[xi, norm_noise, norm_noise_fem, ~] = make_noise(meshpar,fmdl_coarse,E,Lambda);
+%[xi, norm_noise, norm_noise_fem, ~] = make_noise(meshpar,fmdl_coarse,E,Lambda,trunc);
 
 
-normdata = normFEM(data,fmdl);
 
-epssq = noiselevel^2 * normdata / norm_noise_fem;
+N = 15;
+trunc = (2*N+1)*N;
+%M_coarse = fmdl_coarse.Carea;
+E = eigenbasisFEM(meshpar_fine,trunc);
+U = fmdl.Carea*E;
+%s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
+%E_coarse = s.E_coarse;
+%U_coarse = M_coarse*E_coarse;
 
-bq = dataq + sqrt(epssq)*xi';
+
+dataq = data'*U;
+
+
+xi = randn(trunc,1);
+%rel_noise_level = 0.01;
+eps = noiselevel * norm(dataq,2) / norm(xi,2);
+epssq = eps^2;
+
+
+%epssq = noiselevel^2 * normdata / norm_noise;
+%eps = noiselevel * max(abs(data)) / max(abs(xi));
+
+bq = dataq' + eps*xi;
 figure;
-plot_from_gamma(bq,meshpar)
+plot_from_gamma(bq'*E',meshpar_fine)
 title('observation')
 
 %% save in struct

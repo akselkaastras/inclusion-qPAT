@@ -1,7 +1,7 @@
 function starPCN(iter,stepsize,noiselevel,x0seed,noiseseed)
 %% Initialize forward mesh
 fine_hmax = 0.01;
-hmax = 0.015;
+hmax = 0.0175;
 meshpar = mesh_comp(hmax);
 close all;
 %% Load data
@@ -42,11 +42,16 @@ priorpar.std = 0.2;
 fmdl = precomputeFEM(meshpar);
 fmdl = precomputeRHS(meshpar,fmdl,datapar.wfun,datapar.wfungrad);
 fmdl = fixingD(meshpar,fmdl,datapar.D_coarse');
+s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
+E = s.E_coarse;
+U_proj = fmdl.Carea*E;
+fmdl.U_proj = U_proj;
 
 %% Start guess for sampler
-rng(x0seed);
-x0 = priorpar.std*randn(priorpar.dim);
-
+%rng(x0seed);
+%x0 = priorpar.std*randn(priorpar.dim);
+x0 = zeros(priorpar.dim);
+x0(1,:) = [1 1];
 %% Sampling parameters
 samplerpar.N_iter = iter;
 samplerpar.jump_size = stepsize;

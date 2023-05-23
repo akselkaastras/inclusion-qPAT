@@ -30,7 +30,7 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         alpha = 1;
         tau = 1;
         maxfreq = 4;
-        delta = 0.2;
+        delta = 0.1;
         priorpar = prior_init_2d(meshpar_fine.p(1, :), meshpar_fine.p(2, :),alpha,tau,q,maxfreq);
         priorpar_coarse = prior_init_2d(meshpar.p(1, :), meshpar.p(2, :),alpha,tau,q,maxfreq);
     
@@ -69,11 +69,33 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         priorpar.type = 'star';
         priorpar.center = [0.37,-0.43;-0.44,0.36];
         priorpar.std = 0.2;
+    elseif strcmpi(priortype,'starDG')
+        q = 10;
+        alpha = 1;
+        tau = 0.5;
+        maxfreq = 10;
+        xq = linspace(0,2*pi,512);
+        
+        priorpar = prior_init(xq,alpha,tau,q,maxfreq);
+        
+        % For star-shaped inclusion parametrization
+        priorpar.ninclusions = 2; % number of interfaces
+        priorpar.v = [0.2 0.4]; % values at each interface
+        
+        priorpar.background = 0.1;
+        priorpar.angles = linspace(0,2*pi,512)';
+        priorpar.mean = -2;
+        priorpar.dim = [priorpar.M,priorpar.ninclusions];
+        priorpar.type = 'starDG';
+        priorpar.center = [0.37,-0.43;-0.44,0.36];
+        priorpar.std = 0.2;
     end
 
 
     
     %% Initialize forward model on fine mesh
+
+
     D = datapar.D;
     % Precomputing finite element matrices and rhs
     fmdl = precomputeFEM(meshpar_fine);
@@ -86,17 +108,32 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     
     D_coarse = interpolateMesh(D',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
     
-    % Precomputing finite element matrices and rhs
-    fmdl_coarse = precomputeFEM(meshpar);
-    fmdl_coarse = precomputeRHS(meshpar,fmdl_coarse,datapar.wfun,datapar.wfungrad);
-    
-    % Precomputing stiffness
-    fmdl_coarse = fixingD(meshpar,fmdl_coarse,D_coarse');
 
+    if strcmpi(priortype,'starDG')
+        fmdl_coarse = precomputeFEM_DG(meshpar);
+        fmdl_coarse = precomputeRHS_DG(meshpar,fmdl_coarse,datapar.wfun,datapar.wfungrad);
+        % Precomputing stiffness
+        fmdl_coarse = fixingD(meshpar,fmdl_coarse,D_coarse');
 
+    else
+        % Precomputing finite element matrices and rhs
+        fmdl_coarse = precomputeFEM(meshpar);
+        fmdl_coarse = precomputeRHS(meshpar,fmdl_coarse,datapar.wfun,datapar.wfungrad);
+        
+        % Precomputing stiffness
+        fmdl_coarse = fixingD(meshpar,fmdl_coarse,D_coarse');
+    end
+   
+
+    % Projection matrices
+    M = 15;
+    trunc = (2*M+1)*M;
+    E = eigenbasisFEM(meshpar_fine,trunc);
+    fmdl.U_proj = fmdl.Carea*E;
+    fmdl_coarse = computeProjectionMatrices_coarse(fmdl_coarse,meshpar,priorpar);
     
     %% Compute samples of G_{fine}(prior_sample) - G_{coarse}(prior_sample)
-    V = zeros(length(meshpar.p),N);
+    V = zeros(trunc,N);
     U = zeros(pN,1);
     
     for i = 1:N
@@ -118,6 +155,12 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
             % push-forward
             gamma = push_forward_star2D(xi_center,theta,datapar.meshpar_fine.p(1,:)',datapar.meshpar_fine.p(2,:)',priorpar);
             gamma_coarse = push_forward_star2D(xi_center,theta,datapar.meshpar.p(1,:)',datapar.meshpar.p(2,:)',priorpar);
+        elseif strcmpi(priortype,'starDG')
+            xi_center = priorpar.center;
+            theta = priorpar.mean+theta;
+            % push-forward
+            gamma = push_forward_star2D(xi_center,theta,datapar.meshpar_fine.p(1,:)',datapar.meshpar_fine.p(2,:)',priorpar);
+            gamma_coarse = push_forward_star2D_interp(xi_center,theta,datapar.meshpar.xq,datapar.meshpar.yq,datapar.meshpar.n,datapar.meshpar.HN,priorpar);
         end
         
         % Evaluating forward model from precomputed matrices
@@ -125,13 +168,36 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         U(meshpar_fine.NZ) = u;
         u = U + datapar.wfun(meshpar_fine.p(1,:)',meshpar_fine.p(2,:)');
     
-        uq = interpolateMesh(u,meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+
         u_coarse = evalFowardModel(fmdl_coarse,meshpar,gamma_coarse);
         U_coarse = zeros(length(meshpar.p),1);
         U_coarse(meshpar.NZ) = u_coarse;
         u_coarse = U_coarse + datapar.wfun(meshpar.p(1,:)',meshpar.p(2,:)');
-        %V(:,i) = uq(meshpar.NZ)-u_coarse;
-        V(:,i) = uq-u_coarse;
+        
+        
+        if strcmpi(priortype,'starDG')
+            % Multiply with gamma
+            data = u.*gamma;
+            data_proj = data'*fmdl.U_proj;
+            u_coarse = u_coarse(meshpar.t(1:3,:));
+            u_coarse = fmdl_coarse.G*u_coarse(:);
+            u_coarse = reshape(u_coarse,[3 meshpar.HN]);
+        
+        
+            data_coarse = gamma_coarse'.*u_coarse;
+            data_proj_coarse = data_coarse(1,:)*fmdl_coarse.U_proj_coarse1 + data_coarse(2,:)*fmdl_coarse.U_proj_coarse2 + data_coarse(3,:)*fmdl_coarse.U_proj_coarse3;
+        else
+            % Multiply with gamma
+            data = u.*gamma;
+            data_coarse = u_coarse.*gamma_coarse;
+
+            % Project to subspace
+            data_proj = data'*fmdl.U_proj;
+            data_proj_coarse = data_coarse'*fmdl_coarse.U_proj_coarse;
+        end
+        
+
+        V(:,i) = data_proj'-data_proj_coarse';
     end
     
     %% Sample statistics

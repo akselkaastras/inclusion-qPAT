@@ -81,11 +81,13 @@ Dfii = Dfii(1);
 
 % Make interpolation points of elements
 % Based on EIDORS elem_select
-n_interp = 4;
+n_interp = 3;
 el_dim = 2;
 % Get element nodes, and reshape
 % need to be of size n_dims_1 x (n_elems*n_dims) for reshape
-el_nodes= p(:,t(1:3,:));
+tt = t(1:3,:)';
+pp = p';
+el_nodes= pp(tt',:);
 el_nodes= reshape(el_nodes, el_dim+1, []);
 
 % Get interpolation matrix
@@ -99,13 +101,22 @@ interp= (interp + 1/(el_dim+1) )/(n_interp+1);
 
 l_interp = size(interp,1);
 mdl_pts = interp*el_nodes;
-mdl_pts = reshape(mdl_pts, l_interp, length(t(1:3,:)), el_dim);
+mdl_pts = reshape(mdl_pts, l_interp, length(meshpar.t(1:3,:)), el_dim);
 mdl_pts = permute(mdl_pts, [2,3,1]);
 
 interp_x = squeeze(mdl_pts(:,1,:));
 interp_y = squeeze(mdl_pts(:,2,:));
 
+HN = size(meshpar.t,2);
 
+n = size(interp_x,2);
+xq = reshape(interp_x,[n*HN 1]);
+yq = reshape(interp_y,[n*HN 1]);
+
+meshpar.n = n;
+meshpar.HN = HN;
+meshpar.xq = xq;
+meshpar.yq = yq;
 meshpar.trix = trix;
 meshpar.triy = triy;
 meshpar.btri_ind = btri_ind;

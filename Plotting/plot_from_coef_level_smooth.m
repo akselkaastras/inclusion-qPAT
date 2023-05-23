@@ -1,7 +1,7 @@
 function plot_from_coef_level_smooth(cn,priorpar)
 
 
-[X,Y] = meshgrid(linspace(-1,1,800));
+[X,Y] = meshgrid(linspace(-1,1,200));
 xq = X(:);
 yq = Y(:);
 N = length(xq);
@@ -10,7 +10,7 @@ n = floor(sqrt(N));
 % make evaluation matrix for Fourierbasis in query points (xq,yq)
 evalpar = makeEvalMatrixFourier_2d(xq,yq,priorpar.maxfreq);
 % evaluate Fourier basis in those points given coefficients cn
-thetaq = evalpar.B * (cn.*priorpar.lambdahalf);
+thetaq = evalpar.B * cn;
 % push-forward
 gamma = push_forward_levelset2D_smooth(thetaq,priorpar);
 % reshape xq and yq coming from meshgrid

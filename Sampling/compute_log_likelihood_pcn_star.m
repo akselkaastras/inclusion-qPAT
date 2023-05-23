@@ -15,11 +15,17 @@ gamma = push_forward_star2D(xi_center,theta,datapar.meshpar.p(1,:)',datapar.mesh
 u = evalFowardModel(fmdl,datapar.meshpar,gamma);
 
 % add source
-%U = zeros(length(datapar.meshpar.p),1);
 datapar.U(datapar.meshpar.NZ) = u;
 u = datapar.U + datapar.W;
 
+% find data
+data = u.*gamma;
+
+% find projection
+data_proj = data'*fmdl.U_proj;
+
 % compute log-likelihood
-v = u.*gamma+datapar.m-datapar.bq;
+v = data_proj'+datapar.m-datapar.bq;
+
 %v = gamma - datapar.bq;
-ll = -1/(2*datapar.epssq_approx)*normFEM(v,fmdl);
+ll = -1/(2*(datapar.epssq_approx))*sum(v.^2);

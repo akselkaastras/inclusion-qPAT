@@ -2,13 +2,13 @@
 clc; clear; close all;
 addpath(genpath(pwd));
 %%
-priortype = 'star';
-noiseseed = [1,2,3,4,5];
-noiselevel = [0.015,0.03,0.06,0.12];
+priortype = 'level';
+noiseseed = [1,1,1,1,1];
+noiselevel = [0.01,0.02,0.04,0.08,0.16];
 
 
-for i=1:5
-    for j=1:4
+for i=1
+    for j=1:5
         seedstr = sprintf('%0.5g',noiseseed(i));
         noisestr = sprintf('%0.5g',noiselevel(j));
         

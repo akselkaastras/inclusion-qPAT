@@ -9903,3 +9903,6143 @@ For product information, visit www.mathworks.com.
 - - 1000000/1000000
 - - Rejections: 975824
 - - Accepted: 2.0%
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- - 500/500000
+- - Rejections: 183
+- - Accepted: 63.4%
+- - 1000/500000
+- - Rejections: 388
+- - Accepted: 59.0%
+- - 1500/500000
+- - Rejections: 638
+- - Accepted: 50.0%
+- - 2000/500000
+- - Rejections: 925
+- - Accepted: 42.6%
+- - 2500/500000
+- - Rejections: 1263
+- - Accepted: 32.4%
+- - 3000/500000
+- - Rejections: 1544
+- - Accepted: 43.8%
+- - 3500/500000
+- - Rejections: 1858
+- - Accepted: 37.2%
+- - 4000/500000
+- - Rejections: 2205
+- - Accepted: 30.6%
+- - 4500/500000
+- - Rejections: 2478
+- - Accepted: 45.4%
+- - 5000/500000
+- - Rejections: 2783
+- - Accepted: 39.0%
+- - 5500/500000
+- - Rejections: 3092
+- - Accepted: 38.2%
+- - 6000/500000
+- - Rejections: 3411
+- - Accepted: 36.2%
+- - 6500/500000
+- - Rejections: 3767
+- - Accepted: 28.8%
+- - 7000/500000
+- - Rejections: 4113
+- - Accepted: 30.8%
+- - 7500/500000
+- - Rejections: 4467
+- - Accepted: 29.2%
+- - 8000/500000
+- - Rejections: 4812
+- - Accepted: 31.0%
+- - 8500/500000
+- - Rejections: 5142
+- - Accepted: 34.0%
+- - 9000/500000
+- - Rejections: 5544
+- - Accepted: 19.6%
+- - 9500/500000
+- - Rejections: 5904
+- - Accepted: 28.0%
+- - 10000/500000
+- - Rejections: 6260
+- - Accepted: 28.8%
+- - 10500/500000
+- - Rejections: 6594
+- - Accepted: 33.2%
+- - 11000/500000
+- - Rejections: 6879
+- - Accepted: 43.0%
+- - 11500/500000
+- - Rejections: 7273
+- - Accepted: 21.2%
+- - 12000/500000
+- - Rejections: 7632
+- - Accepted: 28.2%
+- - 12500/500000
+- - Rejections: 7965
+- - Accepted: 33.4%
+- - 13000/500000
+- - Rejections: 8280
+- - Accepted: 37.0%
+- - 13500/500000
+- - Rejections: 8617
+- - Accepted: 32.6%
+- - 14000/500000
+- - Rejections: 8985
+- - Accepted: 26.4%
+- - 14500/500000
+- - Rejections: 9363
+- - Accepted: 24.4%
+- - 15000/500000
+- - Rejections: 9785
+- - Accepted: 15.6%
+- - 15500/500000
+- - Rejections: 10138
+- - Accepted: 29.4%
+- - 16000/500000
+- - Rejections: 10480
+- - Accepted: 31.6%
+- - 16500/500000
+- - Rejections: 10851
+- - Accepted: 25.8%
+- - 17000/500000
+- - Rejections: 11177
+- - Accepted: 34.8%
+- - 17500/500000
+- - Rejections: 11503
+- - Accepted: 34.8%
+- - 18000/500000
+- - Rejections: 11884
+- - Accepted: 23.8%
+- - 18500/500000
+- - Rejections: 12231
+- - Accepted: 30.6%
+- - 19000/500000
+- - Rejections: 12556
+- - Accepted: 35.0%
+- - 19500/500000
+- - Rejections: 12879
+- - Accepted: 35.4%
+- - 20000/500000
+- - Rejections: 13272
+- - Accepted: 21.4%
+- - 20500/500000
+- - Rejections: 13602
+- - Accepted: 34.0%
+- - 21000/500000
+- - Rejections: 13934
+- - Accepted: 33.6%
+- - 21500/500000
+- - Rejections: 14290
+- - Accepted: 28.8%
+- - 22000/500000
+- - Rejections: 14617
+- - Accepted: 34.6%
+- - 22500/500000
+- - Rejections: 14992
+- - Accepted: 25.0%
+- - 23000/500000
+- - Rejections: 15397
+- - Accepted: 19.0%
+- - 23500/500000
+- - Rejections: 15803
+- - Accepted: 18.8%
+- - 24000/500000
+- - Rejections: 16221
+- - Accepted: 16.4%
+- - 24500/500000
+- - Rejections: 16604
+- - Accepted: 23.4%
+- - 25000/500000
+- - Rejections: 17034
+- - Accepted: 14.0%
+- - jump_size updated to 0.0081504
+- - 25500/500000
+- - Rejections: 17431
+- - Accepted: 20.6%
+- - 26000/500000
+- - Rejections: 17833
+- - Accepted: 19.6%
+- - 26500/500000
+- - Rejections: 18230
+- - Accepted: 20.6%
+- - 27000/500000
+- - Rejections: 18608
+- - Accepted: 24.4%
+- - 27500/500000
+- - Rejections: 18975
+- - Accepted: 26.6%
+- - 28000/500000
+- - Rejections: 19345
+- - Accepted: 26.0%
+- - 28500/500000
+- - Rejections: 19699
+- - Accepted: 29.2%
+- - 29000/500000
+- - Rejections: 20051
+- - Accepted: 29.6%
+- - 29500/500000
+- - Rejections: 20452
+- - Accepted: 19.8%
+- - 30000/500000
+- - Rejections: 20866
+- - Accepted: 17.2%
+- - 30500/500000
+- - Rejections: 21249
+- - Accepted: 23.4%
+- - 31000/500000
+- - Rejections: 21672
+- - Accepted: 15.4%
+- - 31500/500000
+- - Rejections: 22081
+- - Accepted: 18.2%
+- - 32000/500000
+- - Rejections: 22446
+- - Accepted: 27.0%
+- - 32500/500000
+- - Rejections: 22791
+- - Accepted: 31.0%
+- - 33000/500000
+- - Rejections: 23133
+- - Accepted: 31.6%
+- - 33500/500000
+- - Rejections: 23509
+- - Accepted: 24.8%
+- - 34000/500000
+- - Rejections: 23847
+- - Accepted: 32.4%
+- - 34500/500000
+- - Rejections: 24254
+- - Accepted: 18.6%
+- - 35000/500000
+- - Rejections: 24687
+- - Accepted: 13.4%
+- - 35500/500000
+- - Rejections: 25108
+- - Accepted: 15.8%
+- - 36000/500000
+- - Rejections: 25487
+- - Accepted: 24.2%
+- - 36500/500000
+- - Rejections: 25926
+- - Accepted: 12.2%
+- - 37000/500000
+- - Rejections: 26363
+- - Accepted: 12.6%
+- - 37500/500000
+- - Rejections: 26770
+- - Accepted: 18.6%
+- - 38000/500000
+- - Rejections: 27174
+- - Accepted: 19.2%
+- - 38500/500000
+- - Rejections: 27570
+- - Accepted: 20.8%
+- - 39000/500000
+- - Rejections: 27913
+- - Accepted: 31.4%
+- - 39500/500000
+- - Rejections: 28314
+- - Accepted: 19.8%
+- - 40000/500000
+- - Rejections: 28722
+- - Accepted: 18.4%
+- - 40500/500000
+- - Rejections: 29163
+- - Accepted: 11.8%
+- - 41000/500000
+- - Rejections: 29598
+- - Accepted: 13.0%
+- - 41500/500000
+- - Rejections: 30046
+- - Accepted: 10.4%
+- - 42000/500000
+- - Rejections: 30491
+- - Accepted: 11.0%
+- - 42500/500000
+- - Rejections: 30903
+- - Accepted: 17.6%
+- - 43000/500000
+- - Rejections: 31342
+- - Accepted: 12.2%
+- - 43500/500000
+- - Rejections: 31766
+- - Accepted: 15.2%
+- - 44000/500000
+- - Rejections: 32204
+- - Accepted: 12.4%
+- - 44500/500000
+- - Rejections: 32612
+- - Accepted: 18.4%
+- - 45000/500000
+- - Rejections: 33035
+- - Accepted: 15.4%
+- - 45500/500000
+- - Rejections: 33454
+- - Accepted: 16.2%
+- - 46000/500000
+- - Rejections: 33871
+- - Accepted: 16.6%
+- - 46500/500000
+- - Rejections: 34258
+- - Accepted: 22.6%
+- - 47000/500000
+- - Rejections: 34665
+- - Accepted: 18.6%
+- - 47500/500000
+- - Rejections: 35037
+- - Accepted: 25.6%
+- - 48000/500000
+- - Rejections: 35433
+- - Accepted: 20.8%
+- - 48500/500000
+- - Rejections: 35802
+- - Accepted: 26.2%
+- - 49000/500000
+- - Rejections: 36249
+- - Accepted: 10.6%
+- - 49500/500000
+- - Rejections: 36665
+- - Accepted: 16.8%
+- - 50000/500000
+- - Rejections: 37086
+- - Accepted: 15.8%
+- - jump_size updated to 0.007583
+- - 50500/500000
+- - Rejections: 37501
+- - Accepted: 17.0%
+- - 51000/500000
+- - Rejections: 37913
+- - Accepted: 17.6%
+- - 51500/500000
+- - Rejections: 38256
+- - Accepted: 31.4%
+- - 52000/500000
+- - Rejections: 38598
+- - Accepted: 31.6%
+- - 52500/500000
+- - Rejections: 38955
+- - Accepted: 28.6%
+- - 53000/500000
+- - Rejections: 39295
+- - Accepted: 32.0%
+- - 53500/500000
+- - Rejections: 39647
+- - Accepted: 29.6%
+- - 54000/500000
+- - Rejections: 40003
+- - Accepted: 28.8%
+- - 54500/500000
+- - Rejections: 40402
+- - Accepted: 20.2%
+- - 55000/500000
+- - Rejections: 40777
+- - Accepted: 25.0%
+- - 55500/500000
+- - Rejections: 41144
+- - Accepted: 26.6%
+- - 56000/500000
+- - Rejections: 41474
+- - Accepted: 34.0%
+- - 56500/500000
+- - Rejections: 41825
+- - Accepted: 29.8%
+- - 57000/500000
+- - Rejections: 42196
+- - Accepted: 25.8%
+- - 57500/500000
+- - Rejections: 42553
+- - Accepted: 28.6%
+- - 58000/500000
+- - Rejections: 42946
+- - Accepted: 21.4%
+- - 58500/500000
+- - Rejections: 43280
+- - Accepted: 33.2%
+- - 59000/500000
+- - Rejections: 43646
+- - Accepted: 26.8%
+- - 59500/500000
+- - Rejections: 44051
+- - Accepted: 19.0%
+- - 60000/500000
+- - Rejections: 44421
+- - Accepted: 26.0%
+- - 60500/500000
+- - Rejections: 44769
+- - Accepted: 30.4%
+- - 61000/500000
+- - Rejections: 45118
+- - Accepted: 30.2%
+- - 61500/500000
+- - Rejections: 45505
+- - Accepted: 22.6%
+- - 62000/500000
+- - Rejections: 45902
+- - Accepted: 20.6%
+- - 62500/500000
+- - Rejections: 46243
+- - Accepted: 31.8%
+- - 63000/500000
+- - Rejections: 46582
+- - Accepted: 32.2%
+- - 63500/500000
+- - Rejections: 46932
+- - Accepted: 30.0%
+- - 64000/500000
+- - Rejections: 47307
+- - Accepted: 25.0%
+- - 64500/500000
+- - Rejections: 47652
+- - Accepted: 31.0%
+- - 65000/500000
+- - Rejections: 48029
+- - Accepted: 24.6%
+- - 65500/500000
+- - Rejections: 48391
+- - Accepted: 27.6%
+- - 66000/500000
+- - Rejections: 48750
+- - Accepted: 28.2%
+- - 66500/500000
+- - Rejections: 49114
+- - Accepted: 27.2%
+- - 67000/500000
+- - Rejections: 49524
+- - Accepted: 18.0%
+- - 67500/500000
+- - Rejections: 49936
+- - Accepted: 17.6%
+- - 68000/500000
+- - Rejections: 50319
+- - Accepted: 23.4%
+- - 68500/500000
+- - Rejections: 50701
+- - Accepted: 23.6%
+- - 69000/500000
+- - Rejections: 51113
+- - Accepted: 17.6%
+- - 69500/500000
+- - Rejections: 51493
+- - Accepted: 24.0%
+- - 70000/500000
+- - Rejections: 51887
+- - Accepted: 21.2%
+- - 70500/500000
+- - Rejections: 52296
+- - Accepted: 18.2%
+- - 71000/500000
+- - Rejections: 52698
+- - Accepted: 19.6%
+- - 71500/500000
+- - Rejections: 53083
+- - Accepted: 23.0%
+- - 72000/500000
+- - Rejections: 53487
+- - Accepted: 19.2%
+- - 72500/500000
+- - Rejections: 53880
+- - Accepted: 21.4%
+- - 73000/500000
+- - Rejections: 54261
+- - Accepted: 23.8%
+- - 73500/500000
+- - Rejections: 54673
+- - Accepted: 17.6%
+- - 74000/500000
+- - Rejections: 55055
+- - Accepted: 23.6%
+- - 74500/500000
+- - Rejections: 55449
+- - Accepted: 21.2%
+- - 75000/500000
+- - Rejections: 55857
+- - Accepted: 18.4%
+- - jump_size updated to 0.0073636
+- - 75500/500000
+- - Rejections: 56279
+- - Accepted: 15.6%
+- - 76000/500000
+- - Rejections: 56695
+- - Accepted: 16.8%
+- - 76500/500000
+- - Rejections: 57080
+- - Accepted: 23.0%
+- - 77000/500000
+- - Rejections: 57472
+- - Accepted: 21.6%
+- - 77500/500000
+- - Rejections: 57851
+- - Accepted: 24.2%
+- - 78000/500000
+- - Rejections: 58205
+- - Accepted: 29.2%
+- - 78500/500000
+- - Rejections: 58621
+- - Accepted: 16.8%
+- - 79000/500000
+- - Rejections: 59041
+- - Accepted: 16.0%
+- - 79500/500000
+- - Rejections: 59451
+- - Accepted: 18.0%
+- - 80000/500000
+- - Rejections: 59823
+- - Accepted: 25.6%
+- - 80500/500000
+- - Rejections: 60181
+- - Accepted: 28.4%
+- - 81000/500000
+- - Rejections: 60528
+- - Accepted: 30.6%
+- - 81500/500000
+- - Rejections: 60922
+- - Accepted: 21.2%
+- - 82000/500000
+- - Rejections: 61327
+- - Accepted: 19.0%
+- - 82500/500000
+- - Rejections: 61746
+- - Accepted: 16.2%
+- - 83000/500000
+- - Rejections: 62162
+- - Accepted: 16.8%
+- - 83500/500000
+- - Rejections: 62542
+- - Accepted: 24.0%
+- - 84000/500000
+- - Rejections: 62953
+- - Accepted: 17.8%
+- - 84500/500000
+- - Rejections: 63341
+- - Accepted: 22.4%
+- - 85000/500000
+- - Rejections: 63764
+- - Accepted: 15.4%
+- - 85500/500000
+- - Rejections: 64175
+- - Accepted: 17.8%
+- - 86000/500000
+- - Rejections: 64542
+- - Accepted: 26.6%
+- - 86500/500000
+- - Rejections: 64906
+- - Accepted: 27.2%
+- - 87000/500000
+- - Rejections: 65261
+- - Accepted: 29.0%
+- - 87500/500000
+- - Rejections: 65654
+- - Accepted: 21.4%
+- - 88000/500000
+- - Rejections: 66046
+- - Accepted: 21.6%
+- - 88500/500000
+- - Rejections: 66378
+- - Accepted: 33.6%
+- - 89000/500000
+- - Rejections: 66737
+- - Accepted: 28.2%
+- - 89500/500000
+- - Rejections: 67063
+- - Accepted: 34.8%
+- - 90000/500000
+- - Rejections: 67420
+- - Accepted: 28.6%
+- - 90500/500000
+- - Rejections: 67758
+- - Accepted: 32.4%
+- - 91000/500000
+- - Rejections: 68133
+- - Accepted: 25.0%
+- - 91500/500000
+- - Rejections: 68496
+- - Accepted: 27.4%
+- - 92000/500000
+- - Rejections: 68871
+- - Accepted: 25.0%
+- - 92500/500000
+- - Rejections: 69218
+- - Accepted: 30.6%
+- - 93000/500000
+- - Rejections: 69571
+- - Accepted: 29.4%
+- - 93500/500000
+- - Rejections: 69955
+- - Accepted: 23.2%
+- - 94000/500000
+- - Rejections: 70303
+- - Accepted: 30.4%
+- - 94500/500000
+- - Rejections: 70665
+- - Accepted: 27.6%
+- - 95000/500000
+- - Rejections: 71031
+- - Accepted: 26.8%
+- - 95500/500000
+- - Rejections: 71417
+- - Accepted: 22.8%
+- - 96000/500000
+- - Rejections: 71778
+- - Accepted: 27.8%
+- - 96500/500000
+- - Rejections: 72140
+- - Accepted: 27.6%
+- - 97000/500000
+- - Rejections: 72548
+- - Accepted: 18.4%
+- - 97500/500000
+- - Rejections: 72942
+- - Accepted: 21.2%
+- - 98000/500000
+- - Rejections: 73276
+- - Accepted: 33.2%
+- - 98500/500000
+- - Rejections: 73674
+- - Accepted: 20.4%
+- - 99000/500000
+- - Rejections: 74008
+- - Accepted: 33.2%
+- - 99500/500000
+- - Rejections: 74377
+- - Accepted: 26.2%
+- - 100000/500000
+- - Rejections: 74764
+- - Accepted: 22.6%
+- - jump_size updated to 0.0071593
+- - 100500/500000
+- - Rejections: 75091
+- - Accepted: 34.6%
+- - 101000/500000
+- - Rejections: 75474
+- - Accepted: 23.4%
+- - 101500/500000
+- - Rejections: 75859
+- - Accepted: 23.0%
+- - 102000/500000
+- - Rejections: 76207
+- - Accepted: 30.4%
+- - 102500/500000
+- - Rejections: 76599
+- - Accepted: 21.6%
+- - 103000/500000
+- - Rejections: 76960
+- - Accepted: 27.8%
+- - 103500/500000
+- - Rejections: 77376
+- - Accepted: 16.8%
+- - 104000/500000
+- - Rejections: 77783
+- - Accepted: 18.6%
+- - 104500/500000
+- - Rejections: 78114
+- - Accepted: 33.8%
+- - 105000/500000
+- - Rejections: 78467
+- - Accepted: 29.4%
+- - 105500/500000
+- - Rejections: 78792
+- - Accepted: 35.0%
+- - 106000/500000
+- - Rejections: 79150
+- - Accepted: 28.4%
+- - 106500/500000
+- - Rejections: 79527
+- - Accepted: 24.6%
+- - 107000/500000
+- - Rejections: 79937
+- - Accepted: 18.0%
+- - 107500/500000
+- - Rejections: 80249
+- - Accepted: 37.6%
+- - 108000/500000
+- - Rejections: 80633
+- - Accepted: 23.2%
+- - 108500/500000
+- - Rejections: 81008
+- - Accepted: 25.0%
+- - 109000/500000
+- - Rejections: 81376
+- - Accepted: 26.4%
+- - 109500/500000
+- - Rejections: 81744
+- - Accepted: 26.4%
+- - 110000/500000
+- - Rejections: 82123
+- - Accepted: 24.2%
+- - 110500/500000
+- - Rejections: 82467
+- - Accepted: 31.2%
+- - 111000/500000
+- - Rejections: 82808
+- - Accepted: 31.8%
+- - 111500/500000
+- - Rejections: 83140
+- - Accepted: 33.6%
+- - 112000/500000
+- - Rejections: 83490
+- - Accepted: 30.0%
+- - 112500/500000
+- - Rejections: 83877
+- - Accepted: 22.6%
+- - 113000/500000
+- - Rejections: 84248
+- - Accepted: 25.8%
+- - 113500/500000
+- - Rejections: 84605
+- - Accepted: 28.6%
+- - 114000/500000
+- - Rejections: 84953
+- - Accepted: 30.4%
+- - 114500/500000
+- - Rejections: 85334
+- - Accepted: 23.8%
+- - 115000/500000
+- - Rejections: 85697
+- - Accepted: 27.4%
+- - 115500/500000
+- - Rejections: 86093
+- - Accepted: 20.8%
+- - 116000/500000
+- - Rejections: 86472
+- - Accepted: 24.2%
+- - 116500/500000
+- - Rejections: 86855
+- - Accepted: 23.4%
+- - 117000/500000
+- - Rejections: 87227
+- - Accepted: 25.6%
+- - 117500/500000
+- - Rejections: 87586
+- - Accepted: 28.2%
+- - 118000/500000
+- - Rejections: 87973
+- - Accepted: 22.6%
+- - 118500/500000
+- - Rejections: 88359
+- - Accepted: 22.8%
+- - 119000/500000
+- - Rejections: 88777
+- - Accepted: 16.4%
+- - 119500/500000
+- - Rejections: 89204
+- - Accepted: 14.6%
+- - 120000/500000
+- - Rejections: 89577
+- - Accepted: 25.4%
+- - 120500/500000
+- - Rejections: 89951
+- - Accepted: 25.2%
+- - 121000/500000
+- - Rejections: 90303
+- - Accepted: 29.6%
+- - 121500/500000
+- - Rejections: 90683
+- - Accepted: 24.0%
+- - 122000/500000
+- - Rejections: 91034
+- - Accepted: 29.8%
+- - 122500/500000
+- - Rejections: 91332
+- - Accepted: 40.4%
+- - 123000/500000
+- - Rejections: 91682
+- - Accepted: 30.0%
+- - 123500/500000
+- - Rejections: 92001
+- - Accepted: 36.2%
+- - 124000/500000
+- - Rejections: 92389
+- - Accepted: 22.4%
+- - 124500/500000
+- - Rejections: 92756
+- - Accepted: 26.6%
+- - 125000/500000
+- - Rejections: 93119
+- - Accepted: 27.4%
+- - jump_size updated to 0.0070506
+- - 125500/500000
+- - Rejections: 93510
+- - Accepted: 21.8%
+- - 126000/500000
+- - Rejections: 93825
+- - Accepted: 37.0%
+- - 126500/500000
+- - Rejections: 94198
+- - Accepted: 25.4%
+- - 127000/500000
+- - Rejections: 94576
+- - Accepted: 24.4%
+- - 127500/500000
+- - Rejections: 94962
+- - Accepted: 22.8%
+- - 128000/500000
+- - Rejections: 95284
+- - Accepted: 35.6%
+- - 128500/500000
+- - Rejections: 95625
+- - Accepted: 31.8%
+- - 129000/500000
+- - Rejections: 95984
+- - Accepted: 28.2%
+- - 129500/500000
+- - Rejections: 96429
+- - Accepted: 11.0%
+- - 130000/500000
+- - Rejections: 96789
+- - Accepted: 28.0%
+- - 130500/500000
+- - Rejections: 97169
+- - Accepted: 24.0%
+- - 131000/500000
+- - Rejections: 97574
+- - Accepted: 19.0%
+- - 131500/500000
+- - Rejections: 97939
+- - Accepted: 27.0%
+- - 132000/500000
+- - Rejections: 98303
+- - Accepted: 27.2%
+- - 132500/500000
+- - Rejections: 98687
+- - Accepted: 23.2%
+- - 133000/500000
+- - Rejections: 99019
+- - Accepted: 33.6%
+- - 133500/500000
+- - Rejections: 99366
+- - Accepted: 30.6%
+- - 134000/500000
+- - Rejections: 99755
+- - Accepted: 22.2%
+- - 134500/500000
+- - Rejections: 100114
+- - Accepted: 28.2%
+- - 135000/500000
+- - Rejections: 100444
+- - Accepted: 34.0%
+- - 135500/500000
+- - Rejections: 100792
+- - Accepted: 30.4%
+- - 136000/500000
+- - Rejections: 101125
+- - Accepted: 33.4%
+- - 136500/500000
+- - Rejections: 101463
+- - Accepted: 32.4%
+- - 137000/500000
+- - Rejections: 101800
+- - Accepted: 32.6%
+- - 137500/500000
+- - Rejections: 102163
+- - Accepted: 27.4%
+- - 138000/500000
+- - Rejections: 102524
+- - Accepted: 27.8%
+- - 138500/500000
+- - Rejections: 102942
+- - Accepted: 16.4%
+- - 139000/500000
+- - Rejections: 103336
+- - Accepted: 21.2%
+- - 139500/500000
+- - Rejections: 103733
+- - Accepted: 20.6%
+- - 140000/500000
+- - Rejections: 104105
+- - Accepted: 25.6%
+- - 140500/500000
+- - Rejections: 104483
+- - Accepted: 24.4%
+- - 141000/500000
+- - Rejections: 104849
+- - Accepted: 26.8%
+- - 141500/500000
+- - Rejections: 105247
+- - Accepted: 20.4%
+- - 142000/500000
+- - Rejections: 105625
+- - Accepted: 24.4%
+- - 142500/500000
+- - Rejections: 105976
+- - Accepted: 29.8%
+- - 143000/500000
+- - Rejections: 106322
+- - Accepted: 30.8%
+- - 143500/500000
+- - Rejections: 106689
+- - Accepted: 26.6%
+- - 144000/500000
+- - Rejections: 107017
+- - Accepted: 34.4%
+- - 144500/500000
+- - Rejections: 107362
+- - Accepted: 31.0%
+- - 145000/500000
+- - Rejections: 107735
+- - Accepted: 25.4%
+- - 145500/500000
+- - Rejections: 108088
+- - Accepted: 29.4%
+- - 146000/500000
+- - Rejections: 108453
+- - Accepted: 27.0%
+- - 146500/500000
+- - Rejections: 108839
+- - Accepted: 22.8%
+- - 147000/500000
+- - Rejections: 109213
+- - Accepted: 25.2%
+- - 147500/500000
+- - Rejections: 109580
+- - Accepted: 26.6%
+- - 148000/500000
+- - Rejections: 109889
+- - Accepted: 38.2%
+- - 148500/500000
+- - Rejections: 110229
+- - Accepted: 32.0%
+- - 149000/500000
+- - Rejections: 110573
+- - Accepted: 31.2%
+- - 149500/500000
+- - Rejections: 110929
+- - Accepted: 28.8%
+- - 150000/500000
+- - Rejections: 111271
+- - Accepted: 31.6%
+- - jump_size updated to 0.0069759
+- - 150500/500000
+- - Rejections: 111616
+- - Accepted: 31.0%
+- - 151000/500000
+- - Rejections: 111949
+- - Accepted: 33.4%
+- - 151500/500000
+- - Rejections: 112335
+- - Accepted: 22.8%
+- - 152000/500000
+- - Rejections: 112686
+- - Accepted: 29.8%
+- - 152500/500000
+- - Rejections: 113033
+- - Accepted: 30.6%
+- - 153000/500000
+- - Rejections: 113389
+- - Accepted: 28.8%
+- - 153500/500000
+- - Rejections: 113717
+- - Accepted: 34.4%
+- - 154000/500000
+- - Rejections: 114023
+- - Accepted: 38.8%
+- - 154500/500000
+- - Rejections: 114330
+- - Accepted: 38.6%
+- - 155000/500000
+- - Rejections: 114727
+- - Accepted: 20.6%
+- - 155500/500000
+- - Rejections: 115145
+- - Accepted: 16.4%
+- - 156000/500000
+- - Rejections: 115498
+- - Accepted: 29.4%
+- - 156500/500000
+- - Rejections: 115813
+- - Accepted: 37.0%
+- - 157000/500000
+- - Rejections: 116201
+- - Accepted: 22.4%
+- - 157500/500000
+- - Rejections: 116545
+- - Accepted: 31.2%
+- - 158000/500000
+- - Rejections: 116916
+- - Accepted: 25.8%
+- - 158500/500000
+- - Rejections: 117260
+- - Accepted: 31.2%
+- - 159000/500000
+- - Rejections: 117596
+- - Accepted: 32.8%
+- - 159500/500000
+- - Rejections: 117958
+- - Accepted: 27.6%
+- - 160000/500000
+- - Rejections: 118319
+- - Accepted: 27.8%
+- - 160500/500000
+- - Rejections: 118663
+- - Accepted: 31.2%
+- - 161000/500000
+- - Rejections: 119009
+- - Accepted: 30.8%
+- - 161500/500000
+- - Rejections: 119342
+- - Accepted: 33.4%
+- - 162000/500000
+- - Rejections: 119664
+- - Accepted: 35.6%
+- - 162500/500000
+- - Rejections: 120026
+- - Accepted: 27.6%
+- - 163000/500000
+- - Rejections: 120364
+- - Accepted: 32.4%
+- - 163500/500000
+- - Rejections: 120682
+- - Accepted: 36.4%
+- - 164000/500000
+- - Rejections: 121031
+- - Accepted: 30.2%
+- - 164500/500000
+- - Rejections: 121355
+- - Accepted: 35.2%
+- - 165000/500000
+- - Rejections: 121667
+- - Accepted: 37.6%
+- - 165500/500000
+- - Rejections: 121996
+- - Accepted: 34.2%
+- - 166000/500000
+- - Rejections: 122369
+- - Accepted: 25.4%
+- - 166500/500000
+- - Rejections: 122761
+- - Accepted: 21.6%
+- - 167000/500000
+- - Rejections: 123100
+- - Accepted: 32.2%
+- - 167500/500000
+- - Rejections: 123418
+- - Accepted: 36.4%
+- - 168000/500000
+- - Rejections: 123764
+- - Accepted: 30.8%
+- - 168500/500000
+- - Rejections: 124088
+- - Accepted: 35.2%
+- - 169000/500000
+- - Rejections: 124442
+- - Accepted: 29.2%
+- - 169500/500000
+- - Rejections: 124851
+- - Accepted: 18.2%
+- - 170000/500000
+- - Rejections: 125184
+- - Accepted: 33.4%
+- - 170500/500000
+- - Rejections: 125496
+- - Accepted: 37.6%
+- - 171000/500000
+- - Rejections: 125823
+- - Accepted: 34.6%
+- - 171500/500000
+- - Rejections: 126136
+- - Accepted: 37.4%
+- - 172000/500000
+- - Rejections: 126490
+- - Accepted: 29.2%
+- - 172500/500000
+- - Rejections: 126810
+- - Accepted: 36.0%
+- - 173000/500000
+- - Rejections: 127209
+- - Accepted: 20.2%
+- - 173500/500000
+- - Rejections: 127563
+- - Accepted: 29.2%
+- - 174000/500000
+- - Rejections: 127865
+- - Accepted: 39.6%
+- - 174500/500000
+- - Rejections: 128229
+- - Accepted: 27.2%
+- - 175000/500000
+- - Rejections: 128616
+- - Accepted: 22.6%
+- - jump_size updated to 0.0069922
+- - 175500/500000
+- - Rejections: 128949
+- - Accepted: 33.4%
+- - 176000/500000
+- - Rejections: 129327
+- - Accepted: 24.4%
+- - 176500/500000
+- - Rejections: 129648
+- - Accepted: 35.8%
+- - 177000/500000
+- - Rejections: 130001
+- - Accepted: 29.4%
+- - 177500/500000
+- - Rejections: 130360
+- - Accepted: 28.2%
+- - 178000/500000
+- - Rejections: 130680
+- - Accepted: 36.0%
+- - 178500/500000
+- - Rejections: 131054
+- - Accepted: 25.2%
+- - 179000/500000
+- - Rejections: 131332
+- - Accepted: 44.4%
+- - 179500/500000
+- - Rejections: 131688
+- - Accepted: 28.8%
+- - 180000/500000
+- - Rejections: 132011
+- - Accepted: 35.4%
+- - 180500/500000
+- - Rejections: 132367
+- - Accepted: 28.8%
+- - 181000/500000
+- - Rejections: 132746
+- - Accepted: 24.2%
+- - 181500/500000
+- - Rejections: 133058
+- - Accepted: 37.6%
+- - 182000/500000
+- - Rejections: 133390
+- - Accepted: 33.6%
+- - 182500/500000
+- - Rejections: 133725
+- - Accepted: 33.0%
+- - 183000/500000
+- - Rejections: 134032
+- - Accepted: 38.6%
+- - 183500/500000
+- - Rejections: 134407
+- - Accepted: 25.0%
+- - 184000/500000
+- - Rejections: 134799
+- - Accepted: 21.6%
+- - 184500/500000
+- - Rejections: 135142
+- - Accepted: 31.4%
+- - 185000/500000
+- - Rejections: 135515
+- - Accepted: 25.4%
+- - 185500/500000
+- - Rejections: 135870
+- - Accepted: 29.0%
+- - 186000/500000
+- - Rejections: 136266
+- - Accepted: 20.8%
+- - 186500/500000
+- - Rejections: 136658
+- - Accepted: 21.6%
+- - 187000/500000
+- - Rejections: 137006
+- - Accepted: 30.4%
+- - 187500/500000
+- - Rejections: 137356
+- - Accepted: 30.0%
+- - 188000/500000
+- - Rejections: 137674
+- - Accepted: 36.4%
+- - 188500/500000
+- - Rejections: 138025
+- - Accepted: 29.8%
+- - 189000/500000
+- - Rejections: 138382
+- - Accepted: 28.6%
+- - 189500/500000
+- - Rejections: 138723
+- - Accepted: 31.8%
+- - 190000/500000
+- - Rejections: 139016
+- - Accepted: 41.4%
+- - 190500/500000
+- - Rejections: 139366
+- - Accepted: 30.0%
+- - 191000/500000
+- - Rejections: 139707
+- - Accepted: 31.8%
+- - 191500/500000
+- - Rejections: 140081
+- - Accepted: 25.2%
+- - 192000/500000
+- - Rejections: 140425
+- - Accepted: 31.2%
+- - 192500/500000
+- - Rejections: 140829
+- - Accepted: 19.2%
+- - 193000/500000
+- - Rejections: 141238
+- - Accepted: 18.2%
+- - 193500/500000
+- - Rejections: 141593
+- - Accepted: 29.0%
+- - 194000/500000
+- - Rejections: 142008
+- - Accepted: 17.0%
+- - 194500/500000
+- - Rejections: 142375
+- - Accepted: 26.6%
+- - 195000/500000
+- - Rejections: 142727
+- - Accepted: 29.6%
+- - 195500/500000
+- - Rejections: 143063
+- - Accepted: 32.8%
+- - 196000/500000
+- - Rejections: 143414
+- - Accepted: 29.8%
+- - 196500/500000
+- - Rejections: 143759
+- - Accepted: 31.0%
+- - 197000/500000
+- - Rejections: 144105
+- - Accepted: 30.8%
+- - 197500/500000
+- - Rejections: 144441
+- - Accepted: 32.8%
+- - 198000/500000
+- - Rejections: 144747
+- - Accepted: 38.8%
+- - 198500/500000
+- - Rejections: 145102
+- - Accepted: 29.0%
+- - 199000/500000
+- - Rejections: 145434
+- - Accepted: 33.6%
+- - 199500/500000
+- - Rejections: 145776
+- - Accepted: 31.6%
+- - 200000/500000
+- - Rejections: 146117
+- - Accepted: 31.8%
+- - jump_size updated to 0.0069921
+- - 200500/500000
+- - Rejections: 146479
+- - Accepted: 27.6%
+- - 201000/500000
+- - Rejections: 146870
+- - Accepted: 21.8%
+- - 201500/500000
+- - Rejections: 147215
+- - Accepted: 31.0%
+- - 202000/500000
+- - Rejections: 147563
+- - Accepted: 30.4%
+- - 202500/500000
+- - Rejections: 147968
+- - Accepted: 19.0%
+- - 203000/500000
+- - Rejections: 148391
+- - Accepted: 15.4%
+- - 203500/500000
+- - Rejections: 148787
+- - Accepted: 20.8%
+- - 204000/500000
+- - Rejections: 149153
+- - Accepted: 26.8%
+- - 204500/500000
+- - Rejections: 149500
+- - Accepted: 30.6%
+- - 205000/500000
+- - Rejections: 149845
+- - Accepted: 31.0%
+- - 205500/500000
+- - Rejections: 150185
+- - Accepted: 32.0%
+- - 206000/500000
+- - Rejections: 150548
+- - Accepted: 27.4%
+- - 206500/500000
+- - Rejections: 150902
+- - Accepted: 29.2%
+- - 207000/500000
+- - Rejections: 151268
+- - Accepted: 26.8%
+- - 207500/500000
+- - Rejections: 151667
+- - Accepted: 20.2%
+- - 208000/500000
+- - Rejections: 152037
+- - Accepted: 26.0%
+- - 208500/500000
+- - Rejections: 152482
+- - Accepted: 11.0%
+- - 209000/500000
+- - Rejections: 152932
+- - Accepted: 10.0%
+- - 209500/500000
+- - Rejections: 153335
+- - Accepted: 19.4%
+- - 210000/500000
+- - Rejections: 153693
+- - Accepted: 28.4%
+- - 210500/500000
+- - Rejections: 154133
+- - Accepted: 12.0%
+- - 211000/500000
+- - Rejections: 154518
+- - Accepted: 23.0%
+- - 211500/500000
+- - Rejections: 154894
+- - Accepted: 24.8%
+- - 212000/500000
+- - Rejections: 155302
+- - Accepted: 18.4%
+- - 212500/500000
+- - Rejections: 155682
+- - Accepted: 24.0%
+- - 213000/500000
+- - Rejections: 156029
+- - Accepted: 30.6%
+- - 213500/500000
+- - Rejections: 156404
+- - Accepted: 25.0%
+- - 214000/500000
+- - Rejections: 156774
+- - Accepted: 26.0%
+- - 214500/500000
+- - Rejections: 157118
+- - Accepted: 31.2%
+- - 215000/500000
+- - Rejections: 157482
+- - Accepted: 27.2%
+- - 215500/500000
+- - Rejections: 157847
+- - Accepted: 27.0%
+- - 216000/500000
+- - Rejections: 158205
+- - Accepted: 28.4%
+- - 216500/500000
+- - Rejections: 158532
+- - Accepted: 34.6%
+- - 217000/500000
+- - Rejections: 158886
+- - Accepted: 29.2%
+- - 217500/500000
+- - Rejections: 159297
+- - Accepted: 17.8%
+- - 218000/500000
+- - Rejections: 159657
+- - Accepted: 28.0%
+- - 218500/500000
+- - Rejections: 160028
+- - Accepted: 25.8%
+- - 219000/500000
+- - Rejections: 160388
+- - Accepted: 28.0%
+- - 219500/500000
+- - Rejections: 160740
+- - Accepted: 29.6%
+- - 220000/500000
+- - Rejections: 161070
+- - Accepted: 34.0%
+- - 220500/500000
+- - Rejections: 161427
+- - Accepted: 28.6%
+- - 221000/500000
+- - Rejections: 161790
+- - Accepted: 27.4%
+- - 221500/500000
+- - Rejections: 162144
+- - Accepted: 29.2%
+- - 222000/500000
+- - Rejections: 162512
+- - Accepted: 26.4%
+- - 222500/500000
+- - Rejections: 162909
+- - Accepted: 20.6%
+- - 223000/500000
+- - Rejections: 163332
+- - Accepted: 15.4%
+- - 223500/500000
+- - Rejections: 163727
+- - Accepted: 21.0%
+- - 224000/500000
+- - Rejections: 164130
+- - Accepted: 19.4%
+- - 224500/500000
+- - Rejections: 164555
+- - Accepted: 15.0%
+- - 225000/500000
+- - Rejections: 164922
+- - Accepted: 26.6%
+- - jump_size updated to 0.0068714
+- - 225500/500000
+- - Rejections: 165284
+- - Accepted: 27.6%
+- - 226000/500000
+- - Rejections: 165669
+- - Accepted: 23.0%
+- - 226500/500000
+- - Rejections: 166075
+- - Accepted: 18.8%
+- - 227000/500000
+- - Rejections: 166417
+- - Accepted: 31.6%
+- - 227500/500000
+- - Rejections: 166803
+- - Accepted: 22.8%
+- - 228000/500000
+- - Rejections: 167221
+- - Accepted: 16.4%
+- - 228500/500000
+- - Rejections: 167566
+- - Accepted: 31.0%
+- - 229000/500000
+- - Rejections: 167963
+- - Accepted: 20.6%
+- - 229500/500000
+- - Rejections: 168338
+- - Accepted: 25.0%
+- - 230000/500000
+- - Rejections: 168737
+- - Accepted: 20.2%
+- - 230500/500000
+- - Rejections: 169122
+- - Accepted: 23.0%
+- - 231000/500000
+- - Rejections: 169466
+- - Accepted: 31.2%
+- - 231500/500000
+- - Rejections: 169824
+- - Accepted: 28.4%
+- - 232000/500000
+- - Rejections: 170211
+- - Accepted: 22.6%
+- - 232500/500000
+- - Rejections: 170607
+- - Accepted: 20.8%
+- - 233000/500000
+- - Rejections: 170961
+- - Accepted: 29.2%
+- - 233500/500000
+- - Rejections: 171324
+- - Accepted: 27.4%
+- - 234000/500000
+- - Rejections: 171725
+- - Accepted: 19.8%
+- - 234500/500000
+- - Rejections: 172059
+- - Accepted: 33.2%
+- - 235000/500000
+- - Rejections: 172403
+- - Accepted: 31.2%
+- - 235500/500000
+- - Rejections: 172776
+- - Accepted: 25.4%
+- - 236000/500000
+- - Rejections: 173145
+- - Accepted: 26.2%
+- - 236500/500000
+- - Rejections: 173498
+- - Accepted: 29.4%
+- - 237000/500000
+- - Rejections: 173851
+- - Accepted: 29.4%
+- - 237500/500000
+- - Rejections: 174203
+- - Accepted: 29.6%
+- - 238000/500000
+- - Rejections: 174562
+- - Accepted: 28.2%
+- - 238500/500000
+- - Rejections: 174921
+- - Accepted: 28.2%
+- - 239000/500000
+- - Rejections: 175315
+- - Accepted: 21.2%
+- - 239500/500000
+- - Rejections: 175687
+- - Accepted: 25.6%
+- - 240000/500000
+- - Rejections: 176057
+- - Accepted: 26.0%
+- - 240500/500000
+- - Rejections: 176476
+- - Accepted: 16.2%
+- - 241000/500000
+- - Rejections: 176880
+- - Accepted: 19.2%
+- - 241500/500000
+- - Rejections: 177249
+- - Accepted: 26.2%
+- - 242000/500000
+- - Rejections: 177598
+- - Accepted: 30.2%
+- - 242500/500000
+- - Rejections: 177944
+- - Accepted: 30.8%
+- - 243000/500000
+- - Rejections: 178301
+- - Accepted: 28.6%
+- - 243500/500000
+- - Rejections: 178685
+- - Accepted: 23.2%
+- - 244000/500000
+- - Rejections: 179035
+- - Accepted: 30.0%
+- - 244500/500000
+- - Rejections: 179417
+- - Accepted: 23.6%
+- - 245000/500000
+- - Rejections: 179779
+- - Accepted: 27.6%
+- - 245500/500000
+- - Rejections: 180188
+- - Accepted: 18.2%
+- - 246000/500000
+- - Rejections: 180577
+- - Accepted: 22.2%
+- - 246500/500000
+- - Rejections: 180997
+- - Accepted: 16.0%
+- - 247000/500000
+- - Rejections: 181413
+- - Accepted: 16.8%
+- - 247500/500000
+- - Rejections: 181831
+- - Accepted: 16.4%
+- - 248000/500000
+- - Rejections: 182205
+- - Accepted: 25.2%
+- - 248500/500000
+- - Rejections: 182612
+- - Accepted: 18.6%
+- - 249000/500000
+- - Rejections: 182966
+- - Accepted: 29.2%
+- - 249500/500000
+- - Rejections: 183289
+- - Accepted: 35.4%
+- - 250000/500000
+- - Rejections: 183638
+- - Accepted: 30.2%
+- - jump_size updated to 0.0067665
+- - 250500/500000
+- - Rejections: 183962
+- - Accepted: 35.2%
+- - 251000/500000
+- - Rejections: 184254
+- - Accepted: 41.6%
+- - 251500/500000
+- - Rejections: 184597
+- - Accepted: 31.4%
+- - 252000/500000
+- - Rejections: 184915
+- - Accepted: 36.4%
+- - 252500/500000
+- - Rejections: 185261
+- - Accepted: 30.8%
+- - 253000/500000
+- - Rejections: 185628
+- - Accepted: 26.6%
+- - 253500/500000
+- - Rejections: 185982
+- - Accepted: 29.2%
+- - 254000/500000
+- - Rejections: 186348
+- - Accepted: 26.8%
+- - 254500/500000
+- - Rejections: 186666
+- - Accepted: 36.4%
+- - 255000/500000
+- - Rejections: 187011
+- - Accepted: 31.0%
+- - 255500/500000
+- - Rejections: 187371
+- - Accepted: 28.0%
+- - 256000/500000
+- - Rejections: 187709
+- - Accepted: 32.4%
+- - 256500/500000
+- - Rejections: 188105
+- - Accepted: 20.8%
+- - 257000/500000
+- - Rejections: 188438
+- - Accepted: 33.4%
+- - 257500/500000
+- - Rejections: 188810
+- - Accepted: 25.6%
+- - 258000/500000
+- - Rejections: 189194
+- - Accepted: 23.2%
+- - 258500/500000
+- - Rejections: 189547
+- - Accepted: 29.4%
+- - 259000/500000
+- - Rejections: 189887
+- - Accepted: 32.0%
+- - 259500/500000
+- - Rejections: 190251
+- - Accepted: 27.2%
+- - 260000/500000
+- - Rejections: 190541
+- - Accepted: 42.0%
+- - 260500/500000
+- - Rejections: 190858
+- - Accepted: 36.6%
+- - 261000/500000
+- - Rejections: 191192
+- - Accepted: 33.2%
+- - 261500/500000
+- - Rejections: 191515
+- - Accepted: 35.4%
+- - 262000/500000
+- - Rejections: 191917
+- - Accepted: 19.6%
+- - 262500/500000
+- - Rejections: 192295
+- - Accepted: 24.4%
+- - 263000/500000
+- - Rejections: 192651
+- - Accepted: 28.8%
+- - 263500/500000
+- - Rejections: 193018
+- - Accepted: 26.6%
+- - 264000/500000
+- - Rejections: 193349
+- - Accepted: 33.8%
+- - 264500/500000
+- - Rejections: 193693
+- - Accepted: 31.2%
+- - 265000/500000
+- - Rejections: 194057
+- - Accepted: 27.2%
+- - 265500/500000
+- - Rejections: 194400
+- - Accepted: 31.4%
+- - 266000/500000
+- - Rejections: 194798
+- - Accepted: 20.4%
+- - 266500/500000
+- - Rejections: 195130
+- - Accepted: 33.6%
+- - 267000/500000
+- - Rejections: 195485
+- - Accepted: 29.0%
+- - 267500/500000
+- - Rejections: 195830
+- - Accepted: 31.0%
+- - 268000/500000
+- - Rejections: 196150
+- - Accepted: 36.0%
+- - 268500/500000
+- - Rejections: 196460
+- - Accepted: 38.0%
+- - 269000/500000
+- - Rejections: 196838
+- - Accepted: 24.4%
+- - 269500/500000
+- - Rejections: 197238
+- - Accepted: 20.0%
+- - 270000/500000
+- - Rejections: 197605
+- - Accepted: 26.6%
+- - 270500/500000
+- - Rejections: 197975
+- - Accepted: 26.0%
+- - 271000/500000
+- - Rejections: 198334
+- - Accepted: 28.2%
+- - 271500/500000
+- - Rejections: 198714
+- - Accepted: 24.0%
+- - 272000/500000
+- - Rejections: 199047
+- - Accepted: 33.4%
+- - 272500/500000
+- - Rejections: 199396
+- - Accepted: 30.2%
+- - 273000/500000
+- - Rejections: 199772
+- - Accepted: 24.8%
+- - 273500/500000
+- - Rejections: 200118
+- - Accepted: 30.8%
+- - 274000/500000
+- - Rejections: 200479
+- - Accepted: 27.8%
+- - 274500/500000
+- - Rejections: 200822
+- - Accepted: 31.4%
+- - 275000/500000
+- - Rejections: 201147
+- - Accepted: 35.0%
+- - jump_size updated to 0.0067658
+- - 275500/500000
+- - Rejections: 201538
+- - Accepted: 21.8%
+- - 276000/500000
+- - Rejections: 201923
+- - Accepted: 23.0%
+- - 276500/500000
+- - Rejections: 202300
+- - Accepted: 24.6%
+- - 277000/500000
+- - Rejections: 202664
+- - Accepted: 27.2%
+- - 277500/500000
+- - Rejections: 203029
+- - Accepted: 27.0%
+- - 278000/500000
+- - Rejections: 203422
+- - Accepted: 21.4%
+- - 278500/500000
+- - Rejections: 203791
+- - Accepted: 26.2%
+- - 279000/500000
+- - Rejections: 204139
+- - Accepted: 30.4%
+- - 279500/500000
+- - Rejections: 204499
+- - Accepted: 28.0%
+- - 280000/500000
+- - Rejections: 204875
+- - Accepted: 24.8%
+- - 280500/500000
+- - Rejections: 205220
+- - Accepted: 31.0%
+- - 281000/500000
+- - Rejections: 205540
+- - Accepted: 36.0%
+- - 281500/500000
+- - Rejections: 205901
+- - Accepted: 27.8%
+- - 282000/500000
+- - Rejections: 206214
+- - Accepted: 37.4%
+- - 282500/500000
+- - Rejections: 206589
+- - Accepted: 25.0%
+- - 283000/500000
+- - Rejections: 207052
+- - Accepted: 7.4%
+- - 283500/500000
+- - Rejections: 207412
+- - Accepted: 28.0%
+- - 284000/500000
+- - Rejections: 207790
+- - Accepted: 24.4%
+- - 284500/500000
+- - Rejections: 208174
+- - Accepted: 23.2%
+- - 285000/500000
+- - Rejections: 208541
+- - Accepted: 26.6%
+- - 285500/500000
+- - Rejections: 208879
+- - Accepted: 32.4%
+- - 286000/500000
+- - Rejections: 209232
+- - Accepted: 29.4%
+- - 286500/500000
+- - Rejections: 209621
+- - Accepted: 22.2%
+- - 287000/500000
+- - Rejections: 210033
+- - Accepted: 17.6%
+- - 287500/500000
+- - Rejections: 210438
+- - Accepted: 19.0%
+- - 288000/500000
+- - Rejections: 210805
+- - Accepted: 26.6%
+- - 288500/500000
+- - Rejections: 211124
+- - Accepted: 36.2%
+- - 289000/500000
+- - Rejections: 211465
+- - Accepted: 31.8%
+- - 289500/500000
+- - Rejections: 211870
+- - Accepted: 19.0%
+- - 290000/500000
+- - Rejections: 212255
+- - Accepted: 23.0%
+- - 290500/500000
+- - Rejections: 212689
+- - Accepted: 13.2%
+- - 291000/500000
+- - Rejections: 213163
+- - Accepted: 5.2%
+- - 291500/500000
+- - Rejections: 213599
+- - Accepted: 12.8%
+- - 292000/500000
+- - Rejections: 214061
+- - Accepted: 7.6%
+- - 292500/500000
+- - Rejections: 214409
+- - Accepted: 30.4%
+- - 293000/500000
+- - Rejections: 214786
+- - Accepted: 24.6%
+- - 293500/500000
+- - Rejections: 215122
+- - Accepted: 32.8%
+- - 294000/500000
+- - Rejections: 215518
+- - Accepted: 20.8%
+- - 294500/500000
+- - Rejections: 215926
+- - Accepted: 18.4%
+- - 295000/500000
+- - Rejections: 216299
+- - Accepted: 25.4%
+- - 295500/500000
+- - Rejections: 216654
+- - Accepted: 29.0%
+- - 296000/500000
+- - Rejections: 217056
+- - Accepted: 19.6%
+- - 296500/500000
+- - Rejections: 217422
+- - Accepted: 26.8%
+- - 297000/500000
+- - Rejections: 217733
+- - Accepted: 37.8%
+- - 297500/500000
+- - Rejections: 218063
+- - Accepted: 34.0%
+- - 298000/500000
+- - Rejections: 218422
+- - Accepted: 28.2%
+- - 298500/500000
+- - Rejections: 218795
+- - Accepted: 25.4%
+- - 299000/500000
+- - Rejections: 219157
+- - Accepted: 27.6%
+- - 299500/500000
+- - Rejections: 219514
+- - Accepted: 28.6%
+- - 300000/500000
+- - Rejections: 219927
+- - Accepted: 17.4%
+- - jump_size updated to 0.0066665
+- - 300500/500000
+- - Rejections: 220373
+- - Accepted: 10.8%
+- - 301000/500000
+- - Rejections: 220722
+- - Accepted: 30.2%
+- - 301500/500000
+- - Rejections: 221080
+- - Accepted: 28.4%
+- - 302000/500000
+- - Rejections: 221423
+- - Accepted: 31.4%
+- - 302500/500000
+- - Rejections: 221754
+- - Accepted: 33.8%
+- - 303000/500000
+- - Rejections: 222142
+- - Accepted: 22.4%
+- - 303500/500000
+- - Rejections: 222520
+- - Accepted: 24.4%
+- - 304000/500000
+- - Rejections: 222883
+- - Accepted: 27.4%
+- - 304500/500000
+- - Rejections: 223319
+- - Accepted: 12.8%
+- - 305000/500000
+- - Rejections: 223787
+- - Accepted: 6.4%
+- - 305500/500000
+- - Rejections: 224199
+- - Accepted: 17.6%
+- - 306000/500000
+- - Rejections: 224557
+- - Accepted: 28.4%
+- - 306500/500000
+- - Rejections: 224897
+- - Accepted: 32.0%
+- - 307000/500000
+- - Rejections: 225249
+- - Accepted: 29.6%
+- - 307500/500000
+- - Rejections: 225598
+- - Accepted: 30.2%
+- - 308000/500000
+- - Rejections: 225959
+- - Accepted: 27.8%
+- - 308500/500000
+- - Rejections: 226311
+- - Accepted: 29.6%
+- - 309000/500000
+- - Rejections: 226675
+- - Accepted: 27.2%
+- - 309500/500000
+- - Rejections: 227044
+- - Accepted: 26.2%
+- - 310000/500000
+- - Rejections: 227365
+- - Accepted: 35.8%
+- - 310500/500000
+- - Rejections: 227698
+- - Accepted: 33.4%
+- - 311000/500000
+- - Rejections: 228018
+- - Accepted: 36.0%
+- - 311500/500000
+- - Rejections: 228352
+- - Accepted: 33.2%
+- - 312000/500000
+- - Rejections: 228698
+- - Accepted: 30.8%
+- - 312500/500000
+- - Rejections: 229025
+- - Accepted: 34.6%
+- - 313000/500000
+- - Rejections: 229360
+- - Accepted: 33.0%
+- - 313500/500000
+- - Rejections: 229706
+- - Accepted: 30.8%
+- - 314000/500000
+- - Rejections: 230109
+- - Accepted: 19.4%
+- - 314500/500000
+- - Rejections: 230445
+- - Accepted: 32.8%
+- - 315000/500000
+- - Rejections: 230768
+- - Accepted: 35.4%
+- - 315500/500000
+- - Rejections: 231122
+- - Accepted: 29.2%
+- - 316000/500000
+- - Rejections: 231494
+- - Accepted: 25.6%
+- - 316500/500000
+- - Rejections: 231872
+- - Accepted: 24.4%
+- - 317000/500000
+- - Rejections: 232198
+- - Accepted: 34.8%
+- - 317500/500000
+- - Rejections: 232556
+- - Accepted: 28.4%
+- - 318000/500000
+- - Rejections: 232898
+- - Accepted: 31.6%
+- - 318500/500000
+- - Rejections: 233256
+- - Accepted: 28.4%
+- - 319000/500000
+- - Rejections: 233598
+- - Accepted: 31.6%
+- - 319500/500000
+- - Rejections: 233948
+- - Accepted: 30.0%
+- - 320000/500000
+- - Rejections: 234266
+- - Accepted: 36.4%
+- - 320500/500000
+- - Rejections: 234602
+- - Accepted: 32.8%
+- - 321000/500000
+- - Rejections: 234960
+- - Accepted: 28.4%
+- - 321500/500000
+- - Rejections: 235348
+- - Accepted: 22.4%
+- - 322000/500000
+- - Rejections: 235639
+- - Accepted: 41.8%
+- - 322500/500000
+- - Rejections: 235943
+- - Accepted: 39.2%
+- - 323000/500000
+- - Rejections: 236263
+- - Accepted: 36.0%
+- - 323500/500000
+- - Rejections: 236625
+- - Accepted: 27.6%
+- - 324000/500000
+- - Rejections: 236973
+- - Accepted: 30.4%
+- - 324500/500000
+- - Rejections: 237299
+- - Accepted: 34.8%
+- - 325000/500000
+- - Rejections: 237657
+- - Accepted: 28.4%
+- - jump_size updated to 0.0066496
+- - 325500/500000
+- - Rejections: 237969
+- - Accepted: 37.6%
+- - 326000/500000
+- - Rejections: 238322
+- - Accepted: 29.4%
+- - 326500/500000
+- - Rejections: 238674
+- - Accepted: 29.6%
+- - 327000/500000
+- - Rejections: 238997
+- - Accepted: 35.4%
+- - 327500/500000
+- - Rejections: 239363
+- - Accepted: 26.8%
+- - 328000/500000
+- - Rejections: 239710
+- - Accepted: 30.6%
+- - 328500/500000
+- - Rejections: 240124
+- - Accepted: 17.2%
+- - 329000/500000
+- - Rejections: 240493
+- - Accepted: 26.2%
+- - 329500/500000
+- - Rejections: 240856
+- - Accepted: 27.4%
+- - 330000/500000
+- - Rejections: 241229
+- - Accepted: 25.4%
+- - 330500/500000
+- - Rejections: 241543
+- - Accepted: 37.2%
+- - 331000/500000
+- - Rejections: 241887
+- - Accepted: 31.2%
+- - 331500/500000
+- - Rejections: 242222
+- - Accepted: 33.0%
+- - 332000/500000
+- - Rejections: 242578
+- - Accepted: 28.8%
+- - 332500/500000
+- - Rejections: 242939
+- - Accepted: 27.8%
+- - 333000/500000
+- - Rejections: 243281
+- - Accepted: 31.6%
+- - 333500/500000
+- - Rejections: 243642
+- - Accepted: 27.8%
+- - 334000/500000
+- - Rejections: 244015
+- - Accepted: 25.4%
+- - 334500/500000
+- - Rejections: 244345
+- - Accepted: 34.0%
+- - 335000/500000
+- - Rejections: 244681
+- - Accepted: 32.8%
+- - 335500/500000
+- - Rejections: 245056
+- - Accepted: 25.0%
+- - 336000/500000
+- - Rejections: 245424
+- - Accepted: 26.4%
+- - 336500/500000
+- - Rejections: 245780
+- - Accepted: 28.8%
+- - 337000/500000
+- - Rejections: 246144
+- - Accepted: 27.2%
+- - 337500/500000
+- - Rejections: 246488
+- - Accepted: 31.2%
+- - 338000/500000
+- - Rejections: 246867
+- - Accepted: 24.2%
+- - 338500/500000
+- - Rejections: 247238
+- - Accepted: 25.8%
+- - 339000/500000
+- - Rejections: 247593
+- - Accepted: 29.0%
+- - 339500/500000
+- - Rejections: 247992
+- - Accepted: 20.2%
+- - 340000/500000
+- - Rejections: 248337
+- - Accepted: 31.0%
+- - 340500/500000
+- - Rejections: 248699
+- - Accepted: 27.6%
+- - 341000/500000
+- - Rejections: 249096
+- - Accepted: 20.6%
+- - 341500/500000
+- - Rejections: 249439
+- - Accepted: 31.4%
+- - 342000/500000
+- - Rejections: 249787
+- - Accepted: 30.4%
+- - 342500/500000
+- - Rejections: 250101
+- - Accepted: 37.2%
+- - 343000/500000
+- - Rejections: 250505
+- - Accepted: 19.2%
+- - 343500/500000
+- - Rejections: 250920
+- - Accepted: 17.0%
+- - 344000/500000
+- - Rejections: 251307
+- - Accepted: 22.6%
+- - 344500/500000
+- - Rejections: 251689
+- - Accepted: 23.6%
+- - 345000/500000
+- - Rejections: 252049
+- - Accepted: 28.0%
+- - 345500/500000
+- - Rejections: 252398
+- - Accepted: 30.2%
+- - 346000/500000
+- - Rejections: 252726
+- - Accepted: 34.4%
+- - 346500/500000
+- - Rejections: 253112
+- - Accepted: 22.8%
+- - 347000/500000
+- - Rejections: 253470
+- - Accepted: 28.4%
+- - 347500/500000
+- - Rejections: 253845
+- - Accepted: 25.0%
+- - 348000/500000
+- - Rejections: 254263
+- - Accepted: 16.4%
+- - 348500/500000
+- - Rejections: 254702
+- - Accepted: 12.2%
+- - 349000/500000
+- - Rejections: 255053
+- - Accepted: 29.8%
+- - 349500/500000
+- - Rejections: 255449
+- - Accepted: 20.8%
+- - 350000/500000
+- - Rejections: 255836
+- - Accepted: 22.6%
+- - jump_size updated to 0.0066014
+- - 350500/500000
+- - Rejections: 256229
+- - Accepted: 21.4%
+- - 351000/500000
+- - Rejections: 256632
+- - Accepted: 19.4%
+- - 351500/500000
+- - Rejections: 257003
+- - Accepted: 25.8%
+- - 352000/500000
+- - Rejections: 257364
+- - Accepted: 27.8%
+- - 352500/500000
+- - Rejections: 257713
+- - Accepted: 30.2%
+- - 353000/500000
+- - Rejections: 258088
+- - Accepted: 25.0%
+- - 353500/500000
+- - Rejections: 258404
+- - Accepted: 36.8%
+- - 354000/500000
+- - Rejections: 258787
+- - Accepted: 23.4%
+- - 354500/500000
+- - Rejections: 259135
+- - Accepted: 30.4%
+- - 355000/500000
+- - Rejections: 259491
+- - Accepted: 28.8%
+- - 355500/500000
+- - Rejections: 259836
+- - Accepted: 31.0%
+- - 356000/500000
+- - Rejections: 260176
+- - Accepted: 32.0%
+- - 356500/500000
+- - Rejections: 260510
+- - Accepted: 33.2%
+- - 357000/500000
+- - Rejections: 260878
+- - Accepted: 26.4%
+- - 357500/500000
+- - Rejections: 261228
+- - Accepted: 30.0%
+- - 358000/500000
+- - Rejections: 261601
+- - Accepted: 25.4%
+- - 358500/500000
+- - Rejections: 261966
+- - Accepted: 27.0%
+- - 359000/500000
+- - Rejections: 262318
+- - Accepted: 29.6%
+- - 359500/500000
+- - Rejections: 262686
+- - Accepted: 26.4%
+- - 360000/500000
+- - Rejections: 263010
+- - Accepted: 35.2%
+- - 360500/500000
+- - Rejections: 263353
+- - Accepted: 31.4%
+- - 361000/500000
+- - Rejections: 263708
+- - Accepted: 29.0%
+- - 361500/500000
+- - Rejections: 264091
+- - Accepted: 23.4%
+- - 362000/500000
+- - Rejections: 264412
+- - Accepted: 35.8%
+- - 362500/500000
+- - Rejections: 264777
+- - Accepted: 27.0%
+- - 363000/500000
+- - Rejections: 265138
+- - Accepted: 27.8%
+- - 363500/500000
+- - Rejections: 265494
+- - Accepted: 28.8%
+- - 364000/500000
+- - Rejections: 265861
+- - Accepted: 26.6%
+- - 364500/500000
+- - Rejections: 266240
+- - Accepted: 24.2%
+- - 365000/500000
+- - Rejections: 266593
+- - Accepted: 29.4%
+- - 365500/500000
+- - Rejections: 266925
+- - Accepted: 33.6%
+- - 366000/500000
+- - Rejections: 267258
+- - Accepted: 33.4%
+- - 366500/500000
+- - Rejections: 267584
+- - Accepted: 34.8%
+- - 367000/500000
+- - Rejections: 267962
+- - Accepted: 24.4%
+- - 367500/500000
+- - Rejections: 268316
+- - Accepted: 29.2%
+- - 368000/500000
+- - Rejections: 268658
+- - Accepted: 31.6%
+- - 368500/500000
+- - Rejections: 269022
+- - Accepted: 27.2%
+- - 369000/500000
+- - Rejections: 269375
+- - Accepted: 29.4%
+- - 369500/500000
+- - Rejections: 269722
+- - Accepted: 30.6%
+- - 370000/500000
+- - Rejections: 270123
+- - Accepted: 19.8%
+- - 370500/500000
+- - Rejections: 270504
+- - Accepted: 23.8%
+- - 371000/500000
+- - Rejections: 270901
+- - Accepted: 20.6%
+- - 371500/500000
+- - Rejections: 271278
+- - Accepted: 24.6%
+- - 372000/500000
+- - Rejections: 271615
+- - Accepted: 32.6%
+- - 372500/500000
+- - Rejections: 271914
+- - Accepted: 40.2%
+- - 373000/500000
+- - Rejections: 272238
+- - Accepted: 35.2%
+- - 373500/500000
+- - Rejections: 272590
+- - Accepted: 29.6%
+- - 374000/500000
+- - Rejections: 272926
+- - Accepted: 32.8%
+- - 374500/500000
+- - Rejections: 273268
+- - Accepted: 31.6%
+- - 375000/500000
+- - Rejections: 273642
+- - Accepted: 25.2%
+- - jump_size updated to 0.0065806
+- - 375500/500000
+- - Rejections: 273976
+- - Accepted: 33.2%
+- - 376000/500000
+- - Rejections: 274324
+- - Accepted: 30.4%
+- - 376500/500000
+- - Rejections: 274674
+- - Accepted: 30.0%
+- - 377000/500000
+- - Rejections: 274999
+- - Accepted: 35.0%
+- - 377500/500000
+- - Rejections: 275397
+- - Accepted: 20.4%
+- - 378000/500000
+- - Rejections: 275799
+- - Accepted: 19.6%
+- - 378500/500000
+- - Rejections: 276163
+- - Accepted: 27.2%
+- - 379000/500000
+- - Rejections: 276479
+- - Accepted: 36.8%
+- - 379500/500000
+- - Rejections: 276866
+- - Accepted: 22.6%
+- - 380000/500000
+- - Rejections: 277213
+- - Accepted: 30.6%
+- - 380500/500000
+- - Rejections: 277557
+- - Accepted: 31.2%
+- - 381000/500000
+- - Rejections: 277909
+- - Accepted: 29.6%
+- - 381500/500000
+- - Rejections: 278270
+- - Accepted: 27.8%
+- - 382000/500000
+- - Rejections: 278651
+- - Accepted: 23.8%
+- - 382500/500000
+- - Rejections: 278989
+- - Accepted: 32.4%
+- - 383000/500000
+- - Rejections: 279354
+- - Accepted: 27.0%
+- - 383500/500000
+- - Rejections: 279729
+- - Accepted: 25.0%
+- - 384000/500000
+- - Rejections: 280137
+- - Accepted: 18.4%
+- - 384500/500000
+- - Rejections: 280534
+- - Accepted: 20.6%
+- - 385000/500000
+- - Rejections: 280883
+- - Accepted: 30.2%
+- - 385500/500000
+- - Rejections: 281259
+- - Accepted: 24.8%
+- - 386000/500000
+- - Rejections: 281610
+- - Accepted: 29.8%
+- - 386500/500000
+- - Rejections: 281944
+- - Accepted: 33.2%
+- - 387000/500000
+- - Rejections: 282276
+- - Accepted: 33.6%
+- - 387500/500000
+- - Rejections: 282572
+- - Accepted: 40.8%
+- - 388000/500000
+- - Rejections: 282907
+- - Accepted: 33.0%
+- - 388500/500000
+- - Rejections: 283280
+- - Accepted: 25.4%
+- - 389000/500000
+- - Rejections: 283634
+- - Accepted: 29.2%
+- - 389500/500000
+- - Rejections: 283963
+- - Accepted: 34.2%
+- - 390000/500000
+- - Rejections: 284282
+- - Accepted: 36.2%
+- - 390500/500000
+- - Rejections: 284636
+- - Accepted: 29.2%
+- - 391000/500000
+- - Rejections: 285017
+- - Accepted: 23.8%
+- - 391500/500000
+- - Rejections: 285465
+- - Accepted: 10.4%
+- - 392000/500000
+- - Rejections: 285845
+- - Accepted: 24.0%
+- - 392500/500000
+- - Rejections: 286261
+- - Accepted: 16.8%
+- - 393000/500000
+- - Rejections: 286581
+- - Accepted: 36.0%
+- - 393500/500000
+- - Rejections: 286892
+- - Accepted: 37.8%
+- - 394000/500000
+- - Rejections: 287222
+- - Accepted: 34.0%
+- - 394500/500000
+- - Rejections: 287577
+- - Accepted: 29.0%
+- - 395000/500000
+- - Rejections: 287971
+- - Accepted: 21.2%
+- - 395500/500000
+- - Rejections: 288318
+- - Accepted: 30.6%
+- - 396000/500000
+- - Rejections: 288667
+- - Accepted: 30.2%
+- - 396500/500000
+- - Rejections: 288975
+- - Accepted: 38.4%
+- - 397000/500000
+- - Rejections: 289340
+- - Accepted: 27.0%
+- - 397500/500000
+- - Rejections: 289722
+- - Accepted: 23.6%
+- - 398000/500000
+- - Rejections: 290072
+- - Accepted: 30.0%
+- - 398500/500000
+- - Rejections: 290469
+- - Accepted: 20.6%
+- - 399000/500000
+- - Rejections: 290869
+- - Accepted: 20.0%
+- - 399500/500000
+- - Rejections: 291265
+- - Accepted: 20.8%
+- - 400000/500000
+- - Rejections: 291611
+- - Accepted: 30.8%
+- - jump_size updated to 0.0065498
+- - 400500/500000
+- - Rejections: 291961
+- - Accepted: 30.0%
+- - 401000/500000
+- - Rejections: 292323
+- - Accepted: 27.6%
+- - 401500/500000
+- - Rejections: 292702
+- - Accepted: 24.2%
+- - 402000/500000
+- - Rejections: 293088
+- - Accepted: 22.8%
+- - 402500/500000
+- - Rejections: 293427
+- - Accepted: 32.2%
+- - 403000/500000
+- - Rejections: 293791
+- - Accepted: 27.2%
+- - 403500/500000
+- - Rejections: 294167
+- - Accepted: 24.8%
+- - 404000/500000
+- - Rejections: 294513
+- - Accepted: 30.8%
+- - 404500/500000
+- - Rejections: 294886
+- - Accepted: 25.4%
+- - 405000/500000
+- - Rejections: 295239
+- - Accepted: 29.4%
+- - 405500/500000
+- - Rejections: 295595
+- - Accepted: 28.8%
+- - 406000/500000
+- - Rejections: 295939
+- - Accepted: 31.2%
+- - 406500/500000
+- - Rejections: 296297
+- - Accepted: 28.4%
+- - 407000/500000
+- - Rejections: 296673
+- - Accepted: 24.8%
+- - 407500/500000
+- - Rejections: 297092
+- - Accepted: 16.2%
+- - 408000/500000
+- - Rejections: 297461
+- - Accepted: 26.2%
+- - 408500/500000
+- - Rejections: 297839
+- - Accepted: 24.4%
+- - 409000/500000
+- - Rejections: 298234
+- - Accepted: 21.0%
+- - 409500/500000
+- - Rejections: 298577
+- - Accepted: 31.4%
+- - 410000/500000
+- - Rejections: 298916
+- - Accepted: 32.2%
+- - 410500/500000
+- - Rejections: 299273
+- - Accepted: 28.6%
+- - 411000/500000
+- - Rejections: 299593
+- - Accepted: 36.0%
+- - 411500/500000
+- - Rejections: 299935
+- - Accepted: 31.6%
+- - 412000/500000
+- - Rejections: 300259
+- - Accepted: 35.2%
+- - 412500/500000
+- - Rejections: 300658
+- - Accepted: 20.2%
+- - 413000/500000
+- - Rejections: 300999
+- - Accepted: 31.8%
+- - 413500/500000
+- - Rejections: 301384
+- - Accepted: 23.0%
+- - 414000/500000
+- - Rejections: 301735
+- - Accepted: 29.8%
+- - 414500/500000
+- - Rejections: 302072
+- - Accepted: 32.6%
+- - 415000/500000
+- - Rejections: 302416
+- - Accepted: 31.2%
+- - 415500/500000
+- - Rejections: 302783
+- - Accepted: 26.6%
+- - 416000/500000
+- - Rejections: 303130
+- - Accepted: 30.6%
+- - 416500/500000
+- - Rejections: 303505
+- - Accepted: 25.0%
+- - 417000/500000
+- - Rejections: 303847
+- - Accepted: 31.6%
+- - 417500/500000
+- - Rejections: 304186
+- - Accepted: 32.2%
+- - 418000/500000
+- - Rejections: 304537
+- - Accepted: 29.8%
+- - 418500/500000
+- - Rejections: 304877
+- - Accepted: 32.0%
+- - 419000/500000
+- - Rejections: 305286
+- - Accepted: 18.2%
+- - 419500/500000
+- - Rejections: 305617
+- - Accepted: 33.8%
+- - 420000/500000
+- - Rejections: 305980
+- - Accepted: 27.4%
+- - 420500/500000
+- - Rejections: 306341
+- - Accepted: 27.8%
+- - 421000/500000
+- - Rejections: 306674
+- - Accepted: 33.4%
+- - 421500/500000
+- - Rejections: 307060
+- - Accepted: 22.8%
+- - 422000/500000
+- - Rejections: 307418
+- - Accepted: 28.4%
+- - 422500/500000
+- - Rejections: 307746
+- - Accepted: 34.4%
+- - 423000/500000
+- - Rejections: 308096
+- - Accepted: 30.0%
+- - 423500/500000
+- - Rejections: 308443
+- - Accepted: 30.6%
+- - 424000/500000
+- - Rejections: 308842
+- - Accepted: 20.2%
+- - 424500/500000
+- - Rejections: 309208
+- - Accepted: 26.8%
+- - 425000/500000
+- - Rejections: 309571
+- - Accepted: 27.4%
+- - jump_size updated to 0.0065207
+- - 425500/500000
+- - Rejections: 309913
+- - Accepted: 31.6%
+- - 426000/500000
+- - Rejections: 310263
+- - Accepted: 30.0%
+- - 426500/500000
+- - Rejections: 310591
+- - Accepted: 34.4%
+- - 427000/500000
+- - Rejections: 310979
+- - Accepted: 22.4%
+- - 427500/500000
+- - Rejections: 311303
+- - Accepted: 35.2%
+- - 428000/500000
+- - Rejections: 311670
+- - Accepted: 26.6%
+- - 428500/500000
+- - Rejections: 312021
+- - Accepted: 29.8%
+- - 429000/500000
+- - Rejections: 312394
+- - Accepted: 25.4%
+- - 429500/500000
+- - Rejections: 312800
+- - Accepted: 18.8%
+- - 430000/500000
+- - Rejections: 313186
+- - Accepted: 22.8%
+- - 430500/500000
+- - Rejections: 313548
+- - Accepted: 27.6%
+- - 431000/500000
+- - Rejections: 313888
+- - Accepted: 32.0%
+- - 431500/500000
+- - Rejections: 314194
+- - Accepted: 38.8%
+- - 432000/500000
+- - Rejections: 314521
+- - Accepted: 34.6%
+- - 432500/500000
+- - Rejections: 314894
+- - Accepted: 25.4%
+- - 433000/500000
+- - Rejections: 315271
+- - Accepted: 24.6%
+- - 433500/500000
+- - Rejections: 315625
+- - Accepted: 29.2%
+- - 434000/500000
+- - Rejections: 315947
+- - Accepted: 35.6%
+- - 434500/500000
+- - Rejections: 316254
+- - Accepted: 38.6%
+- - 435000/500000
+- - Rejections: 316590
+- - Accepted: 32.8%
+- - 435500/500000
+- - Rejections: 316944
+- - Accepted: 29.2%
+- - 436000/500000
+- - Rejections: 317286
+- - Accepted: 31.6%
+- - 436500/500000
+- - Rejections: 317601
+- - Accepted: 37.0%
+- - 437000/500000
+- - Rejections: 317958
+- - Accepted: 28.6%
+- - 437500/500000
+- - Rejections: 318333
+- - Accepted: 25.0%
+- - 438000/500000
+- - Rejections: 318672
+- - Accepted: 32.2%
+- - 438500/500000
+- - Rejections: 319044
+- - Accepted: 25.6%
+- - 439000/500000
+- - Rejections: 319455
+- - Accepted: 17.8%
+- - 439500/500000
+- - Rejections: 319827
+- - Accepted: 25.6%
+- - 440000/500000
+- - Rejections: 320189
+- - Accepted: 27.6%
+- - 440500/500000
+- - Rejections: 320551
+- - Accepted: 27.6%
+- - 441000/500000
+- - Rejections: 320841
+- - Accepted: 42.0%
+- - 441500/500000
+- - Rejections: 321173
+- - Accepted: 33.6%
+- - 442000/500000
+- - Rejections: 321530
+- - Accepted: 28.6%
+- - 442500/500000
+- - Rejections: 321848
+- - Accepted: 36.4%
+- - 443000/500000
+- - Rejections: 322143
+- - Accepted: 41.0%
+- - 443500/500000
+- - Rejections: 322530
+- - Accepted: 22.6%
+- - 444000/500000
+- - Rejections: 322903
+- - Accepted: 25.4%
+- - 444500/500000
+- - Rejections: 323288
+- - Accepted: 23.0%
+- - 445000/500000
+- - Rejections: 323634
+- - Accepted: 30.8%
+- - 445500/500000
+- - Rejections: 324018
+- - Accepted: 23.2%
+- - 446000/500000
+- - Rejections: 324407
+- - Accepted: 22.2%
+- - 446500/500000
+- - Rejections: 324785
+- - Accepted: 24.4%
+- - 447000/500000
+- - Rejections: 325189
+- - Accepted: 19.2%
+- - 447500/500000
+- - Rejections: 325558
+- - Accepted: 26.2%
+- - 448000/500000
+- - Rejections: 325932
+- - Accepted: 25.2%
+- - 448500/500000
+- - Rejections: 326391
+- - Accepted: 8.2%
+- - 449000/500000
+- - Rejections: 326758
+- - Accepted: 26.6%
+- - 449500/500000
+- - Rejections: 327177
+- - Accepted: 16.2%
+- - 450000/500000
+- - Rejections: 327580
+- - Accepted: 19.4%
+- - jump_size updated to 0.0064894
+- - 450500/500000
+- - Rejections: 327996
+- - Accepted: 16.8%
+- - 451000/500000
+- - Rejections: 328375
+- - Accepted: 24.2%
+- - 451500/500000
+- - Rejections: 328748
+- - Accepted: 25.4%
+- - 452000/500000
+- - Rejections: 329138
+- - Accepted: 22.0%
+- - 452500/500000
+- - Rejections: 329494
+- - Accepted: 28.8%
+- - 453000/500000
+- - Rejections: 329871
+- - Accepted: 24.6%
+- - 453500/500000
+- - Rejections: 330267
+- - Accepted: 20.8%
+- - 454000/500000
+- - Rejections: 330686
+- - Accepted: 16.2%
+- - 454500/500000
+- - Rejections: 331071
+- - Accepted: 23.0%
+- - 455000/500000
+- - Rejections: 331516
+- - Accepted: 11.0%
+- - 455500/500000
+- - Rejections: 331877
+- - Accepted: 27.8%
+- - 456000/500000
+- - Rejections: 332206
+- - Accepted: 34.2%
+- - 456500/500000
+- - Rejections: 332560
+- - Accepted: 29.2%
+- - 457000/500000
+- - Rejections: 332864
+- - Accepted: 39.2%
+- - 457500/500000
+- - Rejections: 333189
+- - Accepted: 35.0%
+- - 458000/500000
+- - Rejections: 333499
+- - Accepted: 38.0%
+- - 458500/500000
+- - Rejections: 333842
+- - Accepted: 31.4%
+- - 459000/500000
+- - Rejections: 334171
+- - Accepted: 34.2%
+- - 459500/500000
+- - Rejections: 334504
+- - Accepted: 33.4%
+- - 460000/500000
+- - Rejections: 334833
+- - Accepted: 34.2%
+- - 460500/500000
+- - Rejections: 335157
+- - Accepted: 35.2%
+- - 461000/500000
+- - Rejections: 335439
+- - Accepted: 43.6%
+- - 461500/500000
+- - Rejections: 335752
+- - Accepted: 37.4%
+- - 462000/500000
+- - Rejections: 336147
+- - Accepted: 21.0%
+- - 462500/500000
+- - Rejections: 336533
+- - Accepted: 22.8%
+- - 463000/500000
+- - Rejections: 336890
+- - Accepted: 28.6%
+- - 463500/500000
+- - Rejections: 337242
+- - Accepted: 29.6%
+- - 464000/500000
+- - Rejections: 337608
+- - Accepted: 26.8%
+- - 464500/500000
+- - Rejections: 337937
+- - Accepted: 34.2%
+- - 465000/500000
+- - Rejections: 338332
+- - Accepted: 21.0%
+- - 465500/500000
+- - Rejections: 338711
+- - Accepted: 24.2%
+- - 466000/500000
+- - Rejections: 339089
+- - Accepted: 24.4%
+- - 466500/500000
+- - Rejections: 339426
+- - Accepted: 32.6%
+- - 467000/500000
+- - Rejections: 339833
+- - Accepted: 18.6%
+- - 467500/500000
+- - Rejections: 340242
+- - Accepted: 18.2%
+- - 468000/500000
+- - Rejections: 340596
+- - Accepted: 29.2%
+- - 468500/500000
+- - Rejections: 341001
+- - Accepted: 19.0%
+- - 469000/500000
+- - Rejections: 341400
+- - Accepted: 20.2%
+- - 469500/500000
+- - Rejections: 341795
+- - Accepted: 21.0%
+- - 470000/500000
+- - Rejections: 342167
+- - Accepted: 25.6%
+- - 470500/500000
+- - Rejections: 342566
+- - Accepted: 20.2%
+- - 471000/500000
+- - Rejections: 342950
+- - Accepted: 23.2%
+- - 471500/500000
+- - Rejections: 343368
+- - Accepted: 16.4%
+- - 472000/500000
+- - Rejections: 343713
+- - Accepted: 31.0%
+- - 472500/500000
+- - Rejections: 344073
+- - Accepted: 28.0%
+- - 473000/500000
+- - Rejections: 344413
+- - Accepted: 32.0%
+- - 473500/500000
+- - Rejections: 344752
+- - Accepted: 32.2%
+- - 474000/500000
+- - Rejections: 345149
+- - Accepted: 20.6%
+- - 474500/500000
+- - Rejections: 345496
+- - Accepted: 30.6%
+- - 475000/500000
+- - Rejections: 345892
+- - Accepted: 20.8%
+- - jump_size updated to 0.0064412
+- - 475500/500000
+- - Rejections: 346224
+- - Accepted: 33.6%
+- - 476000/500000
+- - Rejections: 346591
+- - Accepted: 26.6%
+- - 476500/500000
+- - Rejections: 346932
+- - Accepted: 31.8%
+- - 477000/500000
+- - Rejections: 347273
+- - Accepted: 31.8%
+- - 477500/500000
+- - Rejections: 347601
+- - Accepted: 34.4%
+- - 478000/500000
+- - Rejections: 347919
+- - Accepted: 36.4%
+- - 478500/500000
+- - Rejections: 348300
+- - Accepted: 23.8%
+- - 479000/500000
+- - Rejections: 348682
+- - Accepted: 23.6%
+- - 479500/500000
+- - Rejections: 349066
+- - Accepted: 23.2%
+- - 480000/500000
+- - Rejections: 349390
+- - Accepted: 35.2%
+- - 480500/500000
+- - Rejections: 349780
+- - Accepted: 22.0%
+- - 481000/500000
+- - Rejections: 350130
+- - Accepted: 30.0%
+- - 481500/500000
+- - Rejections: 350442
+- - Accepted: 37.6%
+- - 482000/500000
+- - Rejections: 350797
+- - Accepted: 29.0%
+- - 482500/500000
+- - Rejections: 351177
+- - Accepted: 24.0%
+- - 483000/500000
+- - Rejections: 351547
+- - Accepted: 26.0%
+- - 483500/500000
+- - Rejections: 351915
+- - Accepted: 26.4%
+- - 484000/500000
+- - Rejections: 352252
+- - Accepted: 32.6%
+- - 484500/500000
+- - Rejections: 352593
+- - Accepted: 31.8%
+- - 485000/500000
+- - Rejections: 352887
+- - Accepted: 41.2%
+- - 485500/500000
+- - Rejections: 353159
+- - Accepted: 45.6%
+- - 486000/500000
+- - Rejections: 353567
+- - Accepted: 18.4%
+- - 486500/500000
+- - Rejections: 353910
+- - Accepted: 31.4%
+- - 487000/500000
+- - Rejections: 354268
+- - Accepted: 28.4%
+- - 487500/500000
+- - Rejections: 354602
+- - Accepted: 33.2%
+- - 488000/500000
+- - Rejections: 354938
+- - Accepted: 32.8%
+- - 488500/500000
+- - Rejections: 355322
+- - Accepted: 23.2%
+- - 489000/500000
+- - Rejections: 355670
+- - Accepted: 30.4%
+- - 489500/500000
+- - Rejections: 356064
+- - Accepted: 21.2%
+- - 490000/500000
+- - Rejections: 356395
+- - Accepted: 33.8%
+- - 490500/500000
+- - Rejections: 356764
+- - Accepted: 26.2%
+- - 491000/500000
+- - Rejections: 357102
+- - Accepted: 32.4%
+- - 491500/500000
+- - Rejections: 357467
+- - Accepted: 27.0%
+- - 492000/500000
+- - Rejections: 357818
+- - Accepted: 29.8%
+- - 492500/500000
+- - Rejections: 358164
+- - Accepted: 30.8%
+- - 493000/500000
+- - Rejections: 358522
+- - Accepted: 28.4%
+- - 493500/500000
+- - Rejections: 358877
+- - Accepted: 29.0%
+- - 494000/500000
+- - Rejections: 359272
+- - Accepted: 21.0%
+- - 494500/500000
+- - Rejections: 359653
+- - Accepted: 23.8%
+- - 495000/500000
+- - Rejections: 359999
+- - Accepted: 30.8%
+- - 495500/500000
+- - Rejections: 360336
+- - Accepted: 32.6%
+- - 496000/500000
+- - Rejections: 360632
+- - Accepted: 40.8%
+- - 496500/500000
+- - Rejections: 360945
+- - Accepted: 37.4%
+- - 497000/500000
+- - Rejections: 361283
+- - Accepted: 32.4%
+- - 497500/500000
+- - Rejections: 361643
+- - Accepted: 28.0%
+- - 498000/500000
+- - Rejections: 361945
+- - Accepted: 39.6%
+- - 498500/500000
+- - Rejections: 362305
+- - Accepted: 28.0%
+- - 499000/500000
+- - Rejections: 362676
+- - Accepted: 25.8%
+- - 499500/500000
+- - Rejections: 363042
+- - Accepted: 26.8%
+- - 500000/500000
+- - Rejections: 363367
+- - Accepted: 35.0%
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- Building rhs
+- - 5 %
+- - 10 %
+- - 15 %
+- - 20 %
+- - 25 %
+- - 30 %
+- - 35 %
+- - 40 %
+- - 45 %
+- - 50 %
+- - 55 %
+- - 60 %
+- - 65 %
+- - 70 %
+- - 75 %
+- - 80 %
+- - 85 %
+- - 90 %
+- - 95 %
+- - 100 %
+- - 1000/1000000
+- - Rejections: 894
+- - Accepted: 10.6%
+- - 2000/1000000
+- - Rejections: 1829
+- - Accepted: 6.5%
+- - 3000/1000000
+- - Rejections: 2805
+- - Accepted: 2.4%
+- - 4000/1000000
+- - Rejections: 3795
+- - Accepted: 1.0%
+- - 5000/1000000
+- - Rejections: 4744
+- - Accepted: 5.1%
+- - 6000/1000000
+- - Rejections: 5724
+- - Accepted: 2.0%
+- - 7000/1000000
+- - Rejections: 6677
+- - Accepted: 4.7%
+- - 8000/1000000
+- - Rejections: 7672
+- - Accepted: 0.5%
+- - 9000/1000000
+- - Rejections: 8634
+- - Accepted: 3.8%
+- - 10000/1000000
+- - Rejections: 9580
+- - Accepted: 5.4%
+- - 11000/1000000
+- - Rejections: 10547
+- - Accepted: 3.3%
+- - 12000/1000000
+- - Rejections: 11528
+- - Accepted: 1.9%
+- - 13000/1000000
+- - Rejections: 12499
+- - Accepted: 2.9%
+- - 14000/1000000
+- - Rejections: 13477
+- - Accepted: 2.2%
+- - 15000/1000000
+- - Rejections: 14461
+- - Accepted: 1.6%
+- - 16000/1000000
+- - Rejections: 15428
+- - Accepted: 3.3%
+- - 17000/1000000
+- - Rejections: 16365
+- - Accepted: 6.3%
+- - 18000/1000000
+- - Rejections: 17348
+- - Accepted: 1.7%
+- - 19000/1000000
+- - Rejections: 18311
+- - Accepted: 3.7%
+- - 20000/1000000
+- - Rejections: 19281
+- - Accepted: 3.0%
+- - 21000/1000000
+- - Rejections: 20255
+- - Accepted: 2.6%
+- - 22000/1000000
+- - Rejections: 21206
+- - Accepted: 4.9%
+- - 23000/1000000
+- - Rejections: 22197
+- - Accepted: 0.9%
+- - 24000/1000000
+- - Rejections: 23176
+- - Accepted: 2.1%
+- - 25000/1000000
+- - Rejections: 24162
+- - Accepted: 1.4%
+- - 26000/1000000
+- - Rejections: 25142
+- - Accepted: 2.0%
+- - 27000/1000000
+- - Rejections: 26101
+- - Accepted: 4.1%
+- - 28000/1000000
+- - Rejections: 27080
+- - Accepted: 2.1%
+- - 29000/1000000
+- - Rejections: 28076
+- - Accepted: 0.4%
+- - 30000/1000000
+- - Rejections: 29065
+- - Accepted: 1.1%
+- - 31000/1000000
+- - Rejections: 30053
+- - Accepted: 1.2%
+- - 32000/1000000
+- - Rejections: 31024
+- - Accepted: 2.9%
+- - 33000/1000000
+- - Rejections: 32005
+- - Accepted: 1.9%
+- - 34000/1000000
+- - Rejections: 33004
+- - Accepted: 0.1%
+- - 35000/1000000
+- - Rejections: 34003
+- - Accepted: 0.1%
+- - 36000/1000000
+- - Rejections: 35003
+- - Accepted: 0.0%
+- - 37000/1000000
+- - Rejections: 35995
+- - Accepted: 0.8%
+- - 38000/1000000
+- - Rejections: 36973
+- - Accepted: 2.2%
+- - 39000/1000000
+- - Rejections: 37966
+- - Accepted: 0.7%
+- - 40000/1000000
+- - Rejections: 38945
+- - Accepted: 2.1%
+- - 41000/1000000
+- - Rejections: 39941
+- - Accepted: 0.4%
+- - 42000/1000000
+- - Rejections: 40931
+- - Accepted: 1.0%
+- - 43000/1000000
+- - Rejections: 41899
+- - Accepted: 3.2%
+- - 44000/1000000
+- - Rejections: 42893
+- - Accepted: 0.6%
+- - 45000/1000000
+- - Rejections: 43889
+- - Accepted: 0.4%
+- - 46000/1000000
+- - Rejections: 44871
+- - Accepted: 1.8%
+- - 47000/1000000
+- - Rejections: 45848
+- - Accepted: 2.3%
+- - 48000/1000000
+- - Rejections: 46834
+- - Accepted: 1.4%
+- - 49000/1000000
+- - Rejections: 47827
+- - Accepted: 0.7%
+- - 50000/1000000
+- - Rejections: 48785
+- - Accepted: 4.2%
+- - jump_size updated to 0.0060723
+- - 51000/1000000
+- - Rejections: 49704
+- - Accepted: 8.1%
+- - 52000/1000000
+- - Rejections: 50628
+- - Accepted: 7.6%
+- - 53000/1000000
+- - Rejections: 51572
+- - Accepted: 5.6%
+- - 54000/1000000
+- - Rejections: 52525
+- - Accepted: 4.7%
+- - 55000/1000000
+- - Rejections: 53516
+- - Accepted: 0.9%
+- - 56000/1000000
+- - Rejections: 54516
+- - Accepted: 0.0%
+- - 57000/1000000
+- - Rejections: 55516
+- - Accepted: 0.0%
+- - 58000/1000000
+- - Rejections: 56516
+- - Accepted: 0.0%
+- - 59000/1000000
+- - Rejections: 57515
+- - Accepted: 0.1%
+- - 60000/1000000
+- - Rejections: 58515
+- - Accepted: 0.0%
+- - 61000/1000000
+- - Rejections: 59514
+- - Accepted: 0.1%
+- - 62000/1000000
+- - Rejections: 60514
+- - Accepted: 0.0%
+- - 63000/1000000
+- - Rejections: 61514
+- - Accepted: 0.0%
+- - 64000/1000000
+- - Rejections: 62514
+- - Accepted: 0.0%
+- - 65000/1000000
+- - Rejections: 63514
+- - Accepted: 0.0%
+- - 66000/1000000
+- - Rejections: 64512
+- - Accepted: 0.2%
+- - 67000/1000000
+- - Rejections: 65512
+- - Accepted: 0.0%
+- - 68000/1000000
+- - Rejections: 66511
+- - Accepted: 0.1%
+- - 69000/1000000
+- - Rejections: 67487
+- - Accepted: 2.4%
+- - 70000/1000000
+- - Rejections: 68485
+- - Accepted: 0.2%
+- - 71000/1000000
+- - Rejections: 69480
+- - Accepted: 0.5%
+- - 72000/1000000
+- - Rejections: 70468
+- - Accepted: 1.2%
+- - 73000/1000000
+- - Rejections: 71463
+- - Accepted: 0.5%
+- - 74000/1000000
+- - Rejections: 72463
+- - Accepted: 0.0%
+- - 75000/1000000
+- - Rejections: 73462
+- - Accepted: 0.1%
+- - 76000/1000000
+- - Rejections: 74458
+- - Accepted: 0.4%
+- - 77000/1000000
+- - Rejections: 75447
+- - Accepted: 1.1%
+- - 78000/1000000
+- - Rejections: 76398
+- - Accepted: 4.9%
+- - 79000/1000000
+- - Rejections: 77396
+- - Accepted: 0.2%
+- - 80000/1000000
+- - Rejections: 78392
+- - Accepted: 0.4%
+- - 81000/1000000
+- - Rejections: 79390
+- - Accepted: 0.2%
+- - 82000/1000000
+- - Rejections: 80368
+- - Accepted: 2.2%
+- - 83000/1000000
+- - Rejections: 81349
+- - Accepted: 1.9%
+- - 84000/1000000
+- - Rejections: 82330
+- - Accepted: 1.9%
+- - 85000/1000000
+- - Rejections: 83306
+- - Accepted: 2.4%
+- - 86000/1000000
+- - Rejections: 84271
+- - Accepted: 3.5%
+- - 87000/1000000
+- - Rejections: 85247
+- - Accepted: 2.4%
+- - 88000/1000000
+- - Rejections: 86245
+- - Accepted: 0.2%
+- - 89000/1000000
+- - Rejections: 87244
+- - Accepted: 0.1%
+- - 90000/1000000
+- - Rejections: 88237
+- - Accepted: 0.7%
+- - 91000/1000000
+- - Rejections: 89236
+- - Accepted: 0.1%
+- - 92000/1000000
+- - Rejections: 90234
+- - Accepted: 0.2%
+- - 93000/1000000
+- - Rejections: 91228
+- - Accepted: 0.6%
+- - 94000/1000000
+- - Rejections: 92218
+- - Accepted: 1.0%
+- - 95000/1000000
+- - Rejections: 93205
+- - Accepted: 1.3%
+- - 96000/1000000
+- - Rejections: 94184
+- - Accepted: 2.1%
+- - 97000/1000000
+- - Rejections: 95180
+- - Accepted: 0.4%
+- - 98000/1000000
+- - Rejections: 96175
+- - Accepted: 0.5%
+- - 99000/1000000
+- - Rejections: 97174
+- - Accepted: 0.1%
+- - 100000/1000000
+- - Rejections: 98173
+- - Accepted: 0.1%
+- - jump_size updated to 0.0049543
+- - 101000/1000000
+- - Rejections: 99162
+- - Accepted: 1.1%
+- - 102000/1000000
+- - Rejections: 100155
+- - Accepted: 0.7%
+- - 103000/1000000
+- - Rejections: 101147
+- - Accepted: 0.8%
+- - 104000/1000000
+- - Rejections: 102134
+- - Accepted: 1.3%
+- - 105000/1000000
+- - Rejections: 103118
+- - Accepted: 1.6%
+- - 106000/1000000
+- - Rejections: 104097
+- - Accepted: 2.1%
+- - 107000/1000000
+- - Rejections: 105075
+- - Accepted: 2.2%
+- - 108000/1000000
+- - Rejections: 106058
+- - Accepted: 1.7%
+- - 109000/1000000
+- - Rejections: 107029
+- - Accepted: 2.9%
+- - 110000/1000000
+- - Rejections: 108000
+- - Accepted: 2.9%
+- - 111000/1000000
+- - Rejections: 108974
+- - Accepted: 2.6%
+- - 112000/1000000
+- - Rejections: 109952
+- - Accepted: 2.2%
+- - 113000/1000000
+- - Rejections: 110945
+- - Accepted: 0.7%
+- - 114000/1000000
+- - Rejections: 111940
+- - Accepted: 0.5%
+- - 115000/1000000
+- - Rejections: 112932
+- - Accepted: 0.8%
+- - 116000/1000000
+- - Rejections: 113875
+- - Accepted: 5.7%
+- - 117000/1000000
+- - Rejections: 114831
+- - Accepted: 4.4%
+- - 118000/1000000
+- - Rejections: 115812
+- - Accepted: 1.9%
+- - 119000/1000000
+- - Rejections: 116775
+- - Accepted: 3.7%
+- - 120000/1000000
+- - Rejections: 117754
+- - Accepted: 2.1%
+- - 121000/1000000
+- - Rejections: 118720
+- - Accepted: 3.4%
+- - 122000/1000000
+- - Rejections: 119718
+- - Accepted: 0.2%
+- - 123000/1000000
+- - Rejections: 120702
+- - Accepted: 1.6%
+- - 124000/1000000
+- - Rejections: 121640
+- - Accepted: 6.2%
+- - 125000/1000000
+- - Rejections: 122602
+- - Accepted: 3.8%
+- - 126000/1000000
+- - Rejections: 123563
+- - Accepted: 3.9%
+- - 127000/1000000
+- - Rejections: 124522
+- - Accepted: 4.1%
+- - 128000/1000000
+- - Rejections: 125517
+- - Accepted: 0.5%
+- - 129000/1000000
+- - Rejections: 126509
+- - Accepted: 0.8%
+- - 130000/1000000
+- - Rejections: 127493
+- - Accepted: 1.6%
+- - 131000/1000000
+- - Rejections: 128480
+- - Accepted: 1.3%
+- - 132000/1000000
+- - Rejections: 129443
+- - Accepted: 3.7%
+- - 133000/1000000
+- - Rejections: 130411
+- - Accepted: 3.2%
+- - 134000/1000000
+- - Rejections: 131391
+- - Accepted: 2.0%
+- - 135000/1000000
+- - Rejections: 132370
+- - Accepted: 2.1%
+- - 136000/1000000
+- - Rejections: 133362
+- - Accepted: 0.8%
+- - 137000/1000000
+- - Rejections: 134346
+- - Accepted: 1.6%
+- - 138000/1000000
+- - Rejections: 135319
+- - Accepted: 2.7%
+- - 139000/1000000
+- - Rejections: 136260
+- - Accepted: 5.9%
+- - 140000/1000000
+- - Rejections: 137238
+- - Accepted: 2.2%
+- - 141000/1000000
+- - Rejections: 138201
+- - Accepted: 3.7%
+- - 142000/1000000
+- - Rejections: 139175
+- - Accepted: 2.6%
+- - 143000/1000000
+- - Rejections: 140135
+- - Accepted: 4.0%
+- - 144000/1000000
+- - Rejections: 141111
+- - Accepted: 2.4%
+- - 145000/1000000
+- - Rejections: 142070
+- - Accepted: 4.1%
+- - 146000/1000000
+- - Rejections: 143006
+- - Accepted: 6.4%
+- - 147000/1000000
+- - Rejections: 143961
+- - Accepted: 4.5%
+- - 148000/1000000
+- - Rejections: 144921
+- - Accepted: 4.0%
+- - 149000/1000000
+- - Rejections: 145886
+- - Accepted: 3.5%
+- - 150000/1000000
+- - Rejections: 146826
+- - Accepted: 6.0%
+- - jump_size updated to 0.0042317
+- - 151000/1000000
+- - Rejections: 147787
+- - Accepted: 3.9%
+- - 152000/1000000
+- - Rejections: 148756
+- - Accepted: 3.1%
+- - 153000/1000000
+- - Rejections: 149735
+- - Accepted: 2.1%
+- - 154000/1000000
+- - Rejections: 150692
+- - Accepted: 4.3%
+- - 155000/1000000
+- - Rejections: 151642
+- - Accepted: 5.0%
+- - 156000/1000000
+- - Rejections: 152627
+- - Accepted: 1.5%
+- - 157000/1000000
+- - Rejections: 153612
+- - Accepted: 1.5%
+- - 158000/1000000
+- - Rejections: 154582
+- - Accepted: 3.0%
+- - 159000/1000000
+- - Rejections: 155533
+- - Accepted: 4.9%
+- - 160000/1000000
+- - Rejections: 156502
+- - Accepted: 3.1%
+- - 161000/1000000
+- - Rejections: 157495
+- - Accepted: 0.7%
+- - 162000/1000000
+- - Rejections: 158493
+- - Accepted: 0.2%
+- - 163000/1000000
+- - Rejections: 159492
+- - Accepted: 0.1%
+- - 164000/1000000
+- - Rejections: 160476
+- - Accepted: 1.6%
+- - 165000/1000000
+- - Rejections: 161409
+- - Accepted: 6.7%
+- - 166000/1000000
+- - Rejections: 162363
+- - Accepted: 4.6%
+- - 167000/1000000
+- - Rejections: 163326
+- - Accepted: 3.7%
+- - 168000/1000000
+- - Rejections: 164289
+- - Accepted: 3.7%
+- - 169000/1000000
+- - Rejections: 165243
+- - Accepted: 4.6%
+- - 170000/1000000
+- - Rejections: 166185
+- - Accepted: 5.8%
+- - 171000/1000000
+- - Rejections: 167128
+- - Accepted: 5.7%
+- - 172000/1000000
+- - Rejections: 168085
+- - Accepted: 4.3%
+- - 173000/1000000
+- - Rejections: 169070
+- - Accepted: 1.5%
+- - 174000/1000000
+- - Rejections: 170019
+- - Accepted: 5.1%
+- - 175000/1000000
+- - Rejections: 170994
+- - Accepted: 2.5%
+- - 176000/1000000
+- - Rejections: 171964
+- - Accepted: 3.0%
+- - 177000/1000000
+- - Rejections: 172940
+- - Accepted: 2.4%
+- - 178000/1000000
+- - Rejections: 173923
+- - Accepted: 1.7%
+- - 179000/1000000
+- - Rejections: 174905
+- - Accepted: 1.8%
+- - 180000/1000000
+- - Rejections: 175862
+- - Accepted: 4.3%
+- - 181000/1000000
+- - Rejections: 176795
+- - Accepted: 6.7%
+- - 182000/1000000
+- - Rejections: 177759
+- - Accepted: 3.6%
+- - 183000/1000000
+- - Rejections: 178710
+- - Accepted: 4.9%
+- - 184000/1000000
+- - Rejections: 179649
+- - Accepted: 6.1%
+- - 185000/1000000
+- - Rejections: 180630
+- - Accepted: 1.9%
+- - 186000/1000000
+- - Rejections: 181599
+- - Accepted: 3.1%
+- - 187000/1000000
+- - Rejections: 182549
+- - Accepted: 5.0%
+- - 188000/1000000
+- - Rejections: 183490
+- - Accepted: 5.9%
+- - 189000/1000000
+- - Rejections: 184427
+- - Accepted: 6.3%
+- - 190000/1000000
+- - Rejections: 185385
+- - Accepted: 4.2%
+- - 191000/1000000
+- - Rejections: 186346
+- - Accepted: 3.9%
+- - 192000/1000000
+- - Rejections: 187288
+- - Accepted: 5.8%
+- - 193000/1000000
+- - Rejections: 188267
+- - Accepted: 2.1%
+- - 194000/1000000
+- - Rejections: 189219
+- - Accepted: 4.8%
+- - 195000/1000000
+- - Rejections: 190193
+- - Accepted: 2.6%
+- - 196000/1000000
+- - Rejections: 191151
+- - Accepted: 4.2%
+- - 197000/1000000
+- - Rejections: 192096
+- - Accepted: 5.5%
+- - 198000/1000000
+- - Rejections: 193064
+- - Accepted: 3.2%
+- - 199000/1000000
+- - Rejections: 193994
+- - Accepted: 7.0%
+- - 200000/1000000
+- - Rejections: 194900
+- - Accepted: 9.4%
+- - jump_size updated to 0.0037131
+- - 201000/1000000
+- - Rejections: 195798
+- - Accepted: 10.2%
+- - 202000/1000000
+- - Rejections: 196737
+- - Accepted: 6.1%
+- - 203000/1000000
+- - Rejections: 197687
+- - Accepted: 5.0%
+- - 204000/1000000
+- - Rejections: 198612
+- - Accepted: 7.5%
+- - 205000/1000000
+- - Rejections: 199577
+- - Accepted: 3.5%
+- - 206000/1000000
+- - Rejections: 200540
+- - Accepted: 3.7%
+- - 207000/1000000
+- - Rejections: 201489
+- - Accepted: 5.1%
+- - 208000/1000000
+- - Rejections: 202425
+- - Accepted: 6.4%
+- - 209000/1000000
+- - Rejections: 203370
+- - Accepted: 5.5%
+- - 210000/1000000
+- - Rejections: 204283
+- - Accepted: 8.7%
+- - 211000/1000000
+- - Rejections: 205214
+- - Accepted: 6.9%
+- - 212000/1000000
+- - Rejections: 206157
+- - Accepted: 5.7%
+- - 213000/1000000
+- - Rejections: 207101
+- - Accepted: 5.6%
+- - 214000/1000000
+- - Rejections: 208003
+- - Accepted: 9.8%
+- - 215000/1000000
+- - Rejections: 208914
+- - Accepted: 8.9%
+- - 216000/1000000
+- - Rejections: 209814
+- - Accepted: 10.0%
+- - 217000/1000000
+- - Rejections: 210735
+- - Accepted: 7.9%
+- - 218000/1000000
+- - Rejections: 211654
+- - Accepted: 8.1%
+- - 219000/1000000
+- - Rejections: 212544
+- - Accepted: 11.0%
+- - 220000/1000000
+- - Rejections: 213503
+- - Accepted: 4.1%
+- - 221000/1000000
+- - Rejections: 214481
+- - Accepted: 2.2%
+- - 222000/1000000
+- - Rejections: 215359
+- - Accepted: 12.2%
+- - 223000/1000000
+- - Rejections: 216277
+- - Accepted: 8.2%
+- - 224000/1000000
+- - Rejections: 217191
+- - Accepted: 8.6%
+- - 225000/1000000
+- - Rejections: 218137
+- - Accepted: 5.4%
+- - 226000/1000000
+- - Rejections: 219060
+- - Accepted: 7.7%
+- - 227000/1000000
+- - Rejections: 219952
+- - Accepted: 10.8%
+- - 228000/1000000
+- - Rejections: 220850
+- - Accepted: 10.2%
+- - 229000/1000000
+- - Rejections: 221807
+- - Accepted: 4.3%
+- - 230000/1000000
+- - Rejections: 222736
+- - Accepted: 7.1%
+- - 231000/1000000
+- - Rejections: 223706
+- - Accepted: 3.0%
+- - 232000/1000000
+- - Rejections: 224632
+- - Accepted: 7.4%
+- - 233000/1000000
+- - Rejections: 225571
+- - Accepted: 6.1%
+- - 234000/1000000
+- - Rejections: 226537
+- - Accepted: 3.4%
+- - 235000/1000000
+- - Rejections: 227518
+- - Accepted: 1.9%
+- - 236000/1000000
+- - Rejections: 228510
+- - Accepted: 0.8%
+- - 237000/1000000
+- - Rejections: 229496
+- - Accepted: 1.4%
+- - 238000/1000000
+- - Rejections: 230472
+- - Accepted: 2.4%
+- - 239000/1000000
+- - Rejections: 231449
+- - Accepted: 2.3%
+- - 240000/1000000
+- - Rejections: 232417
+- - Accepted: 3.2%
+- - 241000/1000000
+- - Rejections: 233404
+- - Accepted: 1.3%
+- - 242000/1000000
+- - Rejections: 234384
+- - Accepted: 2.0%
+- - 243000/1000000
+- - Rejections: 235353
+- - Accepted: 3.1%
+- - 244000/1000000
+- - Rejections: 236315
+- - Accepted: 3.8%
+- - 245000/1000000
+- - Rejections: 237275
+- - Accepted: 4.0%
+- - 246000/1000000
+- - Rejections: 238264
+- - Accepted: 1.1%
+- - 247000/1000000
+- - Rejections: 239252
+- - Accepted: 1.2%
+- - 248000/1000000
+- - Rejections: 240218
+- - Accepted: 3.4%
+- - 249000/1000000
+- - Rejections: 241169
+- - Accepted: 4.9%
+- - 250000/1000000
+- - Rejections: 242156
+- - Accepted: 1.3%
+- - jump_size updated to 0.0033276
+- - 251000/1000000
+- - Rejections: 243132
+- - Accepted: 2.4%
+- - 252000/1000000
+- - Rejections: 244089
+- - Accepted: 4.3%
+- - 253000/1000000
+- - Rejections: 245045
+- - Accepted: 4.4%
+- - 254000/1000000
+- - Rejections: 245978
+- - Accepted: 6.7%
+- - 255000/1000000
+- - Rejections: 246921
+- - Accepted: 5.7%
+- - 256000/1000000
+- - Rejections: 247875
+- - Accepted: 4.6%
+- - 257000/1000000
+- - Rejections: 248859
+- - Accepted: 1.6%
+- - 258000/1000000
+- - Rejections: 249838
+- - Accepted: 2.1%
+- - 259000/1000000
+- - Rejections: 250771
+- - Accepted: 6.7%
+- - 260000/1000000
+- - Rejections: 251753
+- - Accepted: 1.8%
+- - 261000/1000000
+- - Rejections: 252646
+- - Accepted: 10.7%
+- - 262000/1000000
+- - Rejections: 253579
+- - Accepted: 6.7%
+- - 263000/1000000
+- - Rejections: 254570
+- - Accepted: 0.9%
+- - 264000/1000000
+- - Rejections: 255562
+- - Accepted: 0.8%
+- - 265000/1000000
+- - Rejections: 256538
+- - Accepted: 2.4%
+- - 266000/1000000
+- - Rejections: 257499
+- - Accepted: 3.9%
+- - 267000/1000000
+- - Rejections: 258482
+- - Accepted: 1.7%
+- - 268000/1000000
+- - Rejections: 259417
+- - Accepted: 6.5%
+- - 269000/1000000
+- - Rejections: 260333
+- - Accepted: 8.4%
+- - 270000/1000000
+- - Rejections: 261257
+- - Accepted: 7.6%
+- - 271000/1000000
+- - Rejections: 262193
+- - Accepted: 6.4%
+- - 272000/1000000
+- - Rejections: 263057
+- - Accepted: 13.6%
+- - 273000/1000000
+- - Rejections: 263955
+- - Accepted: 10.2%
+- - 274000/1000000
+- - Rejections: 264856
+- - Accepted: 9.9%
+- - 275000/1000000
+- - Rejections: 265739
+- - Accepted: 11.7%
+- - 276000/1000000
+- - Rejections: 266648
+- - Accepted: 9.1%
+- - 277000/1000000
+- - Rejections: 267499
+- - Accepted: 14.9%
+- - 278000/1000000
+- - Rejections: 268377
+- - Accepted: 12.2%
+- - 279000/1000000
+- - Rejections: 269268
+- - Accepted: 10.9%
+- - 280000/1000000
+- - Rejections: 270171
+- - Accepted: 9.7%
+- - 281000/1000000
+- - Rejections: 271065
+- - Accepted: 10.6%
+- - 282000/1000000
+- - Rejections: 271952
+- - Accepted: 11.3%
+- - 283000/1000000
+- - Rejections: 272804
+- - Accepted: 14.8%
+- - 284000/1000000
+- - Rejections: 273626
+- - Accepted: 17.8%
+- - 285000/1000000
+- - Rejections: 274493
+- - Accepted: 13.3%
+- - 286000/1000000
+- - Rejections: 275384
+- - Accepted: 10.9%
+- - 287000/1000000
+- - Rejections: 276324
+- - Accepted: 6.0%
+- - 288000/1000000
+- - Rejections: 277215
+- - Accepted: 10.9%
+- - 289000/1000000
+- - Rejections: 278101
+- - Accepted: 11.4%
+- - 290000/1000000
+- - Rejections: 278981
+- - Accepted: 12.0%
+- - 291000/1000000
+- - Rejections: 279930
+- - Accepted: 5.1%
+- - 292000/1000000
+- - Rejections: 280866
+- - Accepted: 6.4%
+- - 293000/1000000
+- - Rejections: 281812
+- - Accepted: 5.4%
+- - 294000/1000000
+- - Rejections: 282713
+- - Accepted: 9.9%
+- - 295000/1000000
+- - Rejections: 283672
+- - Accepted: 4.1%
+- - 296000/1000000
+- - Rejections: 284623
+- - Accepted: 4.9%
+- - 297000/1000000
+- - Rejections: 285528
+- - Accepted: 9.5%
+- - 298000/1000000
+- - Rejections: 286391
+- - Accepted: 13.7%
+- - 299000/1000000
+- - Rejections: 287339
+- - Accepted: 5.2%
+- - 300000/1000000
+- - Rejections: 288278
+- - Accepted: 6.1%
+- - jump_size updated to 0.0030387
+- - 301000/1000000
+- - Rejections: 289209
+- - Accepted: 6.9%
+- - 302000/1000000
+- - Rejections: 290148
+- - Accepted: 6.1%
+- - 303000/1000000
+- - Rejections: 291011
+- - Accepted: 13.7%
+- - 304000/1000000
+- - Rejections: 291872
+- - Accepted: 13.9%
+- - 305000/1000000
+- - Rejections: 292778
+- - Accepted: 9.4%
+- - 306000/1000000
+- - Rejections: 293611
+- - Accepted: 16.7%
+- - 307000/1000000
+- - Rejections: 294491
+- - Accepted: 12.0%
+- - 308000/1000000
+- - Rejections: 295391
+- - Accepted: 10.0%
+- - 309000/1000000
+- - Rejections: 296329
+- - Accepted: 6.2%
+- - 310000/1000000
+- - Rejections: 297273
+- - Accepted: 5.6%
+- - 311000/1000000
+- - Rejections: 298197
+- - Accepted: 7.6%
+- - 312000/1000000
+- - Rejections: 299131
+- - Accepted: 6.6%
+- - 313000/1000000
+- - Rejections: 300043
+- - Accepted: 8.8%
+- - 314000/1000000
+- - Rejections: 300960
+- - Accepted: 8.3%
+- - 315000/1000000
+- - Rejections: 301848
+- - Accepted: 11.2%
+- - 316000/1000000
+- - Rejections: 302794
+- - Accepted: 5.4%
+- - 317000/1000000
+- - Rejections: 303753
+- - Accepted: 4.1%
+- - 318000/1000000
+- - Rejections: 304652
+- - Accepted: 10.1%
+- - 319000/1000000
+- - Rejections: 305525
+- - Accepted: 12.7%
+- - 320000/1000000
+- - Rejections: 306388
+- - Accepted: 13.7%
+- - 321000/1000000
+- - Rejections: 307279
+- - Accepted: 10.9%
+- - 322000/1000000
+- - Rejections: 308183
+- - Accepted: 9.6%
+- - 323000/1000000
+- - Rejections: 309103
+- - Accepted: 8.0%
+- - 324000/1000000
+- - Rejections: 310005
+- - Accepted: 9.8%
+- - 325000/1000000
+- - Rejections: 310932
+- - Accepted: 7.3%
+- - 326000/1000000
+- - Rejections: 311833
+- - Accepted: 9.9%
+- - 327000/1000000
+- - Rejections: 312710
+- - Accepted: 12.3%
+- - 328000/1000000
+- - Rejections: 313639
+- - Accepted: 7.1%
+- - 329000/1000000
+- - Rejections: 314585
+- - Accepted: 5.4%
+- - 330000/1000000
+- - Rejections: 315542
+- - Accepted: 4.3%
+- - 331000/1000000
+- - Rejections: 316506
+- - Accepted: 3.6%
+- - 332000/1000000
+- - Rejections: 317434
+- - Accepted: 7.2%
+- - 333000/1000000
+- - Rejections: 318363
+- - Accepted: 7.1%
+- - 334000/1000000
+- - Rejections: 319307
+- - Accepted: 5.6%
+- - 335000/1000000
+- - Rejections: 320262
+- - Accepted: 4.5%
+- - 336000/1000000
+- - Rejections: 321194
+- - Accepted: 6.8%
+- - 337000/1000000
+- - Rejections: 322134
+- - Accepted: 6.0%
+- - 338000/1000000
+- - Rejections: 323091
+- - Accepted: 4.3%
+- - 339000/1000000
+- - Rejections: 324031
+- - Accepted: 6.0%
+- - 340000/1000000
+- - Rejections: 325007
+- - Accepted: 2.4%
+- - 341000/1000000
+- - Rejections: 325930
+- - Accepted: 7.7%
+- - 342000/1000000
+- - Rejections: 326827
+- - Accepted: 10.3%
+- - 343000/1000000
+- - Rejections: 327745
+- - Accepted: 8.2%
+- - 344000/1000000
+- - Rejections: 328667
+- - Accepted: 7.8%
+- - 345000/1000000
+- - Rejections: 329586
+- - Accepted: 8.1%
+- - 346000/1000000
+- - Rejections: 330532
+- - Accepted: 5.4%
+- - 347000/1000000
+- - Rejections: 331465
+- - Accepted: 6.7%
+- - 348000/1000000
+- - Rejections: 332414
+- - Accepted: 5.1%
+- - 349000/1000000
+- - Rejections: 333354
+- - Accepted: 6.0%
+- - 350000/1000000
+- - Rejections: 334272
+- - Accepted: 8.2%
+- - jump_size updated to 0.0027964
+- - 351000/1000000
+- - Rejections: 335216
+- - Accepted: 5.6%
+- - 352000/1000000
+- - Rejections: 336144
+- - Accepted: 7.2%
+- - 353000/1000000
+- - Rejections: 337054
+- - Accepted: 9.0%
+- - 354000/1000000
+- - Rejections: 337934
+- - Accepted: 12.0%
+- - 355000/1000000
+- - Rejections: 338873
+- - Accepted: 6.1%
+- - 356000/1000000
+- - Rejections: 339798
+- - Accepted: 7.5%
+- - 357000/1000000
+- - Rejections: 340721
+- - Accepted: 7.7%
+- - 358000/1000000
+- - Rejections: 341675
+- - Accepted: 4.6%
+- - 359000/1000000
+- - Rejections: 342605
+- - Accepted: 7.0%
+- - 360000/1000000
+- - Rejections: 343499
+- - Accepted: 10.6%
+- - 361000/1000000
+- - Rejections: 344388
+- - Accepted: 11.1%
+- - 362000/1000000
+- - Rejections: 345301
+- - Accepted: 8.7%
+- - 363000/1000000
+- - Rejections: 346241
+- - Accepted: 6.0%
+- - 364000/1000000
+- - Rejections: 347168
+- - Accepted: 7.3%
+- - 365000/1000000
+- - Rejections: 348145
+- - Accepted: 2.3%
+- - 366000/1000000
+- - Rejections: 349122
+- - Accepted: 2.3%
+- - 367000/1000000
+- - Rejections: 350062
+- - Accepted: 6.0%
+- - 368000/1000000
+- - Rejections: 351046
+- - Accepted: 1.6%
+- - 369000/1000000
+- - Rejections: 351998
+- - Accepted: 4.8%
+- - 370000/1000000
+- - Rejections: 352988
+- - Accepted: 1.0%
+- - 371000/1000000
+- - Rejections: 353927
+- - Accepted: 6.1%
+- - 372000/1000000
+- - Rejections: 354902
+- - Accepted: 2.5%
+- - 373000/1000000
+- - Rejections: 355853
+- - Accepted: 4.9%
+- - 374000/1000000
+- - Rejections: 356781
+- - Accepted: 7.2%
+- - 375000/1000000
+- - Rejections: 357736
+- - Accepted: 4.5%
+- - 376000/1000000
+- - Rejections: 358646
+- - Accepted: 9.0%
+- - 377000/1000000
+- - Rejections: 359590
+- - Accepted: 5.6%
+- - 378000/1000000
+- - Rejections: 360524
+- - Accepted: 6.6%
+- - 379000/1000000
+- - Rejections: 361396
+- - Accepted: 12.8%
+- - 380000/1000000
+- - Rejections: 362338
+- - Accepted: 5.8%
+- - 381000/1000000
+- - Rejections: 363255
+- - Accepted: 8.3%
+- - 382000/1000000
+- - Rejections: 364137
+- - Accepted: 11.8%
+- - 383000/1000000
+- - Rejections: 365063
+- - Accepted: 7.4%
+- - 384000/1000000
+- - Rejections: 365956
+- - Accepted: 10.7%
+- - 385000/1000000
+- - Rejections: 366870
+- - Accepted: 8.6%
+- - 386000/1000000
+- - Rejections: 367759
+- - Accepted: 11.1%
+- - 387000/1000000
+- - Rejections: 368650
+- - Accepted: 10.9%
+- - 388000/1000000
+- - Rejections: 369581
+- - Accepted: 6.9%
+- - 389000/1000000
+- - Rejections: 370479
+- - Accepted: 10.2%
+- - 390000/1000000
+- - Rejections: 371423
+- - Accepted: 5.6%
+- - 391000/1000000
+- - Rejections: 372310
+- - Accepted: 11.3%
+- - 392000/1000000
+- - Rejections: 373207
+- - Accepted: 10.3%
+- - 393000/1000000
+- - Rejections: 374136
+- - Accepted: 7.1%
+- - 394000/1000000
+- - Rejections: 375079
+- - Accepted: 5.7%
+- - 395000/1000000
+- - Rejections: 375992
+- - Accepted: 8.7%
+- - 396000/1000000
+- - Rejections: 376949
+- - Accepted: 4.3%
+- - 397000/1000000
+- - Rejections: 377844
+- - Accepted: 10.5%
+- - 398000/1000000
+- - Rejections: 378733
+- - Accepted: 11.1%
+- - 399000/1000000
+- - Rejections: 379663
+- - Accepted: 7.0%
+- - 400000/1000000
+- - Rejections: 380547
+- - Accepted: 11.6%
+- - jump_size updated to 0.0025821
+- - 401000/1000000
+- - Rejections: 381408
+- - Accepted: 13.9%
+- - 402000/1000000
+- - Rejections: 382270
+- - Accepted: 13.8%
+- - 403000/1000000
+- - Rejections: 383109
+- - Accepted: 16.1%
+- - 404000/1000000
+- - Rejections: 383934
+- - Accepted: 17.5%
+- - 405000/1000000
+- - Rejections: 384785
+- - Accepted: 14.9%
+- - 406000/1000000
+- - Rejections: 385656
+- - Accepted: 12.9%
+- - 407000/1000000
+- - Rejections: 386557
+- - Accepted: 9.9%
+- - 408000/1000000
+- - Rejections: 387447
+- - Accepted: 11.0%
+- - 409000/1000000
+- - Rejections: 388323
+- - Accepted: 12.4%
+- - 410000/1000000
+- - Rejections: 389219
+- - Accepted: 10.4%
+- - 411000/1000000
+- - Rejections: 390112
+- - Accepted: 10.7%
+- - 412000/1000000
+- - Rejections: 391040
+- - Accepted: 7.2%
+- - 413000/1000000
+- - Rejections: 391999
+- - Accepted: 4.1%
+- - 414000/1000000
+- - Rejections: 392937
+- - Accepted: 6.2%
+- - 415000/1000000
+- - Rejections: 393851
+- - Accepted: 8.6%
+- - 416000/1000000
+- - Rejections: 394726
+- - Accepted: 12.5%
+- - 417000/1000000
+- - Rejections: 395609
+- - Accepted: 11.7%
+- - 418000/1000000
+- - Rejections: 396523
+- - Accepted: 8.6%
+- - 419000/1000000
+- - Rejections: 397446
+- - Accepted: 7.7%
+- - 420000/1000000
+- - Rejections: 398321
+- - Accepted: 12.5%
+- - 421000/1000000
+- - Rejections: 399190
+- - Accepted: 13.1%
+- - 422000/1000000
+- - Rejections: 400004
+- - Accepted: 18.6%
+- - 423000/1000000
+- - Rejections: 400861
+- - Accepted: 14.3%
+- - 424000/1000000
+- - Rejections: 401694
+- - Accepted: 16.7%
+- - 425000/1000000
+- - Rejections: 402527
+- - Accepted: 16.7%
+- - 426000/1000000
+- - Rejections: 403418
+- - Accepted: 10.9%
+- - 427000/1000000
+- - Rejections: 404332
+- - Accepted: 8.6%
+- - 428000/1000000
+- - Rejections: 405236
+- - Accepted: 9.6%
+- - 429000/1000000
+- - Rejections: 406110
+- - Accepted: 12.6%
+- - 430000/1000000
+- - Rejections: 406995
+- - Accepted: 11.5%
+- - 431000/1000000
+- - Rejections: 407907
+- - Accepted: 8.8%
+- - 432000/1000000
+- - Rejections: 408834
+- - Accepted: 7.3%
+- - 433000/1000000
+- - Rejections: 409734
+- - Accepted: 10.0%
+- - 434000/1000000
+- - Rejections: 410634
+- - Accepted: 10.0%
+- - 435000/1000000
+- - Rejections: 411521
+- - Accepted: 11.3%
+- - 436000/1000000
+- - Rejections: 412409
+- - Accepted: 11.2%
+- - 437000/1000000
+- - Rejections: 413246
+- - Accepted: 16.3%
+- - 438000/1000000
+- - Rejections: 414134
+- - Accepted: 11.2%
+- - 439000/1000000
+- - Rejections: 415051
+- - Accepted: 8.3%
+- - 440000/1000000
+- - Rejections: 415956
+- - Accepted: 9.5%
+- - 441000/1000000
+- - Rejections: 416819
+- - Accepted: 13.7%
+- - 442000/1000000
+- - Rejections: 417713
+- - Accepted: 10.6%
+- - 443000/1000000
+- - Rejections: 418601
+- - Accepted: 11.2%
+- - 444000/1000000
+- - Rejections: 419517
+- - Accepted: 8.4%
+- - 445000/1000000
+- - Rejections: 420420
+- - Accepted: 9.7%
+- - 446000/1000000
+- - Rejections: 421323
+- - Accepted: 9.7%
+- - 447000/1000000
+- - Rejections: 422239
+- - Accepted: 8.4%
+- - 448000/1000000
+- - Rejections: 423103
+- - Accepted: 13.6%
+- - 449000/1000000
+- - Rejections: 424039
+- - Accepted: 6.4%
+- - 450000/1000000
+- - Rejections: 425003
+- - Accepted: 3.6%
+- - jump_size updated to 0.0024244
+- - 451000/1000000
+- - Rejections: 425882
+- - Accepted: 12.1%
+- - 452000/1000000
+- - Rejections: 426737
+- - Accepted: 14.5%
+- - 453000/1000000
+- - Rejections: 427584
+- - Accepted: 15.3%
+- - 454000/1000000
+- - Rejections: 428465
+- - Accepted: 11.9%
+- - 455000/1000000
+- - Rejections: 429349
+- - Accepted: 11.6%
+- - 456000/1000000
+- - Rejections: 430227
+- - Accepted: 12.2%
+- - 457000/1000000
+- - Rejections: 431113
+- - Accepted: 11.4%
+- - 458000/1000000
+- - Rejections: 431984
+- - Accepted: 12.9%
+- - 459000/1000000
+- - Rejections: 432862
+- - Accepted: 12.2%
+- - 460000/1000000
+- - Rejections: 433765
+- - Accepted: 9.7%
+- - 461000/1000000
+- - Rejections: 434670
+- - Accepted: 9.5%
+- - 462000/1000000
+- - Rejections: 435547
+- - Accepted: 12.3%
+- - 463000/1000000
+- - Rejections: 436445
+- - Accepted: 10.2%
+- - 464000/1000000
+- - Rejections: 437322
+- - Accepted: 12.3%
+- - 465000/1000000
+- - Rejections: 438268
+- - Accepted: 5.4%
+- - 466000/1000000
+- - Rejections: 439118
+- - Accepted: 15.0%
+- - 467000/1000000
+- - Rejections: 440017
+- - Accepted: 10.1%
+- - 468000/1000000
+- - Rejections: 440948
+- - Accepted: 6.9%
+- - 469000/1000000
+- - Rejections: 441893
+- - Accepted: 5.5%
+- - 470000/1000000
+- - Rejections: 442851
+- - Accepted: 4.2%
+- - 471000/1000000
+- - Rejections: 443809
+- - Accepted: 4.2%
+- - 472000/1000000
+- - Rejections: 444738
+- - Accepted: 7.1%
+- - 473000/1000000
+- - Rejections: 445674
+- - Accepted: 6.4%
+- - 474000/1000000
+- - Rejections: 446606
+- - Accepted: 6.8%
+- - 475000/1000000
+- - Rejections: 447548
+- - Accepted: 5.8%
+- - 476000/1000000
+- - Rejections: 448505
+- - Accepted: 4.3%
+- - 477000/1000000
+- - Rejections: 449443
+- - Accepted: 6.2%
+- - 478000/1000000
+- - Rejections: 450376
+- - Accepted: 6.7%
+- - 479000/1000000
+- - Rejections: 451363
+- - Accepted: 1.3%
+- - 480000/1000000
+- - Rejections: 452312
+- - Accepted: 5.1%
+- - 481000/1000000
+- - Rejections: 453268
+- - Accepted: 4.4%
+- - 482000/1000000
+- - Rejections: 454190
+- - Accepted: 7.8%
+- - 483000/1000000
+- - Rejections: 455098
+- - Accepted: 9.2%
+- - 484000/1000000
+- - Rejections: 456000
+- - Accepted: 9.8%
+- - 485000/1000000
+- - Rejections: 456960
+- - Accepted: 4.0%
+- - 486000/1000000
+- - Rejections: 457897
+- - Accepted: 6.3%
+- - 487000/1000000
+- - Rejections: 458809
+- - Accepted: 8.8%
+- - 488000/1000000
+- - Rejections: 459676
+- - Accepted: 13.3%
+- - 489000/1000000
+- - Rejections: 460559
+- - Accepted: 11.7%
+- - 490000/1000000
+- - Rejections: 461424
+- - Accepted: 13.5%
+- - 491000/1000000
+- - Rejections: 462346
+- - Accepted: 7.8%
+- - 492000/1000000
+- - Rejections: 463264
+- - Accepted: 8.2%
+- - 493000/1000000
+- - Rejections: 464175
+- - Accepted: 8.9%
+- - 494000/1000000
+- - Rejections: 465105
+- - Accepted: 7.0%
+- - 495000/1000000
+- - Rejections: 466038
+- - Accepted: 6.7%
+- - 496000/1000000
+- - Rejections: 466949
+- - Accepted: 8.9%
+- - 497000/1000000
+- - Rejections: 467851
+- - Accepted: 9.8%
+- - 498000/1000000
+- - Rejections: 468737
+- - Accepted: 11.4%
+- - 499000/1000000
+- - Rejections: 469677
+- - Accepted: 6.0%
+- - 500000/1000000
+- - Rejections: 470629
+- - Accepted: 4.8%
+- - jump_size updated to 0.0022668
+- - 501000/1000000
+- - Rejections: 471534
+- - Accepted: 9.5%
+- - 502000/1000000
+- - Rejections: 472470
+- - Accepted: 6.4%
+- - 503000/1000000
+- - Rejections: 473399
+- - Accepted: 7.1%
+- - 504000/1000000
+- - Rejections: 474286
+- - Accepted: 11.3%
+- - 505000/1000000
+- - Rejections: 475204
+- - Accepted: 8.2%
+- - 506000/1000000
+- - Rejections: 476146
+- - Accepted: 5.8%
+- - 507000/1000000
+- - Rejections: 477113
+- - Accepted: 3.3%
+- - 508000/1000000
+- - Rejections: 478049
+- - Accepted: 6.4%
+- - 509000/1000000
+- - Rejections: 478980
+- - Accepted: 6.9%
+- - 510000/1000000
+- - Rejections: 479905
+- - Accepted: 7.5%
+- - 511000/1000000
+- - Rejections: 480828
+- - Accepted: 7.7%
+- - 512000/1000000
+- - Rejections: 481789
+- - Accepted: 3.9%
+- - 513000/1000000
+- - Rejections: 482755
+- - Accepted: 3.4%
+- - 514000/1000000
+- - Rejections: 483698
+- - Accepted: 5.7%
+- - 515000/1000000
+- - Rejections: 484657
+- - Accepted: 4.1%
+- - 516000/1000000
+- - Rejections: 485588
+- - Accepted: 6.9%
+- - 517000/1000000
+- - Rejections: 486485
+- - Accepted: 10.3%
+- - 518000/1000000
+- - Rejections: 487424
+- - Accepted: 6.1%
+- - 519000/1000000
+- - Rejections: 488230
+- - Accepted: 19.4%
+- - 520000/1000000
+- - Rejections: 489096
+- - Accepted: 13.4%
+- - 521000/1000000
+- - Rejections: 489999
+- - Accepted: 9.7%
+- - 522000/1000000
+- - Rejections: 490906
+- - Accepted: 9.3%
+- - 523000/1000000
+- - Rejections: 491819
+- - Accepted: 8.7%
+- - 524000/1000000
+- - Rejections: 492753
+- - Accepted: 6.6%
+- - 525000/1000000
+- - Rejections: 493701
+- - Accepted: 5.2%
+- - 526000/1000000
+- - Rejections: 494693
+- - Accepted: 0.8%
+- - 527000/1000000
+- - Rejections: 495643
+- - Accepted: 5.0%
+- - 528000/1000000
+- - Rejections: 496592
+- - Accepted: 5.1%
+- - 529000/1000000
+- - Rejections: 497488
+- - Accepted: 10.4%
+- - 530000/1000000
+- - Rejections: 498383
+- - Accepted: 10.5%
+- - 531000/1000000
+- - Rejections: 499271
+- - Accepted: 11.2%
+- - 532000/1000000
+- - Rejections: 500152
+- - Accepted: 11.9%
+- - 533000/1000000
+- - Rejections: 501085
+- - Accepted: 6.7%
+- - 534000/1000000
+- - Rejections: 501971
+- - Accepted: 11.4%
+- - 535000/1000000
+- - Rejections: 502869
+- - Accepted: 10.2%
+- - 536000/1000000
+- - Rejections: 503720
+- - Accepted: 14.9%
+- - 537000/1000000
+- - Rejections: 504601
+- - Accepted: 11.9%
+- - 538000/1000000
+- - Rejections: 505475
+- - Accepted: 12.6%
+- - 539000/1000000
+- - Rejections: 506301
+- - Accepted: 17.4%
+- - 540000/1000000
+- - Rejections: 507148
+- - Accepted: 15.3%
+- - 541000/1000000
+- - Rejections: 508049
+- - Accepted: 9.9%
+- - 542000/1000000
+- - Rejections: 508908
+- - Accepted: 14.1%
+- - 543000/1000000
+- - Rejections: 509709
+- - Accepted: 19.9%
+- - 544000/1000000
+- - Rejections: 510608
+- - Accepted: 10.1%
+- - 545000/1000000
+- - Rejections: 511509
+- - Accepted: 9.9%
+- - 546000/1000000
+- - Rejections: 512370
+- - Accepted: 13.9%
+- - 547000/1000000
+- - Rejections: 513259
+- - Accepted: 11.1%
+- - 548000/1000000
+- - Rejections: 514167
+- - Accepted: 9.2%
+- - 549000/1000000
+- - Rejections: 515061
+- - Accepted: 10.6%
+- - 550000/1000000
+- - Rejections: 515963
+- - Accepted: 9.8%
+- - jump_size updated to 0.0021298
+- - 551000/1000000
+- - Rejections: 516876
+- - Accepted: 8.7%
+- - 552000/1000000
+- - Rejections: 517765
+- - Accepted: 11.1%
+- - 553000/1000000
+- - Rejections: 518691
+- - Accepted: 7.4%
+- - 554000/1000000
+- - Rejections: 519582
+- - Accepted: 10.9%
+- - 555000/1000000
+- - Rejections: 520502
+- - Accepted: 8.0%
+- - 556000/1000000
+- - Rejections: 521437
+- - Accepted: 6.5%
+- - 557000/1000000
+- - Rejections: 522337
+- - Accepted: 10.0%
+- - 558000/1000000
+- - Rejections: 523290
+- - Accepted: 4.7%
+- - 559000/1000000
+- - Rejections: 524275
+- - Accepted: 1.5%
+- - 560000/1000000
+- - Rejections: 525201
+- - Accepted: 7.4%
+- - 561000/1000000
+- - Rejections: 526064
+- - Accepted: 13.7%
+- - 562000/1000000
+- - Rejections: 526991
+- - Accepted: 7.3%
+- - 563000/1000000
+- - Rejections: 527922
+- - Accepted: 6.9%
+- - 564000/1000000
+- - Rejections: 528848
+- - Accepted: 7.4%
+- - 565000/1000000
+- - Rejections: 529779
+- - Accepted: 6.9%
+- - 566000/1000000
+- - Rejections: 530718
+- - Accepted: 6.1%
+- - 567000/1000000
+- - Rejections: 531639
+- - Accepted: 7.9%
+- - 568000/1000000
+- - Rejections: 532596
+- - Accepted: 4.3%
+- - 569000/1000000
+- - Rejections: 533479
+- - Accepted: 11.7%
+- - 570000/1000000
+- - Rejections: 534328
+- - Accepted: 15.1%
+- - 571000/1000000
+- - Rejections: 535136
+- - Accepted: 19.2%
+- - 572000/1000000
+- - Rejections: 536028
+- - Accepted: 10.8%
+- - 573000/1000000
+- - Rejections: 536916
+- - Accepted: 11.2%
+- - 574000/1000000
+- - Rejections: 537765
+- - Accepted: 15.1%
+- - 575000/1000000
+- - Rejections: 538680
+- - Accepted: 8.5%
+- - 576000/1000000
+- - Rejections: 539508
+- - Accepted: 17.2%
+- - 577000/1000000
+- - Rejections: 540430
+- - Accepted: 7.8%
+- - 578000/1000000
+- - Rejections: 541350
+- - Accepted: 8.0%
+- - 579000/1000000
+- - Rejections: 542294
+- - Accepted: 5.6%
+- - 580000/1000000
+- - Rejections: 543221
+- - Accepted: 7.3%
+- - 581000/1000000
+- - Rejections: 544146
+- - Accepted: 7.5%
+- - 582000/1000000
+- - Rejections: 545082
+- - Accepted: 6.4%
+- - 583000/1000000
+- - Rejections: 546019
+- - Accepted: 6.3%
+- - 584000/1000000
+- - Rejections: 546939
+- - Accepted: 8.0%
+- - 585000/1000000
+- - Rejections: 547821
+- - Accepted: 11.8%
+- - 586000/1000000
+- - Rejections: 548730
+- - Accepted: 9.1%
+- - 587000/1000000
+- - Rejections: 549682
+- - Accepted: 4.8%
+- - 588000/1000000
+- - Rejections: 550606
+- - Accepted: 7.6%
+- - 589000/1000000
+- - Rejections: 551545
+- - Accepted: 6.1%
+- - 590000/1000000
+- - Rejections: 552496
+- - Accepted: 4.9%
+- - 591000/1000000
+- - Rejections: 553467
+- - Accepted: 2.9%
+- - 592000/1000000
+- - Rejections: 554401
+- - Accepted: 6.6%
+- - 593000/1000000
+- - Rejections: 555339
+- - Accepted: 6.2%
+- - 594000/1000000
+- - Rejections: 556209
+- - Accepted: 13.0%
+- - 595000/1000000
+- - Rejections: 557117
+- - Accepted: 9.2%
+- - 596000/1000000
+- - Rejections: 557991
+- - Accepted: 12.6%
+- - 597000/1000000
+- - Rejections: 558842
+- - Accepted: 14.9%
+- - 598000/1000000
+- - Rejections: 559731
+- - Accepted: 11.1%
+- - 599000/1000000
+- - Rejections: 560606
+- - Accepted: 12.5%
+- - 600000/1000000
+- - Rejections: 561489
+- - Accepted: 11.7%
+- - jump_size updated to 0.0020043
+- - 601000/1000000
+- - Rejections: 562355
+- - Accepted: 13.4%
+- - 602000/1000000
+- - Rejections: 563234
+- - Accepted: 12.1%
+- - 603000/1000000
+- - Rejections: 564063
+- - Accepted: 17.1%
+- - 604000/1000000
+- - Rejections: 564928
+- - Accepted: 13.5%
+- - 605000/1000000
+- - Rejections: 565809
+- - Accepted: 11.9%
+- - 606000/1000000
+- - Rejections: 566701
+- - Accepted: 10.8%
+- - 607000/1000000
+- - Rejections: 567531
+- - Accepted: 17.0%
+- - 608000/1000000
+- - Rejections: 568389
+- - Accepted: 14.2%
+- - 609000/1000000
+- - Rejections: 569256
+- - Accepted: 13.3%
+- - 610000/1000000
+- - Rejections: 570154
+- - Accepted: 10.2%
+- - 611000/1000000
+- - Rejections: 570998
+- - Accepted: 15.6%
+- - 612000/1000000
+- - Rejections: 571807
+- - Accepted: 19.1%
+- - 613000/1000000
+- - Rejections: 572643
+- - Accepted: 16.4%
+- - 614000/1000000
+- - Rejections: 573533
+- - Accepted: 11.0%
+- - 615000/1000000
+- - Rejections: 574396
+- - Accepted: 13.7%
+- - 616000/1000000
+- - Rejections: 575269
+- - Accepted: 12.7%
+- - 617000/1000000
+- - Rejections: 576092
+- - Accepted: 17.7%
+- - 618000/1000000
+- - Rejections: 576815
+- - Accepted: 27.7%
+- - 619000/1000000
+- - Rejections: 577611
+- - Accepted: 20.4%
+- - 620000/1000000
+- - Rejections: 578415
+- - Accepted: 19.6%
+- - 621000/1000000
+- - Rejections: 579232
+- - Accepted: 18.3%
+- - 622000/1000000
+- - Rejections: 580110
+- - Accepted: 12.2%
+- - 623000/1000000
+- - Rejections: 580954
+- - Accepted: 15.6%
+- - 624000/1000000
+- - Rejections: 581829
+- - Accepted: 12.5%
+- - 625000/1000000
+- - Rejections: 582749
+- - Accepted: 8.0%
+- - 626000/1000000
+- - Rejections: 583600
+- - Accepted: 14.9%
+- - 627000/1000000
+- - Rejections: 584449
+- - Accepted: 15.1%
+- - 628000/1000000
+- - Rejections: 585224
+- - Accepted: 22.5%
+- - 629000/1000000
+- - Rejections: 586061
+- - Accepted: 16.3%
+- - 630000/1000000
+- - Rejections: 586891
+- - Accepted: 17.0%
+- - 631000/1000000
+- - Rejections: 587810
+- - Accepted: 8.1%
+- - 632000/1000000
+- - Rejections: 588683
+- - Accepted: 12.7%
+- - 633000/1000000
+- - Rejections: 589585
+- - Accepted: 9.8%
+- - 634000/1000000
+- - Rejections: 590495
+- - Accepted: 9.0%
+- - 635000/1000000
+- - Rejections: 591427
+- - Accepted: 6.8%
+- - 636000/1000000
+- - Rejections: 592288
+- - Accepted: 13.9%
+- - 637000/1000000
+- - Rejections: 593195
+- - Accepted: 9.3%
+- - 638000/1000000
+- - Rejections: 594096
+- - Accepted: 9.9%
+- - 639000/1000000
+- - Rejections: 595058
+- - Accepted: 3.8%
+- - 640000/1000000
+- - Rejections: 595909
+- - Accepted: 14.9%
+- - 641000/1000000
+- - Rejections: 596779
+- - Accepted: 13.0%
+- - 642000/1000000
+- - Rejections: 597660
+- - Accepted: 11.9%
+- - 643000/1000000
+- - Rejections: 598494
+- - Accepted: 16.6%
+- - 644000/1000000
+- - Rejections: 599375
+- - Accepted: 11.9%
+- - 645000/1000000
+- - Rejections: 600197
+- - Accepted: 17.8%
+- - 646000/1000000
+- - Rejections: 601147
+- - Accepted: 5.0%
+- - 647000/1000000
+- - Rejections: 601930
+- - Accepted: 21.7%
+- - 648000/1000000
+- - Rejections: 602791
+- - Accepted: 13.9%
+- - 649000/1000000
+- - Rejections: 603665
+- - Accepted: 12.6%
+- - 650000/1000000
+- - Rejections: 604502
+- - Accepted: 16.3%
+- - jump_size updated to 0.0019171
+- - 651000/1000000
+- - Rejections: 605376
+- - Accepted: 12.6%
+- - 652000/1000000
+- - Rejections: 606232
+- - Accepted: 14.4%
+- - 653000/1000000
+- - Rejections: 607093
+- - Accepted: 13.9%
+- - 654000/1000000
+- - Rejections: 607959
+- - Accepted: 13.4%
+- - 655000/1000000
+- - Rejections: 608853
+- - Accepted: 10.6%
+- - 656000/1000000
+- - Rejections: 609798
+- - Accepted: 5.5%
+- - 657000/1000000
+- - Rejections: 610715
+- - Accepted: 8.3%
+- - 658000/1000000
+- - Rejections: 611612
+- - Accepted: 10.3%
+- - 659000/1000000
+- - Rejections: 612473
+- - Accepted: 13.9%
+- - 660000/1000000
+- - Rejections: 613366
+- - Accepted: 10.7%
+- - 661000/1000000
+- - Rejections: 614212
+- - Accepted: 15.4%
+- - 662000/1000000
+- - Rejections: 615073
+- - Accepted: 13.9%
+- - 663000/1000000
+- - Rejections: 615878
+- - Accepted: 19.5%
+- - 664000/1000000
+- - Rejections: 616689
+- - Accepted: 18.9%
+- - 665000/1000000
+- - Rejections: 617553
+- - Accepted: 13.6%
+- - 666000/1000000
+- - Rejections: 618431
+- - Accepted: 12.2%
+- - 667000/1000000
+- - Rejections: 619181
+- - Accepted: 25.0%
+- - 668000/1000000
+- - Rejections: 619987
+- - Accepted: 19.4%
+- - 669000/1000000
+- - Rejections: 620862
+- - Accepted: 12.5%
+- - 670000/1000000
+- - Rejections: 621678
+- - Accepted: 18.4%
+- - 671000/1000000
+- - Rejections: 622567
+- - Accepted: 11.1%
+- - 672000/1000000
+- - Rejections: 623507
+- - Accepted: 6.0%
+- - 673000/1000000
+- - Rejections: 624344
+- - Accepted: 16.3%
+- - 674000/1000000
+- - Rejections: 625232
+- - Accepted: 11.2%
+- - 675000/1000000
+- - Rejections: 626055
+- - Accepted: 17.7%
+- - 676000/1000000
+- - Rejections: 626909
+- - Accepted: 14.6%
+- - 677000/1000000
+- - Rejections: 627782
+- - Accepted: 12.7%
+- - 678000/1000000
+- - Rejections: 628648
+- - Accepted: 13.4%
+- - 679000/1000000
+- - Rejections: 629458
+- - Accepted: 19.0%
+- - 680000/1000000
+- - Rejections: 630301
+- - Accepted: 15.7%
+- - 681000/1000000
+- - Rejections: 631092
+- - Accepted: 20.9%
+- - 682000/1000000
+- - Rejections: 631904
+- - Accepted: 18.8%
+- - 683000/1000000
+- - Rejections: 632807
+- - Accepted: 9.7%
+- - 684000/1000000
+- - Rejections: 633655
+- - Accepted: 15.2%
+- - 685000/1000000
+- - Rejections: 634443
+- - Accepted: 21.2%
+- - 686000/1000000
+- - Rejections: 635275
+- - Accepted: 16.8%
+- - 687000/1000000
+- - Rejections: 636155
+- - Accepted: 12.0%
+- - 688000/1000000
+- - Rejections: 637053
+- - Accepted: 10.2%
+- - 689000/1000000
+- - Rejections: 637869
+- - Accepted: 18.4%
+- - 690000/1000000
+- - Rejections: 638713
+- - Accepted: 15.6%
+- - 691000/1000000
+- - Rejections: 639574
+- - Accepted: 13.9%
+- - 692000/1000000
+- - Rejections: 640427
+- - Accepted: 14.7%
+- - 693000/1000000
+- - Rejections: 641237
+- - Accepted: 19.0%
+- - 694000/1000000
+- - Rejections: 642088
+- - Accepted: 14.9%
+- - 695000/1000000
+- - Rejections: 642983
+- - Accepted: 10.5%
+- - 696000/1000000
+- - Rejections: 643801
+- - Accepted: 18.2%
+- - 697000/1000000
+- - Rejections: 644647
+- - Accepted: 15.4%
+- - 698000/1000000
+- - Rejections: 645557
+- - Accepted: 9.0%
+- - 699000/1000000
+- - Rejections: 646453
+- - Accepted: 10.4%
+- - 700000/1000000
+- - Rejections: 647376
+- - Accepted: 7.7%
+- - jump_size updated to 0.0018381
+- - 701000/1000000
+- - Rejections: 648280
+- - Accepted: 9.6%
+- - 702000/1000000
+- - Rejections: 649165
+- - Accepted: 11.5%
+- - 703000/1000000
+- - Rejections: 650040
+- - Accepted: 12.5%
+- - 704000/1000000
+- - Rejections: 650911
+- - Accepted: 12.9%
+- - 705000/1000000
+- - Rejections: 651721
+- - Accepted: 19.0%
+- - 706000/1000000
+- - Rejections: 652558
+- - Accepted: 16.3%
+- - 707000/1000000
+- - Rejections: 653461
+- - Accepted: 9.7%
+- - 708000/1000000
+- - Rejections: 654340
+- - Accepted: 12.1%
+- - 709000/1000000
+- - Rejections: 655213
+- - Accepted: 12.7%
+- - 710000/1000000
+- - Rejections: 656034
+- - Accepted: 17.9%
+- - 711000/1000000
+- - Rejections: 656972
+- - Accepted: 6.2%
+- - 712000/1000000
+- - Rejections: 657874
+- - Accepted: 9.8%
+- - 713000/1000000
+- - Rejections: 658790
+- - Accepted: 8.4%
+- - 714000/1000000
+- - Rejections: 659661
+- - Accepted: 12.9%
+- - 715000/1000000
+- - Rejections: 660543
+- - Accepted: 11.8%
+- - 716000/1000000
+- - Rejections: 661385
+- - Accepted: 15.8%
+- - 717000/1000000
+- - Rejections: 662260
+- - Accepted: 12.5%
+- - 718000/1000000
+- - Rejections: 663189
+- - Accepted: 7.1%
+- - 719000/1000000
+- - Rejections: 664171
+- - Accepted: 1.8%
+- - 720000/1000000
+- - Rejections: 665134
+- - Accepted: 3.7%
+- - 721000/1000000
+- - Rejections: 666016
+- - Accepted: 11.8%
+- - 722000/1000000
+- - Rejections: 666870
+- - Accepted: 14.6%
+- - 723000/1000000
+- - Rejections: 667780
+- - Accepted: 9.0%
+- - 724000/1000000
+- - Rejections: 668667
+- - Accepted: 11.3%
+- - 725000/1000000
+- - Rejections: 669455
+- - Accepted: 21.2%
+- - 726000/1000000
+- - Rejections: 670322
+- - Accepted: 13.3%
+- - 727000/1000000
+- - Rejections: 671150
+- - Accepted: 17.2%
+- - 728000/1000000
+- - Rejections: 671950
+- - Accepted: 20.0%
+- - 729000/1000000
+- - Rejections: 672768
+- - Accepted: 18.2%
+- - 730000/1000000
+- - Rejections: 673659
+- - Accepted: 10.9%
+- - 731000/1000000
+- - Rejections: 674582
+- - Accepted: 7.7%
+- - 732000/1000000
+- - Rejections: 675437
+- - Accepted: 14.5%
+- - 733000/1000000
+- - Rejections: 676372
+- - Accepted: 6.5%
+- - 734000/1000000
+- - Rejections: 677249
+- - Accepted: 12.3%
+- - 735000/1000000
+- - Rejections: 678153
+- - Accepted: 9.6%
+- - 736000/1000000
+- - Rejections: 678991
+- - Accepted: 16.2%
+- - 737000/1000000
+- - Rejections: 679844
+- - Accepted: 14.7%
+- - 738000/1000000
+- - Rejections: 680754
+- - Accepted: 9.0%
+- - 739000/1000000
+- - Rejections: 681698
+- - Accepted: 5.6%
+- - 740000/1000000
+- - Rejections: 682651
+- - Accepted: 4.7%
+- - 741000/1000000
+- - Rejections: 683554
+- - Accepted: 9.7%
+- - 742000/1000000
+- - Rejections: 684465
+- - Accepted: 8.9%
+- - 743000/1000000
+- - Rejections: 685316
+- - Accepted: 14.9%
+- - 744000/1000000
+- - Rejections: 686209
+- - Accepted: 10.7%
+- - 745000/1000000
+- - Rejections: 687083
+- - Accepted: 12.6%
+- - 746000/1000000
+- - Rejections: 687928
+- - Accepted: 15.5%
+- - 747000/1000000
+- - Rejections: 688794
+- - Accepted: 13.4%
+- - 748000/1000000
+- - Rejections: 689680
+- - Accepted: 11.4%
+- - 749000/1000000
+- - Rejections: 690535
+- - Accepted: 14.5%
+- - 750000/1000000
+- - Rejections: 691390
+- - Accepted: 14.5%
+- - jump_size updated to 0.0017545
+- - 751000/1000000
+- - Rejections: 692225
+- - Accepted: 16.5%
+- - 752000/1000000
+- - Rejections: 693097
+- - Accepted: 12.8%
+- - 753000/1000000
+- - Rejections: 693968
+- - Accepted: 12.9%
+- - 754000/1000000
+- - Rejections: 694821
+- - Accepted: 14.7%
+- - 755000/1000000
+- - Rejections: 695696
+- - Accepted: 12.5%
+- - 756000/1000000
+- - Rejections: 696606
+- - Accepted: 9.0%
+- - 757000/1000000
+- - Rejections: 697518
+- - Accepted: 8.8%
+- - 758000/1000000
+- - Rejections: 698390
+- - Accepted: 12.8%
+- - 759000/1000000
+- - Rejections: 699242
+- - Accepted: 14.8%
+- - 760000/1000000
+- - Rejections: 700041
+- - Accepted: 20.1%
+- - 761000/1000000
+- - Rejections: 700875
+- - Accepted: 16.6%
+- - 762000/1000000
+- - Rejections: 701673
+- - Accepted: 20.2%
+- - 763000/1000000
+- - Rejections: 702490
+- - Accepted: 18.3%
+- - 764000/1000000
+- - Rejections: 703335
+- - Accepted: 15.5%
+- - 765000/1000000
+- - Rejections: 704155
+- - Accepted: 18.0%
+- - 766000/1000000
+- - Rejections: 704947
+- - Accepted: 20.8%
+- - 767000/1000000
+- - Rejections: 705798
+- - Accepted: 14.9%
+- - 768000/1000000
+- - Rejections: 706702
+- - Accepted: 9.6%
+- - 769000/1000000
+- - Rejections: 707514
+- - Accepted: 18.8%
+- - 770000/1000000
+- - Rejections: 708375
+- - Accepted: 13.9%
+- - 771000/1000000
+- - Rejections: 709211
+- - Accepted: 16.4%
+- - 772000/1000000
+- - Rejections: 710106
+- - Accepted: 10.5%
+- - 773000/1000000
+- - Rejections: 711018
+- - Accepted: 8.8%
+- - 774000/1000000
+- - Rejections: 711866
+- - Accepted: 15.2%
+- - 775000/1000000
+- - Rejections: 712698
+- - Accepted: 16.8%
+- - 776000/1000000
+- - Rejections: 713570
+- - Accepted: 12.8%
+- - 777000/1000000
+- - Rejections: 714428
+- - Accepted: 14.2%
+- - 778000/1000000
+- - Rejections: 715311
+- - Accepted: 11.7%
+- - 779000/1000000
+- - Rejections: 716154
+- - Accepted: 15.7%
+- - 780000/1000000
+- - Rejections: 717021
+- - Accepted: 13.3%
+- - 781000/1000000
+- - Rejections: 717907
+- - Accepted: 11.4%
+- - 782000/1000000
+- - Rejections: 718744
+- - Accepted: 16.3%
+- - 783000/1000000
+- - Rejections: 719576
+- - Accepted: 16.8%
+- - 784000/1000000
+- - Rejections: 720462
+- - Accepted: 11.4%
+- - 785000/1000000
+- - Rejections: 721294
+- - Accepted: 16.8%
+- - 786000/1000000
+- - Rejections: 722250
+- - Accepted: 4.4%
+- - 787000/1000000
+- - Rejections: 723196
+- - Accepted: 5.4%
+- - 788000/1000000
+- - Rejections: 724159
+- - Accepted: 3.7%
+- - 789000/1000000
+- - Rejections: 725081
+- - Accepted: 7.8%
+- - 790000/1000000
+- - Rejections: 726010
+- - Accepted: 7.1%
+- - 791000/1000000
+- - Rejections: 726884
+- - Accepted: 12.6%
+- - 792000/1000000
+- - Rejections: 727752
+- - Accepted: 13.2%
+- - 793000/1000000
+- - Rejections: 728527
+- - Accepted: 22.5%
+- - 794000/1000000
+- - Rejections: 729354
+- - Accepted: 17.3%
+- - 795000/1000000
+- - Rejections: 730124
+- - Accepted: 23.0%
+- - 796000/1000000
+- - Rejections: 730887
+- - Accepted: 23.7%
+- - 797000/1000000
+- - Rejections: 731662
+- - Accepted: 22.5%
+- - 798000/1000000
+- - Rejections: 732545
+- - Accepted: 11.7%
+- - 799000/1000000
+- - Rejections: 733393
+- - Accepted: 15.2%
+- - 800000/1000000
+- - Rejections: 734240
+- - Accepted: 15.3%
+- - jump_size updated to 0.001687
+- - 801000/1000000
+- - Rejections: 735051
+- - Accepted: 18.9%
+- - 802000/1000000
+- - Rejections: 735944
+- - Accepted: 10.7%
+- - 803000/1000000
+- - Rejections: 736875
+- - Accepted: 6.9%
+- - 804000/1000000
+- - Rejections: 737772
+- - Accepted: 10.3%
+- - 805000/1000000
+- - Rejections: 738710
+- - Accepted: 6.2%
+- - 806000/1000000
+- - Rejections: 739696
+- - Accepted: 1.4%
+- - 807000/1000000
+- - Rejections: 740649
+- - Accepted: 4.7%
+- - 808000/1000000
+- - Rejections: 741581
+- - Accepted: 6.8%
+- - 809000/1000000
+- - Rejections: 742496
+- - Accepted: 8.5%
+- - 810000/1000000
+- - Rejections: 743282
+- - Accepted: 21.4%
+- - 811000/1000000
+- - Rejections: 744016
+- - Accepted: 26.6%
+- - 812000/1000000
+- - Rejections: 744770
+- - Accepted: 24.6%
+- - 813000/1000000
+- - Rejections: 745654
+- - Accepted: 11.6%
+- - 814000/1000000
+- - Rejections: 746542
+- - Accepted: 11.2%
+- - 815000/1000000
+- - Rejections: 747413
+- - Accepted: 12.9%
+- - 816000/1000000
+- - Rejections: 748286
+- - Accepted: 12.7%
+- - 817000/1000000
+- - Rejections: 749179
+- - Accepted: 10.7%
+- - 818000/1000000
+- - Rejections: 750016
+- - Accepted: 16.3%
+- - 819000/1000000
+- - Rejections: 750848
+- - Accepted: 16.8%
+- - 820000/1000000
+- - Rejections: 751634
+- - Accepted: 21.4%
+- - 821000/1000000
+- - Rejections: 752495
+- - Accepted: 13.9%
+- - 822000/1000000
+- - Rejections: 753271
+- - Accepted: 22.4%
+- - 823000/1000000
+- - Rejections: 754118
+- - Accepted: 15.3%
+- - 824000/1000000
+- - Rejections: 754960
+- - Accepted: 15.8%
+- - 825000/1000000
+- - Rejections: 755834
+- - Accepted: 12.6%
+- - 826000/1000000
+- - Rejections: 756736
+- - Accepted: 9.8%
+- - 827000/1000000
+- - Rejections: 757606
+- - Accepted: 13.0%
+- - 828000/1000000
+- - Rejections: 758498
+- - Accepted: 10.8%
+- - 829000/1000000
+- - Rejections: 759405
+- - Accepted: 9.3%
+- - 830000/1000000
+- - Rejections: 760298
+- - Accepted: 10.7%
+- - 831000/1000000
+- - Rejections: 761166
+- - Accepted: 13.2%
+- - 832000/1000000
+- - Rejections: 761979
+- - Accepted: 18.7%
+- - 833000/1000000
+- - Rejections: 762776
+- - Accepted: 20.3%
+- - 834000/1000000
+- - Rejections: 763562
+- - Accepted: 21.4%
+- - 835000/1000000
+- - Rejections: 764434
+- - Accepted: 12.8%
+- - 836000/1000000
+- - Rejections: 765324
+- - Accepted: 11.0%
+- - 837000/1000000
+- - Rejections: 766213
+- - Accepted: 11.1%
+- - 838000/1000000
+- - Rejections: 767130
+- - Accepted: 8.3%
+- - 839000/1000000
+- - Rejections: 767957
+- - Accepted: 17.3%
+- - 840000/1000000
+- - Rejections: 768770
+- - Accepted: 18.7%
+- - 841000/1000000
+- - Rejections: 769534
+- - Accepted: 23.6%
+- - 842000/1000000
+- - Rejections: 770340
+- - Accepted: 19.4%
+- - 843000/1000000
+- - Rejections: 771110
+- - Accepted: 23.0%
+- - 844000/1000000
+- - Rejections: 771852
+- - Accepted: 25.8%
+- - 845000/1000000
+- - Rejections: 772577
+- - Accepted: 27.5%
+- - 846000/1000000
+- - Rejections: 773347
+- - Accepted: 23.0%
+- - 847000/1000000
+- - Rejections: 774077
+- - Accepted: 27.0%
+- - 848000/1000000
+- - Rejections: 774852
+- - Accepted: 22.5%
+- - 849000/1000000
+- - Rejections: 775728
+- - Accepted: 12.4%
+- - 850000/1000000
+- - Rejections: 776558
+- - Accepted: 17.0%
+- - jump_size updated to 0.0016282
+- - 851000/1000000
+- - Rejections: 777219
+- - Accepted: 33.9%
+- - 852000/1000000
+- - Rejections: 778026
+- - Accepted: 19.3%
+- - 853000/1000000
+- - Rejections: 778770
+- - Accepted: 25.6%
+- - 854000/1000000
+- - Rejections: 779566
+- - Accepted: 20.4%
+- - 855000/1000000
+- - Rejections: 780372
+- - Accepted: 19.4%
+- - 856000/1000000
+- - Rejections: 781190
+- - Accepted: 18.2%
+- - 857000/1000000
+- - Rejections: 782042
+- - Accepted: 14.8%
+- - 858000/1000000
+- - Rejections: 782913
+- - Accepted: 12.9%
+- - 859000/1000000
+- - Rejections: 783687
+- - Accepted: 22.6%
+- - 860000/1000000
+- - Rejections: 784539
+- - Accepted: 14.8%
+- - 861000/1000000
+- - Rejections: 785369
+- - Accepted: 17.0%
+- - 862000/1000000
+- - Rejections: 786158
+- - Accepted: 21.1%
+- - 863000/1000000
+- - Rejections: 786929
+- - Accepted: 22.9%
+- - 864000/1000000
+- - Rejections: 787695
+- - Accepted: 23.4%
+- - 865000/1000000
+- - Rejections: 788490
+- - Accepted: 20.5%
+- - 866000/1000000
+- - Rejections: 789360
+- - Accepted: 13.0%
+- - 867000/1000000
+- - Rejections: 790182
+- - Accepted: 17.8%
+- - 868000/1000000
+- - Rejections: 791012
+- - Accepted: 17.0%
+- - 869000/1000000
+- - Rejections: 791838
+- - Accepted: 17.4%
+- - 870000/1000000
+- - Rejections: 792600
+- - Accepted: 23.8%
+- - 871000/1000000
+- - Rejections: 793385
+- - Accepted: 21.5%
+- - 872000/1000000
+- - Rejections: 794147
+- - Accepted: 23.8%
+- - 873000/1000000
+- - Rejections: 795007
+- - Accepted: 14.0%
+- - 874000/1000000
+- - Rejections: 795790
+- - Accepted: 21.7%
+- - 875000/1000000
+- - Rejections: 796535
+- - Accepted: 25.5%
+- - 876000/1000000
+- - Rejections: 797347
+- - Accepted: 18.8%
+- - 877000/1000000
+- - Rejections: 798107
+- - Accepted: 24.0%
+- - 878000/1000000
+- - Rejections: 799023
+- - Accepted: 8.4%
+- - 879000/1000000
+- - Rejections: 799937
+- - Accepted: 8.6%
+- - 880000/1000000
+- - Rejections: 800810
+- - Accepted: 12.7%
+- - 881000/1000000
+- - Rejections: 801658
+- - Accepted: 15.2%
+- - 882000/1000000
+- - Rejections: 802456
+- - Accepted: 20.2%
+- - 883000/1000000
+- - Rejections: 803273
+- - Accepted: 18.3%
+- - 884000/1000000
+- - Rejections: 804149
+- - Accepted: 12.4%
+- - 885000/1000000
+- - Rejections: 804922
+- - Accepted: 22.7%
+- - 886000/1000000
+- - Rejections: 805700
+- - Accepted: 22.2%
+- - 887000/1000000
+- - Rejections: 806473
+- - Accepted: 22.7%
+- - 888000/1000000
+- - Rejections: 807272
+- - Accepted: 20.1%
+- - 889000/1000000
+- - Rejections: 807986
+- - Accepted: 28.6%
+- - 890000/1000000
+- - Rejections: 808764
+- - Accepted: 22.2%
+- - 891000/1000000
+- - Rejections: 809554
+- - Accepted: 21.0%
+- - 892000/1000000
+- - Rejections: 810429
+- - Accepted: 12.5%
+- - 893000/1000000
+- - Rejections: 811164
+- - Accepted: 26.5%
+- - 894000/1000000
+- - Rejections: 811953
+- - Accepted: 21.1%
+- - 895000/1000000
+- - Rejections: 812744
+- - Accepted: 20.9%
+- - 896000/1000000
+- - Rejections: 813479
+- - Accepted: 26.5%
+- - 897000/1000000
+- - Rejections: 814170
+- - Accepted: 30.9%
+- - 898000/1000000
+- - Rejections: 814948
+- - Accepted: 22.2%
+- - 899000/1000000
+- - Rejections: 815799
+- - Accepted: 14.9%
+- - 900000/1000000
+- - Rejections: 816613
+- - Accepted: 18.6%
+- - jump_size updated to 0.0015898
+- - 901000/1000000
+- - Rejections: 817405
+- - Accepted: 20.8%
+- - 902000/1000000
+- - Rejections: 818145
+- - Accepted: 26.0%
+- - 903000/1000000
+- - Rejections: 818962
+- - Accepted: 18.3%
+- - 904000/1000000
+- - Rejections: 819797
+- - Accepted: 16.5%
+- - 905000/1000000
+- - Rejections: 820600
+- - Accepted: 19.7%
+- - 906000/1000000
+- - Rejections: 821386
+- - Accepted: 21.4%
+- - 907000/1000000
+- - Rejections: 822291
+- - Accepted: 9.5%
+- - 908000/1000000
+- - Rejections: 823081
+- - Accepted: 21.0%
+- - 909000/1000000
+- - Rejections: 823863
+- - Accepted: 21.8%
+- - 910000/1000000
+- - Rejections: 824649
+- - Accepted: 21.4%
+- - 911000/1000000
+- - Rejections: 825437
+- - Accepted: 21.2%
+- - 912000/1000000
+- - Rejections: 826221
+- - Accepted: 21.6%
+- - 913000/1000000
+- - Rejections: 827083
+- - Accepted: 13.8%
+- - 914000/1000000
+- - Rejections: 827971
+- - Accepted: 11.2%
+- - 915000/1000000
+- - Rejections: 828794
+- - Accepted: 17.7%
+- - 916000/1000000
+- - Rejections: 829595
+- - Accepted: 19.9%
+- - 917000/1000000
+- - Rejections: 830400
+- - Accepted: 19.5%
+- - 918000/1000000
+- - Rejections: 831215
+- - Accepted: 18.5%
+- - 919000/1000000
+- - Rejections: 832025
+- - Accepted: 19.0%
+- - 920000/1000000
+- - Rejections: 832730
+- - Accepted: 29.5%
+- - 921000/1000000
+- - Rejections: 833508
+- - Accepted: 22.2%
+- - 922000/1000000
+- - Rejections: 834300
+- - Accepted: 20.8%
+- - 923000/1000000
+- - Rejections: 835055
+- - Accepted: 24.5%
+- - 924000/1000000
+- - Rejections: 835891
+- - Accepted: 16.4%
+- - 925000/1000000
+- - Rejections: 836713
+- - Accepted: 17.8%
+- - 926000/1000000
+- - Rejections: 837589
+- - Accepted: 12.4%
+- - 927000/1000000
+- - Rejections: 838380
+- - Accepted: 20.9%
+- - 928000/1000000
+- - Rejections: 839142
+- - Accepted: 23.8%
+- - 929000/1000000
+- - Rejections: 839918
+- - Accepted: 22.4%
+- - 930000/1000000
+- - Rejections: 840657
+- - Accepted: 26.1%
+- - 931000/1000000
+- - Rejections: 841443
+- - Accepted: 21.4%
+- - 932000/1000000
+- - Rejections: 842282
+- - Accepted: 16.1%
+- - 933000/1000000
+- - Rejections: 843157
+- - Accepted: 12.5%
+- - 934000/1000000
+- - Rejections: 844096
+- - Accepted: 6.1%
+- - 935000/1000000
+- - Rejections: 844957
+- - Accepted: 13.9%
+- - 936000/1000000
+- - Rejections: 845761
+- - Accepted: 19.6%
+- - 937000/1000000
+- - Rejections: 846649
+- - Accepted: 11.2%
+- - 938000/1000000
+- - Rejections: 847478
+- - Accepted: 17.1%
+- - 939000/1000000
+- - Rejections: 848350
+- - Accepted: 12.8%
+- - 940000/1000000
+- - Rejections: 849156
+- - Accepted: 19.4%
+- - 941000/1000000
+- - Rejections: 849976
+- - Accepted: 18.0%
+- - 942000/1000000
+- - Rejections: 850870
+- - Accepted: 10.6%
+- - 943000/1000000
+- - Rejections: 851693
+- - Accepted: 17.7%
+- - 944000/1000000
+- - Rejections: 852527
+- - Accepted: 16.6%
+- - 945000/1000000
+- - Rejections: 853333
+- - Accepted: 19.4%
+- - 946000/1000000
+- - Rejections: 854125
+- - Accepted: 20.8%
+- - 947000/1000000
+- - Rejections: 854927
+- - Accepted: 19.8%
+- - 948000/1000000
+- - Rejections: 855782
+- - Accepted: 14.5%
+- - 949000/1000000
+- - Rejections: 856615
+- - Accepted: 16.7%
+- - 950000/1000000
+- - Rejections: 857396
+- - Accepted: 21.9%
+- - jump_size updated to 0.0015482
+- - 951000/1000000
+- - Rejections: 858232
+- - Accepted: 16.4%
+- - 952000/1000000
+- - Rejections: 859067
+- - Accepted: 16.5%
+- - 953000/1000000
+- - Rejections: 859926
+- - Accepted: 14.1%
+- - 954000/1000000
+- - Rejections: 860759
+- - Accepted: 16.7%
+- - 955000/1000000
+- - Rejections: 861549
+- - Accepted: 21.0%
+- - 956000/1000000
+- - Rejections: 862371
+- - Accepted: 17.8%
+- - 957000/1000000
+- - Rejections: 863155
+- - Accepted: 21.6%
+- - 958000/1000000
+- - Rejections: 863937
+- - Accepted: 21.8%
+- - 959000/1000000
+- - Rejections: 864850
+- - Accepted: 8.7%
+- - 960000/1000000
+- - Rejections: 865664
+- - Accepted: 18.6%
+- - 961000/1000000
+- - Rejections: 866399
+- - Accepted: 26.5%
+- - 962000/1000000
+- - Rejections: 867203
+- - Accepted: 19.6%
+- - 963000/1000000
+- - Rejections: 867966
+- - Accepted: 23.7%
+- - 964000/1000000
+- - Rejections: 868782
+- - Accepted: 18.4%
+- - 965000/1000000
+- - Rejections: 869576
+- - Accepted: 20.6%
+- - 966000/1000000
+- - Rejections: 870442
+- - Accepted: 13.4%
+- - 967000/1000000
+- - Rejections: 871184
+- - Accepted: 25.8%
+- - 968000/1000000
+- - Rejections: 872026
+- - Accepted: 15.8%
+- - 969000/1000000
+- - Rejections: 872788
+- - Accepted: 23.8%
+- - 970000/1000000
+- - Rejections: 873570
+- - Accepted: 21.8%
+- - 971000/1000000
+- - Rejections: 874351
+- - Accepted: 21.9%
+- - 972000/1000000
+- - Rejections: 875190
+- - Accepted: 16.1%
+- - 973000/1000000
+- - Rejections: 876010
+- - Accepted: 18.0%
+- - 974000/1000000
+- - Rejections: 876770
+- - Accepted: 24.0%
+- - 975000/1000000
+- - Rejections: 877499
+- - Accepted: 27.1%
+- - 976000/1000000
+- - Rejections: 878288
+- - Accepted: 21.1%
+- - 977000/1000000
+- - Rejections: 879068
+- - Accepted: 22.0%
+- - 978000/1000000
+- - Rejections: 879863
+- - Accepted: 20.5%
+- - 979000/1000000
+- - Rejections: 880767
+- - Accepted: 9.6%
+- - 980000/1000000
+- - Rejections: 881638
+- - Accepted: 12.9%
+- - 981000/1000000
+- - Rejections: 882420
+- - Accepted: 21.8%
+- - 982000/1000000
+- - Rejections: 883168
+- - Accepted: 25.2%
+- - 983000/1000000
+- - Rejections: 883967
+- - Accepted: 20.1%
+- - 984000/1000000
+- - Rejections: 884762
+- - Accepted: 20.5%
+- - 985000/1000000
+- - Rejections: 885590
+- - Accepted: 17.2%
+- - 986000/1000000
+- - Rejections: 886419
+- - Accepted: 17.1%
+- - 987000/1000000
+- - Rejections: 887292
+- - Accepted: 12.7%
+- - 988000/1000000
+- - Rejections: 888126
+- - Accepted: 16.6%
+- - 989000/1000000
+- - Rejections: 888946
+- - Accepted: 18.0%
+- - 990000/1000000
+- - Rejections: 889714
+- - Accepted: 23.2%
+- - 991000/1000000
+- - Rejections: 890521
+- - Accepted: 19.3%
+- - 992000/1000000
+- - Rejections: 891306
+- - Accepted: 21.5%
+- - 993000/1000000
+- - Rejections: 892163
+- - Accepted: 14.3%
+- - 994000/1000000
+- - Rejections: 892991
+- - Accepted: 17.2%
+- - 995000/1000000
+- - Rejections: 893842
+- - Accepted: 14.9%
+- - 996000/1000000
+- - Rejections: 894671
+- - Accepted: 17.1%
+- - 997000/1000000
+- - Rejections: 895445
+- - Accepted: 22.6%
+- - 998000/1000000
+- - Rejections: 896228
+- - Accepted: 21.7%
+- - 999000/1000000
+- - Rejections: 897063
+- - Accepted: 16.5%
+- - 1000000/1000000
+- - Rejections: 897863
+- - Accepted: 20.0%

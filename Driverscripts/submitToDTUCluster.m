@@ -3,8 +3,8 @@ function cmdsub = submitToDTUCluster(jobid,cmd)
 id = num2str(jobid);
 jobname = ['job_', id];
 
-memcore = 4000;
-maxmem  = 6000;
+memcore = 6000;
+maxmem  = 10000;
 email   = 'akara@dtu.dk';
 ncores = 1;
 

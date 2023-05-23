@@ -58,3 +58,21 @@ In dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
 /zhome/ee/2/108654/.lsbatch/1683112608.16639028.shell: line 14: 102749 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(1,0.12,"star");exit'
+{Operation terminated by user during precomputeFEM (line 41)
+
+
+In make_data (line 117)
+fmdl = precomputeFEM(meshpar_fine);
+
+In dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+{Operation terminated by user during precomputeFEM (line 41)
+
+
+In make_data (line 117)
+fmdl = precomputeFEM(meshpar_fine);
+
+In dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 

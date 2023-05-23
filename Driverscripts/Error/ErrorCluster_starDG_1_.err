@@ -1,0 +1,12 @@
+{Operation terminated by user during precomputeFEM_DG (line 48)
+
+
+In starDGPCN (line 42)
+fmdl = precomputeFEM_DG(meshpar);
+} 
+{Operation terminated by user during precomputeFEM_DG (line 48)
+
+
+In starDGPCN (line 42)
+fmdl = precomputeFEM_DG(meshpar);
+} 
