@@ -66,10 +66,10 @@ fmdl = fixingD(meshpar,fmdl,gamma');
 fmdl_DG = fixingD(meshpar,fmdl_DG,gamma');
 
 %%
-q = 10;
-alpha = 1;
-tau = 0.5;
-maxfreq = 10;
+q = 30;
+alpha = 1.75;
+tau = 1;
+maxfreq = 15;
 xq = linspace(0,2*pi,512);
 
 priorpar = prior_init(xq,alpha,tau,q,maxfreq);
@@ -94,16 +94,18 @@ xi = priorpar.lambdahalf.*xi;
 xi_center = priorpar.center;
 
 
-%% Evaluating forward model from precomputed matrices
+%Evaluating forward model from precomputed matrices
 theta = priorsample(xi,priorpar);
 theta = priorpar.mean+theta;
 n = 10;
 
 
+plot_from_coef_star(xi,priorpar)
+%%
 gamma = push_forward_star2D(xi_center,theta,meshpar.p(1,:)',meshpar.p(2,:)',priorpar);
 gammaDG = push_forward_star2D_interp(xi_center,theta,meshpar.xq,meshpar.yq,meshpar.n,meshpar.HN,priorpar);
 plot_from_gamma(gamma,meshpar)
-figure;
+figure(1);
 pdesurf(meshpar.p,meshpar.t,gammaDG')
 view(2)
 colormap default

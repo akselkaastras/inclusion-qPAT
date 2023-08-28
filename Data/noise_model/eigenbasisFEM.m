@@ -16,11 +16,12 @@ for i = 1:30
     M = size(s.x,2);
     for j = 1:M
         E(:,k) = s.x(:,j);
-        k = k+1;
+        
         if k == trunc
             flag = 1;
             break;
         end
+        k = k+1;
     end
     if flag == 1
         disp(' - - Truncation reached');

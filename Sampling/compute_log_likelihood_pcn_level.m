@@ -20,9 +20,9 @@ u = datapar.U + datapar.W;
 data = u.*gamma;
 
 % Find projection
-c = fmdl.U_proj'*data;
+c = fmdl.U_proj_coarse'*data;
 
 % compute log-likelihood
 v = c-datapar.bq;
-ll = -1/(2*datapar.epssq_approx)*sum(v.^2);
+ll = -1/(2*(datapar.epssq + datapar.sigmasq))*sum(v.^2);
 

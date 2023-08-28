@@ -15,7 +15,7 @@ str = append(str,['#BSUB -n ', num2str(ncores), '\n']);
 str = append(str,'#BSUB -R "span[hosts=1]"\n');
 str = append(str,['#BSUB -R "rusage[mem=', num2str(memcore),'MB]"\n']);
 str = append(str,['#BSUB -M ', num2str(maxmem), 'MB\n']);
-str = append(str,'#BSUB -W 38:00\n');
+str = append(str,'#BSUB -W 64:00\n');
 str = append(str,['#BSUB -u ', email,'\n']);
 str = append(str,'#BSUB -N \n');
 str = append(str,['#BSUB -o Driverscripts/Output/OutputCluster_',id,'_.out\n']);

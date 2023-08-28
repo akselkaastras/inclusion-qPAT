@@ -28,7 +28,8 @@ data = gamma'.*u;
 data_proj = data(1,:)*fmdl.U_proj_coarse1 + data(2,:)*fmdl.U_proj_coarse2 + data(3,:)*fmdl.U_proj_coarse3;
        
 % compute log-likelihood
-v = data_proj'+datapar.m-datapar.bq;
+%v = data_proj'+datapar.m-datapar.bq;
+v = data_proj'-datapar.bq;
 
 %v = gamma - datapar.bq;
-ll = -1/(2*(datapar.epssq_approx))*sum(v.^2);
+ll = -1/(2*(datapar.epssq + datapar.sigmasq))*sum(v.^2);

@@ -32,7 +32,9 @@ acc = zeros(N_iter,1); % acceptance history
 acc(1) = 1;        % initial guess is accepted
 
 % Adaptation initialize
-Na = floor(0.01*N_iter);
+Na = 15000;
+%Na = floor(0.015*N_iter);
+%Na = floor(0.3*N_iter);
 hat_acc = zeros(floor(N_iter/Na),1);
 star_acc = 0.3; % target acceptance rate
 i = 1;

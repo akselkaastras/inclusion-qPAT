@@ -9,7 +9,7 @@ function datapar = computeApproxError(datapar,N,priortype)
 %   the distribution of G_{fine}-G_{coarse}
 
 %% Is the approximation error already computed?
-filename = strcat(num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(datapar.noiselevel), '.mat');
+filename = strcat(num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(datapar.noiselevel),'_',num2str(datapar.N), '.mat');
 disp(filename);
 if ~isfile(strcat('Data/sigma2/sigma2_',filename))
 
@@ -26,25 +26,25 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
 
     
     if strcmpi(priortype, 'level')
-        q = 3;
-        alpha = 1;
+        q = 4;
+        alpha = 1.2;
         tau = 1;
         maxfreq = 4;
         delta = 0.1;
-        priorpar = prior_init_2d(meshpar_fine.p(1, :), meshpar_fine.p(2, :),alpha,tau,q,maxfreq);
-        priorpar_coarse = prior_init_2d(meshpar.p(1, :), meshpar.p(2, :),alpha,tau,q,maxfreq);
+        priorpar = prior_init_2d(meshpar_fine.xq', meshpar_fine.yq',alpha,tau,q,maxfreq);
+        priorpar_coarse = prior_init_2d(meshpar.xq', meshpar.yq',alpha,tau,q,maxfreq);
     
         % For levelset
         priorpar.ninterface = 3; % number of interfaces
-        priorpar.c = [-inf -2 2 inf]; % contour levels (ninterface+1)
-        priorpar.v = [0.3 0.1 0.5]; % values at each interface
+        priorpar.c = [-inf 0 2 inf]; % contour levels (ninterface+1)
+        priorpar.v = [0.1 0.3 0.5]; % values at each interface
         priorpar.delta = delta; % smoothing factor
         priorpar.dim = [priorpar.M,1];
         priorpar.type = 'level';
         priorpar.std = 1;
         priorpar_coarse.ninterface = 3;
-        priorpar_coarse.c = [-inf -2 2 inf]; % contour levels (ninterface+1)
-        priorpar_coarse.v = [0.3 0.1 0.5]; % values at each interface
+        priorpar_coarse.c = [-inf 0 2 inf]; % contour levels (ninterface+1)
+        priorpar_coarse.v = [0.1 0.3 0.5]; % values at each interface
         priorpar_coarse.delta = delta; % smoothing factor
         priorpar_coarse.dim = [priorpar.M,1];
         priorpar_coarse.type = 'level';
@@ -70,10 +70,10 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         priorpar.center = [0.37,-0.43;-0.44,0.36];
         priorpar.std = 0.2;
     elseif strcmpi(priortype,'starDG')
-        q = 10;
-        alpha = 1;
-        tau = 0.5;
-        maxfreq = 10;
+        q = 30;
+        alpha = 1.75;
+        tau = 1;
+        maxfreq = 12;
         xq = linspace(0,2*pi,512);
         
         priorpar = prior_init(xq,alpha,tau,q,maxfreq);
@@ -94,22 +94,26 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
 
     
     %% Initialize forward model on fine mesh
+    %% Phantom is discontinuous
 
 
     D = datapar.D;
-    % Precomputing finite element matrices and rhs
-    fmdl = precomputeFEM(meshpar_fine);
-    fmdl = precomputeRHS(meshpar_fine,fmdl,datapar.wfun,datapar.wfungrad);
-    
+    % Precompute FEM matrices
+    fmdl = precomputeFEM_DG(meshpar_fine);
+    fmdl = precomputeRHS_DG(meshpar_fine,fmdl,datapar.wfun,datapar.wfungrad);
+
     % Precomputing stiffness
     fmdl = fixingD(meshpar_fine,fmdl,D);
-    
+    M = datapar.N;
+    trunc = M*(2*M+1);
+    % Projection matrices for projection
+    fmdl = computeProjectionMatrices_fine(fmdl,meshpar_fine,trunc);    
     %% Initialize forward model on coarse mesh
     
     D_coarse = interpolateMesh(D',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
     
 
-    if strcmpi(priortype,'starDG')
+    if strcmpi(priortype,'starDG') || strcmpi(priortype,'level')
         fmdl_coarse = precomputeFEM_DG(meshpar);
         fmdl_coarse = precomputeRHS_DG(meshpar,fmdl_coarse,datapar.wfun,datapar.wfungrad);
         % Precomputing stiffness
@@ -125,12 +129,10 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     end
    
 
-    % Projection matrices
-    M = 15;
-    trunc = (2*M+1)*M;
+    % Projection matrices for coarse mesh
     E = eigenbasisFEM(meshpar_fine,trunc);
     fmdl.U_proj = fmdl.Carea*E;
-    fmdl_coarse = computeProjectionMatrices_coarse(fmdl_coarse,meshpar,priorpar);
+    fmdl_coarse = computeProjectionMatrices_coarse(fmdl_coarse,meshpar,priorpar,trunc);
     
     %% Compute samples of G_{fine}(prior_sample) - G_{coarse}(prior_sample)
     V = zeros(trunc,N);
@@ -141,14 +143,14 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         % Sample prior
         
         xi = priorpar.std*randn(priorpar.dim);
+        xi = priorpar.lambdahalf.*xi;
         theta = priorsample(xi,priorpar);
         
         % Push-forward
         if strcmpi(priortype,'level')
-
-            gamma = push_forward_levelset2D_smooth(theta,priorpar);
+            gamma = push_forward_level2D_interp(theta,meshpar_fine.n,meshpar_fine.HN,priorpar);
             theta_coarse = priorsample(xi,priorpar_coarse);
-            gamma_coarse = push_forward_levelset2D_smooth(theta_coarse,priorpar_coarse);
+            gamma_coarse = push_forward_level2D_interp(theta_coarse,meshpar.n,meshpar.HN,priorpar_coarse);
         elseif strcmpi(priortype,'star')
             xi_center = priorpar.center;
             theta = priorpar.mean+theta;
@@ -159,7 +161,7 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
             xi_center = priorpar.center;
             theta = priorpar.mean+theta;
             % push-forward
-            gamma = push_forward_star2D(xi_center,theta,datapar.meshpar_fine.p(1,:)',datapar.meshpar_fine.p(2,:)',priorpar);
+            gamma = push_forward_star2D_interp(xi_center,theta,meshpar_fine.xq,meshpar_fine.yq,meshpar_fine.n,meshpar_fine.HN,priorpar);
             gamma_coarse = push_forward_star2D_interp(xi_center,theta,datapar.meshpar.xq,datapar.meshpar.yq,datapar.meshpar.n,datapar.meshpar.HN,priorpar);
         end
         
@@ -175,10 +177,19 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         u_coarse = U_coarse + datapar.wfun(meshpar.p(1,:)',meshpar.p(2,:)');
         
         
-        if strcmpi(priortype,'starDG')
-            % Multiply with gamma
-            data = u.*gamma;
-            data_proj = data'*fmdl.U_proj;
+        if strcmpi(priortype,'starDG') || strcmpi(priortype,'level')
+        
+            % fine mesh
+            u = u(meshpar_fine.t(1:3,:));
+            u = fmdl.G*u(:);
+            u = reshape(u,[3 meshpar_fine.HN]);
+
+            data = gamma'.*u;
+            data_proj = data(1,:)*fmdl.U_proj1 + data(2,:)*fmdl.U_proj2 + data(3,:)*fmdl.U_proj3;
+            
+            
+            
+            % coarse mesh
             u_coarse = u_coarse(meshpar.t(1:3,:));
             u_coarse = fmdl_coarse.G*u_coarse(:);
             u_coarse = reshape(u_coarse,[3 meshpar.HN]);
@@ -186,7 +197,7 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         
             data_coarse = gamma_coarse'.*u_coarse;
             data_proj_coarse = data_coarse(1,:)*fmdl_coarse.U_proj_coarse1 + data_coarse(2,:)*fmdl_coarse.U_proj_coarse2 + data_coarse(3,:)*fmdl_coarse.U_proj_coarse3;
-        else
+       else
             % Multiply with gamma
             data = u.*gamma;
             data_coarse = u_coarse.*gamma_coarse;

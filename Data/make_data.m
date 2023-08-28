@@ -32,27 +32,28 @@ meshpar.NZ = setdiff(1:length(meshpar.p),meshpar.e(1,:));
 meshpar_fine.NZ = setdiff(1:pN,meshpar_fine.e(1,:));
 
 %% Make gamma from curves
-Gamma = zeros(ninclusions,npoints);
+Gamma = zeros(ninclusions,meshpar_fine.HN);
 for i = 1:ninclusions
     index = 2*(i-1);
-    Gamma(i,:) = inpolygon(meshpar_fine.p(1,:),meshpar_fine.p(2,:),curves(index+1,:),curves(index+2,:));
+    nodes = [curves(index+1,:)',curves(index+2,:)'];
+    Gamma(i,:) = Gamma(i,:) + mean(reshape(inpoly2([meshpar_fine.xq, meshpar_fine.yq],nodes),[meshpar_fine.HN meshpar_fine.n]),2)';
 end
-gamma = values(ninclusions+1)+zeros(1,npoints);
+gamma = values(ninclusions+1)+zeros(1,meshpar_fine.HN);
 for i = 1:ninclusions
     gamma = gamma + values(i)*Gamma(i,:);
 end
 
-% Gamma on coarse grid
-Gamma_coarse = zeros(ninclusions,npoints_coarse);
+
+Mua = zeros(ninclusions,length(meshpar_fine.p));
 for i = 1:ninclusions
     index = 2*(i-1);
-    Gamma_coarse(i,:) = inpolygon(meshpar.p(1,:),meshpar.p(2,:),curves(index+1,:),curves(index+2,:));
+    nodes = [curves(index+1,:)',curves(index+2,:)'];
+    Mua(i,:) = Mua(i,:) + inpoly2([meshpar_fine.p(1,:)', meshpar_fine.p(2,:)'],nodes)';
 end
-gamma_coarse = values(ninclusions+1)+zeros(1,npoints_coarse);
+mua = values(ninclusions+1)+zeros(1,length(meshpar_fine.p));
 for i = 1:ninclusions
-    gamma_coarse  = gamma_coarse + values(i)*Gamma_coarse(i,:);
+    mua = mua + values(i)*Mua(i,:);
 end
-
 
 %% Make smoothened scattering mus with Gaussian smoothing
 nimage = 300;
@@ -86,45 +87,64 @@ constantg = 0.8;   % Anisotropy factor of the Heneyey-Greenstein scattering func
 constantkind = 2;  % Dimension
 
 murs = mus.*(1-constantg);
-D = 1./constantkind * (1./(gamma + murs));
+D = 1./constantkind * (1./(mua + murs));
 
 %% plot parameters
 figure(1), clf
-subplot(131)
-plot_from_gamma(full(gamma),meshpar_fine)
-title('Absorption coefficient')
+subplot(121)
+pdesurf(meshpar_fine.p,meshpar_fine.t,gamma)
+colormap default
+view(2)
+title('Absorption coefficient, $\gamma$','interpreter','latex','fontsize',16)
 colorbar
-subplot(132)
-plot_from_gamma(full(mus),meshpar_fine)
-title('Scattering coefficient')
-colorbar
-subplot(133)
+%subplot(132)
+%plot_from_gamma(full(mus),meshpar_fine)
+%title('Scattering coefficient')
+%colorbar
+subplot(122)
 plot_from_gamma(full(D),meshpar_fine)
-title('Diffusion coefficient')
+title('Diffusion coefficient, $a$','interpreter','latex','fontsize',16)
 colorbar
 %% evaluate forward model
-    % define source from wfun
-    sigma = 0.5;
-    m1 = 0.5*[sqrt(2),sqrt(2)];
-    m2 = -0.5*[sqrt(2),sqrt(2)];
-    scale = 10;
-    figure(2);
-    
-    % Source is Gaussian
-    wfunfun = @(x1,x2,m) scale*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
-    wfungradfun = @(x1,x2,m) 1/(sigma^2)*wfunfun(x1,x2,m).*[m(1)-x1 m(2)-x2]; 
-    wfun = @(x1,x2) wfunfun(x1,x2,m1) + wfunfun(x1,x2,m2);
-    wfungrad = @(x1,x2) wfungradfun(x1,x2,m1) + wfungradfun(x1,x2,m2);
+% define source from wfun
+sigma = 0.5;
+m1 = 0.5*[sqrt(2),sqrt(2)];
+m2 = 0.5*[-sqrt(2),sqrt(2)];
+scale1 = 10;
+scale2 = 5;
+scale3 = 2;
+figure(2);
+
+% Source is Gaussian
+wfunfun = @(x1,x2,m,scale) scale*exp(-1/(2*sigma^2)*((x1-m(1)).^2+(x2-m(2)).^2));
+wfungradfun = @(x1,x2,m,scale) 1/(sigma^2)*wfunfun(x1,x2,m,scale).*[m(1)-x1 m(2)-x2]; 
+wfun = @(x1,x2) wfunfun(x1,x2,m1,scale1) + wfunfun(x1,x2,-m1,scale2) + wfunfun(x1,x2,m2,scale3);  %wfunfun(x1,x2,-m2,scale2);
+wfungrad = @(x1,x2) wfungradfun(x1,x2,m1,scale1) + wfungradfun(x1,x2,-m1,scale2) + wfungradfun(x1,x2,m2,scale3);  %wfungradfun(x1,x2,-m2,scale2);
 
 
+% L1
+% % Precomputing finite element matrices and rhs
+% fmdl = precomputeFEM(meshpar_fine);
+% fmdl = precomputeRHS(meshpar_fine,fmdl,wfun,wfungrad);
+% 
+% % Precomputing stiffness
+% fmdl = fixingD(meshpar_fine,fmdl,D);
+% 
+% % Evaluating forward model from precomputed matrices
+% u = evalFowardModel(fmdl,meshpar_fine,gamma');
+
+% DG
 % Precomputing finite element matrices and rhs
-fmdl = precomputeFEM(meshpar_fine);
-fmdl = precomputeRHS(meshpar_fine,fmdl,wfun,wfungrad);
+fmdl = precomputeFEM_DG(meshpar_fine);
+fmdl = precomputeRHS_DG(meshpar_fine,fmdl,wfun,wfungrad);
 
 % Precomputing stiffness
 fmdl = fixingD(meshpar_fine,fmdl,D);
 
 % Evaluating forward model from precomputed matrices
+N = 13;
+trunc = N*(2*N+1);
+fmdl = computeProjectionMatrices_fine(fmdl,meshpar_fine,trunc);
 u = evalFowardModel(fmdl,meshpar_fine,gamma');
 
 %% Add source back again
@@ -136,16 +156,25 @@ figure;
 plot_from_gamma(full(u),meshpar_fine)
 
 %% Data
-data = full(u).*gamma';
+% L1
+%data = full(u).*gamma';
 
+% Mixed L1 and DG
+u = u(meshpar_fine.t(1:3,:));
+u = fmdl.G*u(:);
+u = reshape(u,[3 meshpar_fine.HN]);
+        
+        
+data = gamma.*u;
+dataq = data(1,:)*fmdl.U_proj1 + data(2,:)*fmdl.U_proj2 + data(3,:)*fmdl.U_proj3;
 %% plot solution and data
 figure(2), clf
 subplot(121)
-plot_from_gamma(full(u),meshpar_fine)
+plot_from_gamma(U + wfun(meshpar_fine.p(1,:)',meshpar_fine.p(2,:)'),meshpar_fine)
 title('Solution to PDE')
 colorbar
 subplot(122)
-plot_from_gamma(data,meshpar_fine)
+plot_from_gamma(dataq*fmdl.E',meshpar_fine)
 title('Data')
 colorbar
 
@@ -153,11 +182,11 @@ colorbar
 % We do this by evaluating data in coarse mesh points
 % This corresponds to minimizing approx. L^2(D) functional over 
 % coarse hat-basis-functions.
-uq = interpolateMesh(full(u),meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
-dataq = uq.*gamma_coarse';
+%uq = interpolateMesh(full(u),meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
+%dataq = uq.*gamma_coarse';
 
 D_coarse = interpolateMesh(D',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
-gamma_true = gamma_coarse';
+gamma_true = gamma';
 
 %% add noise
 rng(seed);
@@ -189,17 +218,17 @@ rng(seed);
 
 
 
-N = 15;
-trunc = (2*N+1)*N;
+%N = 15;
+%trunc = (2*N+1)*N;
 %M_coarse = fmdl_coarse.Carea;
-E = eigenbasisFEM(meshpar_fine,trunc);
-U = fmdl.Carea*E;
+%E = eigenbasisFEM(meshpar_fine,trunc);
+%U = fmdl.Carea*E;
 %s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
 %E_coarse = s.E_coarse;
 %U_coarse = M_coarse*E_coarse;
 
 
-dataq = data'*U;
+%dataq = data'*U;
 
 
 xi = randn(trunc,1);
@@ -212,8 +241,8 @@ epssq = eps^2;
 %eps = noiselevel * max(abs(data)) / max(abs(xi));
 
 bq = dataq' + eps*xi;
-figure;
-plot_from_gamma(bq'*E',meshpar_fine)
+%figure;
+plot_from_gamma(bq'*fmdl.E',meshpar_fine)
 title('observation')
 
 %% save in struct
@@ -232,3 +261,4 @@ datapar.W = wfun(meshpar.p(1,:)',meshpar.p(2,:)');
 datapar.wfun = wfun;
 datapar.wfungrad = wfungrad;
 datapar.U = zeros(length(meshpar.p),1);
+datapar.N = N;
