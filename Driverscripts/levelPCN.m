@@ -41,12 +41,12 @@ fmdl = precomputeFEM(meshpar);
 fmdl = precomputeRHS(meshpar,fmdl,datapar.wfun,datapar.wfungrad);
 fmdl = fixingD(meshpar,fmdl,datapar.D_coarse');
 trunc = (2*datapar.N+1)*datapar.N;
-fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,priorpar,trunc);
+fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,datapar.meshpar_fine,priorpar,trunc);
 
-s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
-E_coarse = s.E_coarse;
-E_coarse = E_coarse(:,1:trunc);
-fmdl.U_proj_coarse = fmdl.Carea*E_coarse;
+%s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
+%E_coarse = s.E_coarse;
+%E_coarse = E_coarse(:,1:trunc);
+%fmdl.U_proj_coarse = fmdl.Carea*E_coarse;
 %s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
 %E = s.E_coarse;
 %U_proj = fmdl.Carea*E;

@@ -33,8 +33,11 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         tau = 1;
         maxfreq = 4;
         delta = 0.1;
-        priorpar = prior_init_2d(meshpar_fine.xq', meshpar_fine.yq',alpha,tau,q,maxfreq);
-        priorpar_coarse = prior_init_2d(meshpar.xq', meshpar.yq',alpha,tau,q,maxfreq);
+        priorpar = prior_init_2d(meshpar_fine.p(1, :), meshpar_fine.p(2, :),alpha,tau,q,maxfreq);
+        priorpar_coarse = prior_init_2d(meshpar.p(1, :), meshpar.p(2, :),alpha,tau,q,maxfreq);
+    
+        %priorpar = prior_init_2d(meshpar_fine.xq', meshpar_fine.yq',alpha,tau,q,maxfreq);
+        %priorpar_coarse = prior_init_2d(meshpar.xq', meshpar.yq',alpha,tau,q,maxfreq);
     
         % For levelset
         priorpar.ninterface = 3; % number of interfaces
@@ -94,14 +97,20 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     end
 
     %% Initialize forward model on fine mesh
-    %% Phantom is discontinuous
     D = datapar.D;
-    % Precompute FEM matrices
-    fmdl = precomputeFEM_DG(meshpar_fine);
-    fmdl = precomputeRHS_DG(meshpar_fine,fmdl,datapar.wfun,datapar.wfungrad);
+
+    if strcmpi(priortype,'starDG')
+        fmdl = precomputeFEM_DG(meshpar_fine);
+        fmdl = precomputeRHS_DG(meshpar_fine,fmdl,datapar.wfun,datapar.wfungrad);
+    else
+        fmdl = precomputeFEM(meshpar_fine);
+        fmdl = precomputeRHS(meshpar_fine,fmdl,datapar.wfun,datapar.wfungrad);
+    end
+
 
     % Precomputing stiffness
     fmdl = fixingD(meshpar_fine,fmdl,D);
+
     M = datapar.N;
     trunc = M*(2*M+1);
     % Projection matrices for projection
@@ -111,7 +120,8 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     D_coarse = interpolateMesh(D',meshpar.p(1,:)',meshpar.p(2,:)',meshpar_fine);
     
 
-    if strcmpi(priortype,'starDG') || strcmpi(priortype,'level')
+    %if strcmpi(priortype,'starDG') || strcmpi(priortype,'level')
+    if strcmpi(priortype,'starDG')
         fmdl_coarse = precomputeFEM_DG(meshpar);
         fmdl_coarse = precomputeRHS_DG(meshpar,fmdl_coarse,datapar.wfun,datapar.wfungrad);
         % Precomputing stiffness
@@ -130,7 +140,7 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     % Projection matrices for coarse mesh
     E = eigenbasisFEM(meshpar_fine,trunc);
     fmdl.U_proj = fmdl.Carea*E;
-    fmdl_coarse = computeProjectionMatrices_coarse(fmdl_coarse,meshpar,priorpar,trunc);
+    fmdl_coarse = computeProjectionMatrices_coarse(fmdl_coarse,meshpar,datapar.meshpar_fine,priorpar,trunc);
     
     %% Compute samples of G_{fine}(prior_sample) - G_{coarse}(prior_sample)
     V = zeros(trunc,N);
@@ -146,9 +156,13 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         
         % Push-forward
         if strcmpi(priortype,'level')
-            gamma = push_forward_level2D_interp(theta,meshpar_fine.n,meshpar_fine.HN,priorpar);
+            gamma = push_forward_levelset2D_smooth(theta,priorpar);
             theta_coarse = priorsample(xi,priorpar_coarse);
-            gamma_coarse = push_forward_level2D_interp(theta_coarse,meshpar.n,meshpar.HN,priorpar_coarse);
+            gamma_coarse = push_forward_levelset2D_smooth(theta_coarse,priorpar);
+            
+            %gamma = push_forward_level2D_interp(theta,meshpar_fine.n,meshpar_fine.HN,priorpar);
+            %theta_coarse = priorsample(xi,priorpar_coarse);
+            %gamma_coarse = push_forward_level2D_interp(theta_coarse,meshpar.n,meshpar.HN,priorpar_coarse);
         elseif strcmpi(priortype,'star')
             xi_center = priorpar.center;
             theta = priorpar.mean+theta;
@@ -175,8 +189,8 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         u_coarse = U_coarse + datapar.wfun(meshpar.p(1,:)',meshpar.p(2,:)');
         
         
-        if strcmpi(priortype,'starDG') || strcmpi(priortype,'level')
-        
+        %if strcmpi(priortype,'starDG') || strcmpi(priortype,'level')
+        if strcmpi(priortype,'starDG')
             % fine mesh
             u = u(meshpar_fine.t(1:3,:));
             u = fmdl.G*u(:);

@@ -10,7 +10,8 @@ function datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,seed)
 %   values [ninclusions x 1]: absorption level of inclusion when bg = 1
 %                             around 2-5 times of background
 %   noiselevel: relative noiselevel of Gaussian noise added
-%   meshrefine: fineness of FEM mesh, which data is simulated on
+%   fine_hmax: fineness of FEM mesh, which data is simulated on
+%   meshpar: meshpar struct of coarse FEM mesh
 %   seed: to replicate results
 %
 % Output:

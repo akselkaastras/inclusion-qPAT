@@ -9,6 +9,14 @@ theta = priorpar.mean+theta;
 % push-forward
 gamma = push_forward_star2D_interp(xi_center,theta,datapar.meshpar.xq,datapar.meshpar.yq,datapar.meshpar.n,datapar.meshpar.HN,priorpar);
 
+% plot sample
+%pause(0.1);
+%figure(1);
+%pdesurf(datapar.meshpar.p,datapar.meshpar.t,gamma')
+%colormap default
+%view(2)
+
+
 % evaluate forward model
 u = evalFowardModel(fmdl,datapar.meshpar,gamma);
 

@@ -38,7 +38,7 @@ end
 
 [in,on] = inpoly2([xq yq],[xv(kk) yv(kk)],[],1e-7);
 indzero = ~(in+on);
-disp([num2str(sum(indzero)),' points outside mesh']);
+%disp([num2str(sum(indzero)),' points outside mesh']);
 
 %% Run through each element
 for j = 1:HN

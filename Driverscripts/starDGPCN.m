@@ -58,7 +58,7 @@ fmdl = precomputeFEM_DG(meshpar);
 fmdl = precomputeRHS_DG(meshpar,fmdl,datapar.wfun,datapar.wfungrad);
 fmdl = fixingD(meshpar,fmdl,datapar.D_coarse');
 trunc = (2*datapar.N+1)*datapar.N;
-fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,priorpar,trunc);
+fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,datapar.meshpar_fine,priorpar,trunc);
 
 %% Start guess for sampler
 %rng(x0seed);
