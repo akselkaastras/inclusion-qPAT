@@ -17,7 +17,7 @@ The file `driver.m` demonstrates the main capabilities of this collections of sc
 2. Samples from prior distributions based on Matern Gaussian fields and the star-shaped set and level set parametrizations.
 3. Computes data for a specific ground true parameter on a fine mesh, see <b>Data</b> below.
 4. Approximates approximation error arising from fine and coarse mesh differences.
-5. Samples a posterior distribution based on the prior distributions and a likelihood arising from white noise observations of $`\langle H, \phi_k \rangle_{L^2(D)} + \varepsilon \xi_k`$, where $`H`$ is the true observation, $`\phi_k`$ are Dirichlet Laplacian eigenfunctions, $`\varepsilon>0`$ is a noise level and $`\xi_k\sim N(0,1)`$ i.i.d. The posterior is sampled using a Markov Chain Monte Carlo (MCMC) method, the preconditioned Crank-Nicolson (pCN) scheme.
+5. Samples a posterior distribution based on the prior distributions and a likelihood arising from white noise observations of $`\langle H, \phi_k \rangle_{L^2(\mathcal{O}))} + \varepsilon \xi_k`$, where $`H`$ is the true observation, $`\phi_k`$ are Dirichlet Laplacian eigenfunctions, $`\varepsilon>0`$ is a noise level and $`\xi_k\sim N(0,1)`$ i.i.d. The posterior is sampled using a Markov Chain Monte Carlo (MCMC) method, the preconditioned Crank-Nicolson (pCN) scheme.
 
 
 ## Parametrizations
