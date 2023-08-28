@@ -21,6 +21,8 @@ Parametrizations:
 the first uses continuous approximation of the heaviside function to filter $`\theta`$ .
 the second uses `inpoly2.m`
 
+## MCMC
+
 ## FEM
 Builds on finite element routines in first order Lagrange basis and discontinuous Galerkin basis. Many of these routines build on code by Niko Hänninen, Tanja Tarvainen and Ville Kolehmainen (University of Eastern Finland).
 
