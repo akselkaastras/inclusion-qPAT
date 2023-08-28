@@ -2,7 +2,7 @@ clc; clear;
 addpath(genpath(pwd))
 %% Make mesh
 fine_hmax = 0.02;
-hmax = 0.03;
+hmax = 0.0175;
 
 meshpar = mesh_comp(hmax);
 %% Make prior for levelset with matern covariance
