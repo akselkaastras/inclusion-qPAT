@@ -72,4 +72,5 @@ These functions are used for batch job scripts for submission to computing clust
 The .m scripts in this folder loads structs including samples that are not included for size reasons.
 Our figure making scripts build on export_fig, see <a href="https://www.mathworks.com/matlabcentral/fileexchange/23629-export_fig">export_fig</a> and uses `tight_subplot`, see <a href="https://www.mathworks.com/matlabcentral/fileexchange/27991-tight_subplot-nh-nw-gap-marg_h-marg_w">tight_subplot</a>
 
-# License
+## License
+`inclusion-qPAT` is licensed under GNU General Public License v3.0.
