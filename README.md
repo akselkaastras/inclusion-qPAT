@@ -1,6 +1,12 @@
 # Bayesian inclusion detection for quantitative photoacoustic tomography
 
- should run everything from root folder
+<p style="text-align:center;">
+<img src="Figures/readme/truth.png" width="230" class="center">                    <img src="Figures/readme/star.png" width="230" class="center">        <img src="Figures/readme/level.png" width="230" class=center>
+</p>
+
+Ground true parameter (left). Sample from a posterior distribution for inclusion detection based on a star-shaped parametrization (middle) and a level set parametrization (right)
+
+<b> should run everything from root folder</b>
 
 ## driver.m file
 
