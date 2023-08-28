@@ -1,9 +1,12 @@
+%% This code is for specific figuremaking given data run on the DTU gbar
+%% WILL return errors if these files are not available
+
 %% Make mean plot star-shape (5*1e5)
 
-p{1} = '/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.02_2206.mat';
-p{2} = '/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.04_2206.mat';
-p{3} = '/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.08_2206.mat';
-p{4} = '/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.16_2206.mat';
+p{1} = 'Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.02_2206.mat';
+p{2} = 'Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.04_2206.mat';
+p{3} = 'Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.08_2206.mat';
+p{4} = 'Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.16_2206.mat';
 % Make curves
 t = linspace(0,2*pi,1000);
 kitecurve = [cos(t)+0.65*cos(2*t)-0.65; 1.5*sin(t)];
@@ -43,10 +46,10 @@ set(gcf,'color','w');
 print('Figures/recon_plot/mean_plot_star_red1.eps','-depsc2')
 %% Make mean plot level-set
 
-p{1} = '/work3/akara/qPAT-level/Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.02_2206.mat';
-p{2} = '/work3/akara/qPAT-level/Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.04_2206.mat';
-p{3} = '/work3/akara/qPAT-level/Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.08_2206.mat';
-p{4} = '/work3/akara/qPAT-level/Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.16_2206.mat';
+p{1} = 'Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.02_2206.mat';
+p{2} = 'Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.04_2206.mat';
+p{3} = 'Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.08_2206.mat';
+p{4} = 'Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.16_2206.mat';
 
 
 res = 1000;
@@ -75,7 +78,7 @@ set(gcf,'color','w');
 %export_fig 'Figures/recon_plot/mean_plot_level_red.pdf' -opengl
 print('Figures/recon_plot/mean_plot_level_red1.eps','-depsc2')
 %% Autocorrelation plot for 4 % star (6 first coefficients)
-p{2} = '/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.04_2206.mat';
+p{2} = 'Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.04_2206.mat';
 load(p{2});
 results = burnthin(results,5e5,1);
 figure(1);
@@ -88,7 +91,7 @@ set(gcf, 'Position',  [100, 100, 600, 1000])
 export_fig 'Figures/recon_plot/acf_star.pdf' -opengl
 
 %% Autocorrelation plot for 4 % level (6 first coefficients)
-p{2} = '/work3/akara/qPAT-level/Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.04_2206.mat';
+p{2} = 'Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.04_2206.mat';
 load(p{2});
 results = burnthin(results,1.2e6,1);
 plot_autocorr_level(results)
@@ -99,7 +102,7 @@ set(gcf,'color','w');
 export_fig 'Figures/recon_plot/acf_level.pdf' -opengl
 
 %% Star chains
-p{2} = '/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.04_2206.mat';
+p{2} = 'Results/StarDG/xr_x0seed_1_noiseseed_1_0.01_0.0175_starDG_0.04_2206.mat';
 load(p{2});
 results = burnthin(results,5e5,1);
 plot_chains_star(results,6)
@@ -109,7 +112,7 @@ set(gcf,'color','w');
 %export_fig 'Figures/recon_plot/chains_star.pdf' -opengl
 print('Figures/recon_plot/chains_star1.eps','-depsc2')
 %% Level chains
-p{2} = '/work3/akara/qPAT-level/Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.04_2206.mat';
+p{2} = 'Results/Level/xr_x0seed_1_noiseseed_1_0.01_0.0175_level_0.04_2206.mat';
 load(p{2});
 results = burnthin(results,1.2e6,1);
 plot_chains_level(results)
@@ -126,11 +129,11 @@ N = length(noiseseed);
 error_star = zeros(5,N);
 eps_star = zeros(1,5);
 for i = 1:N
-    p{1} = ['/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.01_2206.mat'];
-    p{2} = ['/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.02_2206.mat'];
-    p{3} = ['/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.04_2206.mat'];
-    p{4} = ['/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.08_2206.mat'];
-    p{5} = ['/work3/akara/qPAT-level/Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.16_2206.mat'];
+    p{1} = ['Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.01_2206.mat'];
+    p{2} = ['Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.02_2206.mat'];
+    p{3} = ['Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.04_2206.mat'];
+    p{4} = ['Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.08_2206.mat'];
+    p{5} = ['Results/StarDG/xr_x0seed_1_noiseseed_',num2str(noiseseed(i)),'_0.01_0.0175_starDG_0.16_2206.mat'];
 
 
     res = 1000;

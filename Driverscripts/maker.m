@@ -1,9 +1,10 @@
-%% Run
+%% This script is for mass production of results on DTU clusters
 clc; clear; close all;
 addpath(genpath(pwd));
-%% starDG
-priortype = 'starDG';
 
+%% Enter your own email %%
+email   = 'akara@dtu.dk';
+%% Prior type: starDG (star shaped set parametrization with DG basis)
 iter = 1.5e6;
 stepsize = [0.015,0.025,0.035,0.045,0.1];
 noiselevel = [0.01,0.02,0.04,0.08,0.16];
@@ -31,13 +32,12 @@ for j=1:5
         
         cmd = [matlab_call, call2, func_call, end_call];
         
-        submitToDTUCluster(['starDG_', num2str(i)],cmd)
+        submitToDTUCluster(['starDG_', num2str(i)],cmd,email)
     end
 end
 
 %% level
-
-priortype = 'level';
+email   = 'akara@dtu.dk';
 
 iter = 2.2e6;
 stepsize = [0.002, 0.003, 0.006, 0.01, 0.05];
@@ -68,6 +68,6 @@ for j = 1:4
         
         cmd = [matlab_call, call2, func_call, end_call];
         
-        submitToDTUCluster(['level_', num2str(i)],cmd)
+        submitToDTUCluster(['level_', num2str(i)],cmd,email)
     end
 end

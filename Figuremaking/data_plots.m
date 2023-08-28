@@ -1,3 +1,5 @@
+%% Makes plot of data and ground true parameters
+
 hmax = 0.0175;
 fine_hmax = 0.01;
 meshpar = mesh_comp(hmax);

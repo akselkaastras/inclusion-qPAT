@@ -1,3 +1,5 @@
+%% Function for saving data
+
 function dataSave(noiseseed, noiselevel, priortype)
     hmax = 0.0175;
     fine_hmax = 0.01;

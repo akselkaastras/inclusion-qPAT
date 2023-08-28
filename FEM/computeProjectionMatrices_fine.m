@@ -1,4 +1,6 @@
 function fmdl = computeProjectionMatrices_fine(fmdl,meshpar,trunc)
+
+
 E = eigenbasisFEM(meshpar,trunc);
 
 

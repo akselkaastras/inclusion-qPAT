@@ -1,4 +1,4 @@
-%% Plot
+%% Plot of prior samples
 %% Make prior for levelset with matern covariance
 clc;
 clear;

@@ -1,5 +1,8 @@
 function [K, C, M] = computeLaplacian(meshpar)
 
+% Computes stiffness matrix for Laplacian in piecewise linear basis
+% Also computes mass matrix and "area" matrix for mesh specified by
+% meshpar
 
 %% Load mesh
 p = meshpar.p';

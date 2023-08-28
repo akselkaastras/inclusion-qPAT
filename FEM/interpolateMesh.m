@@ -1,4 +1,6 @@
 function vq = interpolateMesh(u,xq,yq,meshpar)
+% Returns vq as u evaluated in query points (xq,yq) based on the function u
+% represented in a mesh specified by meshpar
 
 %% Load mesh
 p = meshpar.p';

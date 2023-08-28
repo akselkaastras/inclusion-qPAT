@@ -1,11 +1,10 @@
-function cmdsub = submitToDTUCluster(jobid,cmd)
+function cmdsub = submitToDTUCluster(jobid,cmd,email)
 
 id = num2str(jobid);
 jobname = ['job_', id];
 
 memcore = 6000;
 maxmem  = 10000;
-email   = 'akara@dtu.dk';
 ncores = 1;
 
 % update jobscript string

@@ -1,7 +1,8 @@
 function fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,priorpar,trunc)
 
-s = load('Data/noise_model/eigenv/E_coarse_0.01_0.0175.mat');
-E_coarse = s.E_coarse;
+E_coarse = eigenbasisFEM(meshpar,trunc);
+%s = load(strcat('Data/noise_model/eigenv/E_',num2str(meshpar.hmax),'.mat'));
+%E_coarse = s.E;
 E_coarse = E_coarse(:,1:trunc);
 
 if ~(strcmpi(priorpar.type,'starDG') || strcmpi(priorpar.type,'level'))

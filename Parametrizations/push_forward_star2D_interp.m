@@ -2,13 +2,6 @@ function gamma = push_forward_star2D_interp(xi_center,theta,xq,yq,n,HN,priorpar)
 % Makes physical parameter consisting of star-shaped inclusions
 % out of theta.
 
-% Input: 
-%   xi_center [2*ninclusions x 1]: contains centers of inclusions in the
-%                                  form [x_1 y_1 x_2 y_2 ... y_ninclusions]
-%   xi [priorpar.M x ninclusions]: contains M standard normal coefficients
-%                                  for each inclusion
-%   priorpar: struct containing information on KL expansion
-%   meshpar: struct containing information on FEM mesh
 
 % Reshape xi_center for convenience
 xi_center = reshape(xi_center,priorpar.ninclusions,2);

@@ -3,10 +3,12 @@ function datapar = computeApproxError(datapar,N,priortype)
 % Input:
 %   datapar: struct
 %   N: number of iterations
+%   priortype: priorpar.type ('level','star','starDG')
 %
 % Output:
-%   sigma2: sigma2>0 such that N(0,sigma2 I) is the best approximation of 
-%   the distribution of G_{fine}-G_{coarse}
+%   datapar: updated datapar containing:
+%       sigmasq: sigmasq>0 such that N(0,sigmasq I) is the best approximation 
+%       of the empirical distribution of G_{fine}-G_{coarse}
 
 %% Is the approximation error already computed?
 filename = strcat(num2str(datapar.meshpar_fine.hmax),'_',num2str(datapar.meshpar.hmax),'_',priortype,'_',num2str(datapar.noiselevel),'_',num2str(datapar.N), '.mat');
@@ -24,7 +26,7 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     
     %% Initialize prior
 
-    
+    % Here we choose some prior parameters suitable for samples
     if strcmpi(priortype, 'level')
         q = 4;
         alpha = 1.2;
@@ -91,12 +93,8 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
         priorpar.std = 0.2;
     end
 
-
-    
     %% Initialize forward model on fine mesh
     %% Phantom is discontinuous
-
-
     D = datapar.D;
     % Precompute FEM matrices
     fmdl = precomputeFEM_DG(meshpar_fine);
@@ -137,9 +135,9 @@ if ~isfile(strcat('Data/sigma2/sigma2_',filename))
     %% Compute samples of G_{fine}(prior_sample) - G_{coarse}(prior_sample)
     V = zeros(trunc,N);
     U = zeros(pN,1);
-    
+    disp('Computing samples of G_{fine}(prior_sample) - G_{coarse}(prior_sample) for approximation error')
     for i = 1:N
-        i
+        disp(['Sample ',num2str(i),'/',num2str(N)])
         % Sample prior
         
         xi = priorpar.std*randn(priorpar.dim);
@@ -243,6 +241,6 @@ datapar.sigmasq_ws = sigmasq_ws;
 datapar.sigmaKL2 = sigmaKL2;
 datapar.m = m;
 datapar.sigmasq_m = sigmasq_m;
-datapar.epssq_approx = datapar.epssq + datapar.sigmasq_m;
+datapar.epssq_approx = datapar.epssq + datapar.sigmasq;
 datapar.V = V;
 

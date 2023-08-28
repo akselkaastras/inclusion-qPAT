@@ -1,5 +1,5 @@
 function M = computeMass(meshpar)
-
+% Computes mass matrix corresponding to mesh specified by meshpar
 
 %% Load mesh
 p = meshpar.p';
