@@ -64,3 +64,8 @@ In pCNsampler (line 48)
 In starPCN (line 62)
 [LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl, x0);
 } 
+{Unrecognized field name "NZ".
+
+Error in findEigenLaplacian (line 9)
+NZ = meshpar.NZ;
+} 

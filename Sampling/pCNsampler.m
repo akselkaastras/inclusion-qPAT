@@ -13,8 +13,12 @@ if strcmp(priorpar.type,'level')
     ll = compute_log_likelihood_pcn_level(xr, datapar, priorpar, fmdl);
 elseif strcmp(priorpar.type,'star')
     ll = compute_log_likelihood_pcn_star(xr, datapar, priorpar, fmdl); 
+elseif strcmp(priorpar.type,'starDG')
+    ll = compute_log_likelihood_pcn_starDG(xr, datapar, priorpar, fmdl); 
 elseif strcmp(priorpar.type,'id')
     ll = compute_log_likelihood_pcn_id(xr, datapar, priorpar, fmdl);
+elseif strcmp(priorpar.type,'id_level')
+    ll = compute_log_likelihood_pcn_id_level(xr, datapar, priorpar, fmdl);
 end
 
 % Initialize records
@@ -28,7 +32,9 @@ acc = zeros(N_iter,1); % acceptance history
 acc(1) = 1;        % initial guess is accepted
 
 % Adaptation initialize
-Na = floor(0.05*N_iter);
+Na = 15000;
+%Na = floor(0.015*N_iter);
+%Na = floor(0.3*N_iter);
 hat_acc = zeros(floor(N_iter/Na),1);
 star_acc = 0.3; % target acceptance rate
 i = 1;
@@ -39,17 +45,23 @@ for k = 2:N_iter
     
     % Sample preprior
     xi = priorpar.std*randn(dim);
+    xi = priorpar.lambdahalf.*xi;
 
     % Update with preconditioned Crank-Nicolson
+    %xr_new = sqrt(1-jump_size^2)*xr + jump_size*xi;
     xr_new = sqrt(1-jump_size^2)*xr + jump_size*xi;
-    
+
     % Compute log-likelihood
     if strcmp(priorpar.type,'level')
         ll_new = compute_log_likelihood_pcn_level(xr_new, datapar, priorpar, fmdl);
     elseif strcmp(priorpar.type,'star')
         ll_new = compute_log_likelihood_pcn_star(xr_new, datapar, priorpar, fmdl);
+    elseif strcmp(priorpar.type,'starDG')
+        ll_new = compute_log_likelihood_pcn_starDG(xr_new, datapar, priorpar, fmdl); 
     elseif strcmp(priorpar.type,'id')
         ll_new = compute_log_likelihood_pcn_id(xr_new, datapar, priorpar, fmdl);
+    elseif strcmp(priorpar.type,'id_level')
+        ll_new = compute_log_likelihood_pcn_id_level(xr_new, datapar, priorpar, fmdl);
     end
     
     % Compute acceptance probability

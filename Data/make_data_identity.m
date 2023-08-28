@@ -117,27 +117,54 @@ gamma_true = gamma_coarse';
 rng(seed);
 pN = length(meshpar.p);
 % Define number of basis functions to include
-NN = ceil(1/4*(sqrt(1+8*pN)-1));
-MBessel = NN;
-Nzeros = NN;
+%NN = ceil(1/4*(sqrt(1+8*pN)-1));
+%MBessel = NN;
+%Nzeros = NN;
 
 % Compute norm squared of data and noisesample
-fmdl_coarse = precomputeFEM(meshpar);
+%fmdl_coarse = precomputeFEM(meshpar);
 
 % Make eigenfunctions of L^2(D)
-[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
+%[E,Lambda] = eigenbasisLaplacianDisk2D(MBessel,Nzeros,meshpar);
 
 % Make some noise and compute norm
-[xi, norm_noise, norm_noise_fem, ~] = make_noise(meshpar,fmdl_coarse,E,Lambda);
+%[xi1, norm_noise1, norm_noise_fem1, ~] = make_noise(meshpar,fmdl_coarse,E,Lambda);
+N = 15;
+trunc = (2*N+1)*N;
+M = computeMass(meshpar);
+E = eigenbasisFEM(meshpar,trunc);
+U = M*E;
+%M_fine = computeMass(meshpar_fine);
+%E_fine = eigenbasisFEM(meshpar_fine,trunc);
+%U_fine = M_fine*E_fine;
 
+dataq = gamma_coarse*U;
 
-normdata = normFEM(dataq,fmdl_coarse);
+%[xi, norm_noise, norm_noise_fem, ~] = make_noise_FEM(meshpar,fmdl_coarse,trunc);
+%xi3 = randn(pN,1);
+%norm_noise_fem3 = normFEM(xi3,fmdl_coarse);
+%R = chol(fmdl_coarse.Carea);
+%RR = R\speye(pN);
 
-epssq = noiselevel^2 * normdata / norm_noise_fem;
+%xi_vec = randn(pN,1);
 
-bq = dataq + sqrt(epssq)*xi';
+% Noise in basis consisting of scaled eigenvectors of mass matrix
+%xi = RR*xi_vec;
+xi = randn(trunc,1);
+%rel_noise_level = 0.01;
+eps = noiselevel * max(abs(dataq))/max(abs(xi));
+epssq = eps^2;
+
+%normdata = normFEM(data,fmdl);
+%normdata = normFEM(dataq,fmdl_coarse);
+%norm_noise = normFEM(xi,fmdl_coarse);
+
+%epssq = noiselevel^2 * normdata / norm_noise;
+%eps = noiselevel * max(abs(data)) / max(abs(xi));
+
+bq = dataq' + eps*xi;
 figure;
-plot_from_gamma(bq,meshpar)
+plot_from_gamma(bq'*E',meshpar)
 title('observation')
 
 %% save in struct

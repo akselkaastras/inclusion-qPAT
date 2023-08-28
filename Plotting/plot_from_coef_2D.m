@@ -1,7 +1,7 @@
 function plot_from_coef_2D(cn,priorpar)
 eps = 0.1;
 
-[X,Y] = meshgrid(linspace(-1-eps,1+eps,800));
+[X,Y] = meshgrid(linspace(-1-eps,1+eps,200));
 xq = X(:);
 yq = Y(:);
 N = length(xq);
@@ -10,7 +10,7 @@ n = floor(sqrt(N));
 % make evaluation matrix for Fourierbasis in query points (xq,yq)
 evalpar = makeEvalMatrixFourier_2d(xq,yq,priorpar.maxfreq);
 % evaluate Fourier basis in those points given coefficients cn
-thetaq = evalpar.B * (cn.*priorpar.lambdahalf);
+thetaq = evalpar.B * cn;
 % reshape xq and yq coming from meshgrid
 X = reshape(xq,n,n);
 Y = reshape(yq,n,n);

@@ -1,4 +1,4 @@
-function [xi, norm_noise, norm_noise_fem, wk] = make_noise(meshpar,fmdl,E,Lambda)
+function [xi, norm_noise, norm_noise_fem, wk] = make_noise(meshpar,fmdl,E,Lambda,trunc)
 
 pN = length(meshpar.p);
 if pN <= length(Lambda)
@@ -7,8 +7,8 @@ else
 end
 [Lambda,ord] = sort(Lambda);
 E = E(ord,:);
-E = E(1:pN,:);
-Lambda = Lambda(1:pN);
+E = E(1:trunc,:);
+Lambda = Lambda(1:trunc);
 
 e = randn(1,size(E,1));
 xi = e * E;

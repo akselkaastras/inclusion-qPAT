@@ -2,7 +2,7 @@ function u = evalFowardModel(fmdl,meshpar,q)
 
 pN = length(meshpar.p);
 pNN = pN-size(meshpar.e(1,:),2);
-qmatrix = spdiags(q, 0, pN, pN);
+qmatrix = spdiags(q, 0, length(q), length(q));
 
 
 % Build mass matrix

@@ -1,4 +1,4 @@
-function [K, C] = computeLaplacian(meshpar)
+function [K, C, M] = computeLaplacian(meshpar)
 
 
 %% Load mesh
@@ -14,6 +14,7 @@ HN = size(H,1);
 pNN = pN-NN;
 %% Build stiffness and mass matrix
 Agrad = sparse(pNN*pNN,pN);
+Aarea = sparse(pN*pN,pN);
 Aint = sparse(pNN*pNN,pN);
 
 
@@ -35,7 +36,7 @@ for kk = 1:pN
             K(ind, ind) = K(ind, ind) + elIntGrad;
         end
     end
-
+    Aarea(:,kk) = C(:);
     C(Nbound,:) = [];
     C(:,Nbound) = [];
     K(Nbound,:) = [];
@@ -55,10 +56,15 @@ K = Agrad*eyematrix;
 K = reshape(sum(K,2),pNN,pNN);
 K = 1/2*(K'+K);
 
-% Build maass matrix
+% Build mass matrix
 C = Aint*eyematrix;
 C = reshape(sum(C,2),pNN,pNN);
 C = 1/2*(C'+C);
+
+% Build area matrix
+M = Aarea*eyematrix;
+M = reshape(sum(M,2),pN,pN);
+M = 1/2*(M'+M);
 
 
 end

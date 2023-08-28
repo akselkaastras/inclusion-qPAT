@@ -1,0 +1,33 @@
+{Operation terminated by user during precomputeFEM_DG (line 47)
+
+
+In starDGPCN (line 42)
+fmdl = precomputeFEM_DG(meshpar);
+} 
+{Operation terminated by user during precomputeFEM_DG (line 47)
+
+
+In starDGPCN (line 42)
+fmdl = precomputeFEM_DG(meshpar);
+} 
+{Not enough input arguments.
+
+Error in computeProjectionMatrices_coarse (line 5)
+E_coarse = E_coarse(:,1:trunc);
+
+Error in starDGPCN (line 45)
+fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,priorpar);
+} 
+{Not enough input arguments.
+
+Error in computeProjectionMatrices_coarse (line 5)
+E_coarse = E_coarse(:,1:trunc);
+
+Error in starDGPCN (line 45)
+fmdl = computeProjectionMatrices_coarse(fmdl,meshpar,priorpar);
+} 
+{Unrecognized field name "N".
+
+Error in starDGPCN (line 45)
+trunc = (2*datapar.N+1)*datapar.N;
+} 

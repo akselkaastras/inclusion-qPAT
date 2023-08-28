@@ -7,7 +7,8 @@ yq = Y(:);
 n = sqrt(length(xq));
 
 % evaluate Fourier basis in those points given coefficients cn
-thetaq = priorpar.B * (xi.*priorpar.lambdahalf);
+%thetaq = priorpar.B *(xi.*priorpar.lambdahalf);
+thetaq = priorpar.B * xi;
 thetaq = priorpar.mean + thetaq;
 % push-forward
 gamma = push_forward_star2D(xi_center,thetaq,xq,yq,priorpar);

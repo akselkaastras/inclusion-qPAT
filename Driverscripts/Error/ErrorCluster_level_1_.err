@@ -1,0 +1,64 @@
+{Unrecognized function or variable 'sigmasq'.
+
+Error in compute_log_likelihood_pcn_level (line 27)
+ll = -1/(2*(datapar.epssq + sigmasq))*sum(v.^2);
+
+Error in pCNsampler (line 13)
+    ll = compute_log_likelihood_pcn_level(xr, datapar, priorpar, fmdl);
+
+Error in levelPCN (line 63)
+[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl, x0);
+} 
+User defined signal 2
+{Operation terminated by user during evalFowardModel (line 26)
+
+
+In compute_log_likelihood_pcn_level (line 12)
+u = evalFowardModel(fmdl,datapar.meshpar,gamma);
+
+In pCNsampler (line 54)
+        ll_new = compute_log_likelihood_pcn_level(xr_new, datapar, priorpar, fmdl);
+
+In levelPCN (line 63)
+rng(sampleseed)
+} 
+{Operation terminated by user during evalFowardModel (line 26)
+
+
+In compute_log_likelihood_pcn_level (line 12)
+u = evalFowardModel(fmdl,datapar.meshpar,gamma);
+
+In pCNsampler (line 54)
+        ll_new = compute_log_likelihood_pcn_level(xr_new, datapar, priorpar, fmdl);
+
+In levelPCN (line 63)
+rng(sampleseed)
+} 
+{Unrecognized field name "N".
+
+Error in levelPCN (line 42)
+trunc = (2*datapar.N+1)*datapar.N;
+} 
+{Unrecognized field name "U_proj_coarse".
+
+Error in compute_log_likelihood_pcn_level (line 23)
+c = fmdl.U_proj_coarse'*data;
+
+Error in pCNsampler (line 13)
+    ll = compute_log_likelihood_pcn_level(xr, datapar, priorpar, fmdl);
+
+Error in levelPCN (line 65)
+[LL, N_reject, XR] = pCNsampler(datapar, samplerpar, priorpar, fmdl, x0);
+} 
+{Operation terminated by user during precomputeFEM (line 48)
+
+
+In levelPCN (line 39)
+fmdl = precomputeFEM(meshpar);
+} 
+{Operation terminated by user during precomputeFEM (line 48)
+
+
+In levelPCN (line 39)
+fmdl = precomputeFEM(meshpar);
+} 

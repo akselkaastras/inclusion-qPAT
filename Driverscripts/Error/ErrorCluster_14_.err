@@ -58,3 +58,35 @@ In dataSave (line 18)
     datapar = computeApproxError(datapar,N,priortype);
 } 
 /zhome/ee/2/108654/.lsbatch/1683112608.16639028.shell: line 14: 102749 Killed                  matlab -nodisplay -r 'addpath(genpath(pwd));dataSave(1,0.12,"star");exit'
+{Operation terminated by user during precomputeFEM (line 41)
+
+
+In make_data (line 117)
+fmdl = precomputeFEM(meshpar_fine);
+
+In dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+{Operation terminated by user during precomputeFEM (line 41)
+
+
+In make_data (line 117)
+fmdl = precomputeFEM(meshpar_fine);
+
+In dataSave (line 16)
+    datapar = make_data(curves,values,noiselevel,fine_hmax,meshpar,noiseseed);
+} 
+{Error using *
+Incorrect dimensions for matrix multiplication. Check that the number of
+columns in the first matrix matches the number of rows in the second matrix. To
+perform elementwise multiplication, use '.*'.
+
+Error in evalFowardModel (line 9)
+C = fmdl.Aint*qmatrix;
+
+Error in computeApproxError (line 170)
+        u = evalFowardModel(fmdl,meshpar_fine,gamma);
+
+Error in dataSave (line 18)
+    datapar = computeApproxError(datapar,N,priortype);
+} 

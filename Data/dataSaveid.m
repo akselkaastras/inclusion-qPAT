@@ -1,5 +1,5 @@
 function dataSaveid(noiseseed, noiselevel, priortype)
-    hmax = 0.015;
+    hmax = 0.0175;
     fine_hmax = 0.01;
     meshpar = mesh_comp(hmax);
 
