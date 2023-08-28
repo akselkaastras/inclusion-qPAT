@@ -6,17 +6,20 @@
 
 ## Parametrizations
 Main functions are:
-prior_init.m
-prior_init2d.m
+`prior_init.m`
+`prior_init2d.m`
 
-returns a structure containing KL (Karhunen-Loeve) eigenfunctions $`\{e_k\}_{k\in \mathbb{Z}^m}`$ and eigenvalues $`\{\lambda_k\}_{k\in \mathbb{Z}^m}`$ truncated corresponding to a user specified max frequency ``max_freq´´ for the Matern covariance.
+returns a structure containing KL (Karhunen-Loeve) eigenfunctions $`\{e_k\}_{k\in \mathbb{Z}^m}`$ and eigenvalues $`\{\lambda_k\}_{k\in \mathbb{Z}^m}`$ truncated corresponding to a user specified max frequency `max_freq` for the Matern covariance.
 Given an i.i.d Gaussian vector of same length as the number of eigenfunctions, priorsample.m computes the KL expansion
-$$\sum_{k} \xi_k \sqrt{\lambda_k} e_k.$$
+$$\theta = \sum_{k} \xi_k \sqrt{\lambda_k} e_k.$$
 
 
 Parametrizations:
-push_forward_levelset2D_smooth.m
-push_forward_star2D_interp.m
+`push_forward_levelset2D_smooth.m`
+`push_forward_star2D_interp.m`
+
+the first uses continuous approximation of the heaviside function to filter $`\theta`$ .
+the second uses `inpoly2.m`
 
 ## FEM
 Builds on finite element routines in first order Lagrange basis and discontinuous Galerkin basis. Many of these routines build on code by Niko Hänninen, Tanja Tarvainen and Ville Kolehmainen (University of Eastern Finland).
