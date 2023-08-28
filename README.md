@@ -4,11 +4,21 @@
 <img src="Figures/readme/truth.png" width="230" class="center">                    <img src="Figures/readme/star.png" width="230" class="center">        <img src="Figures/readme/level.png" width="230" class=center>
 </p>
 
-Ground true parameter (left). Sample from a posterior distribution for inclusion detection based on a star-shaped parametrization (middle) and a level set parametrization (right)
+Ground true parameter on fine mesh (left). Sample from a posterior distribution for inclusion detection based on a star-shaped parametrization (middle) and a level set parametrization (right) both on a coarse mesh.
+$`10^3`$ samples were computed. This took around $`\sim`$ 1 minute.
 
-<b> should run everything from root folder</b>
+```diff
+@@ Run files from the root folder. @@
+```
 
 ## driver.m file
+The file `driver.m` demonstrates the main capabilities of this collections of scripts. It:
+1. Constructs a triangular finite element mesh for the unit disc based on element size `hmax`. We recommend `hmax>= 0.03` for a smooth initial experience.
+2. Samples from prior distributions based on Matern Gaussian fields and the star-shaped set and level set parametrizations.
+3. Computes data for a specific ground true parameter on a fine mesh, see <b>Data</b> below.
+4. Approximates approximation error arising from fine and coarse mesh differences.
+5. Samples a posterior distribution based on the prior distributions and a likelihood arising from white noise observations of $`\langle H, \phi_k \rangle_{L^2(D)} + \varepsilon \xi_k`$, where $`H`$ is the true observation, $`\phi_k`$ are Dirichlet Laplacian eigenfunctions, $`\varepsilon>0`$ is a noise level and $`\xi_k\sim N(0,1)`$ i.i.d. The posterior is sampled using a Markov Chain Monte Carlo (MCMC) method, the preconditioned Crank-Nicolson (pCN) scheme.
+
 
 ## Parametrizations
 Main functions are:
