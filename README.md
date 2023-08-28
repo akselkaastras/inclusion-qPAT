@@ -35,7 +35,7 @@ The two other main functions of this folder are the functions pertaining to the 
 4. `push_forward_star2D_interp.m`
 
 The first uses a continuous approximation of the heaviside function to filter the two-dimensional Gaussian field $`\theta`$ to a piecewise constant parameter. This we call the smoothened level set parametrization.
-The second uses as input a one-dimensional periodic Gaussian process and map it to a star-shaped set. This parametrization uses the routine `inpoly2.m`, see <a href="https://www.mathworks.com/matlabcentral/fileexchange/10391-inpoly-a-fast-points-in-polygon-test">inpoly</a>.
+The second uses as input a one-dimensional periodic Gaussian process and maps it to a star-shaped set. This parametrization uses the routine `inpoly2.m`, see <a href="https://www.mathworks.com/matlabcentral/fileexchange/10391-inpoly-a-fast-points-in-polygon-test">inpoly</a>.
 
 ## Finite element routines
 The `FEM` folder builds on finite element routines in first order Lagrange basis and discontinuous Galerkin basis. Many of these routines build on code by Niko Hänninen, Tanja Tarvainen and Ville Kolehmainen (University of Eastern Finland).
